@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="hero.name">Dr. Scarlet Perez | Medicina Estetica</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9C%9A</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <nav class="bottom-nav">
+        <div class="lang-switcher-bottom">
+            <button class="lang-btn-bottom active" data-lang="es">ES</button>
+            <button class="lang-btn-bottom" data-lang="en">EN</button>
+            <button class="lang-btn-bottom" data-lang="ca">CA</button>
+        </div>
+
+        <div class="burger-menu-container">
+            <button id="burger-btn" aria-label="Menu" onclick="toggleBurgerMenu()">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu-overlay">
+        <ul class="menu-links">
+            <li><a href="#hero" class="menu-link" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="#about" class="menu-link" data-i18n="nav.about">Perfil</a></li>
+            <li><a href="#education" class="menu-link" data-i18n="nav.education">Formacion</a></li>
+            <li><a href="#experience" class="menu-link" data-i18n="nav.experience">Experiencia</a></li>
+            <li><a href="#contact" class="menu-link" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+    </div>
+
+    <main id="app-scroller">
+
+        <header class="hero" id="hero">
+            <div class="container hero-content">
+
+                <div class="profile-frame">
+                    <img src="photo.jpg" alt="Dr. Scarlet Perez" class="profile-img" id="hero-img">
+                </div>
+
+                <span class="subtitle" data-i18n="hero.subtitle">MEDICO ESTETICO | CIRUJANO</span>
+                <h1 data-i18n="hero.name">Dr. Scarlet Perez</h1>
+
+                <div class="university-info" style="margin-bottom: 15px;">
+                    <p style="font-size: 1rem; font-weight: 500; color: var(--text-dark); opacity: 0.9;">
+                        <span data-i18n="hero.degree">Grado en Medicina</span> | <a
+                            href="https://www.ucb.edu.bo/carreras/medicina/" target="_blank"
+                            style="color: inherit; text-decoration: underline; text-underline-offset: 3px;"
+                            data-i18n="hero.uni">Universidad Catolica Boliviana San Pablo</a> (2022)
+                    </p>
+                </div>
+
+                <div class="hero-details college-info">
+                    <p data-i18n="hero.college_name">Colegio Medico de Barcelona</p>
+                    <p data-i18n="hero.col_num">Colegiada no 69466</p>
+                </div>
+
+                <a href="#contact" class="btn-primary" data-i18n="hero.cta">CONTACTAR</a>
+            </div>
+        </header>
+
+        <section class="section-about" id="about">
+            <div class="container">
+                <h2 data-i18n="about.title">Perfil Profesional</h2>
+                <div class="about-text">
+                    <p data-i18n="about.desc">Medico Cirujano con titulacion homologada en Espana. Actualmente ampliando especializacion con Masters en Medicina Estetica y Restauracion Capilar. Experiencia practica en atencion clinica, urgencias y coordinacion de pacientes. Comprometida con la excelencia medica y el trato humano.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section-education" id="education">
+            <div class="container">
+                <h2 data-i18n="edu.title">Formacion Academica</h2>
+
+                <div class="timeline-container collapsed" id="edu-timeline">
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.1.date">2025 - ACTUALIDAD</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.ucv.es/oferta-academica/postgrados/ciencias-de-la-salud/master-universitario-en-medicina-estetica-y-rejuvenecimiento-integral" target="_blank" class="school-link" data-i18n="edu.1.school">UCV & European Medical College</a>
+                                </div>
+                                <h3 data-i18n="edu.1.title">Master en Medicina Estetica y Rejuvenecimiento Integral</h3>
+                                <p data-i18n="edu.1.details">Sede: Barcelona. En curso.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.2.date">2025 - ACTUALIDAD</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://europeanmedicalcollege.com/master-medicina-restauracion-capilar/" target="_blank" class="school-link" data-i18n="edu.2.school">European Medical College</a>
+                                </div>
+                                <h3 data-i18n="edu.2.title">Master en Medicina y Restauracion Capilar</h3>
+                                <p data-i18n="edu.2.details">En curso.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.3.date">Enero 2026</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.sanidad.gob.es/areas/profesionesSanitarias/formacionEspecializada/home.htm" target="_blank" class="school-link" data-i18n="edu.3.school">Ministerio de Sanidad</a>
+                                </div>
+                                <h3 data-i18n="edu.3.title">Examen MIR</h3>
+                                <p data-i18n="edu.3.details">Examen realizado el 24/01/2026.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.4.date">2016 - 2022</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.ucb.edu.bo/carreras/medicina/" target="_blank" class="school-link" data-i18n="edu.4.school">Universidad Catolica Boliviana San Pablo</a>
+                                </div>
+                                <h3 data-i18n="edu.4.title">Grado en Medicina y Cirugia</h3>
+                                <p data-i18n="edu.4.details">Santa Cruz, Bolivia. Titulo homologado en Espana.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-expand-container">
+                    <button class="btn-expand" onclick="toggleTimeline('edu-timeline', this)">
+                        <span data-i18n="btn.expand">Ver toda la formacion</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-education" id="experience">
+            <div class="container">
+                <h2 data-i18n="exp.title">Experiencia Profesional</h2>
+
+                <div class="timeline-container collapsed" id="exp-timeline">
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.1.date">2022</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.cns.gob.bo/" target="_blank" data-i18n="exp.1.place">Caja Nacional de Salud - Bolivia</a>
+                                </div>
+                                <h3 data-i18n="exp.1.role">Internado Rotatorio Medico</h3>
+                                <p data-i18n="exp.1.desc">Rotaciones completas en Cirugia, Pediatria, Ginecologia y Medicina Interna.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.2.date">2020 - 2022</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://fexpocruz.com.bo/" target="_blank" data-i18n="exp.2.place">Feria Expocruz</a>
+                                </div>
+                                <h3 data-i18n="exp.2.role">Medico de Apoyo / Urgencias</h3>
+                                <p data-i18n="exp.2.desc">Atencion primaria de urgencias, triaje y estabilizacion.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.3.date">2020 - 2022</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <span data-i18n="exp.3.place">Centro Medico Perpetuo Socorro</span>
+                                </div>
+                                <h3 data-i18n="exp.3.role">Rotaciones Clinicas</h3>
+                                <p data-i18n="exp.3.desc">Asistencia en consultas externas y procedimientos menores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-expand-container">
+                    <button class="btn-expand" onclick="toggleTimeline('exp-timeline', this)">
+                        <span data-i18n="btn.expand">Ver toda la formacion</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="section-contact" id="contact">
+            <div class="container">
+                <h2 data-i18n="contact.title">Contacto Profesional</h2>
+
+                <div style="margin-top: 40px; margin-bottom: 40px;">
+                    <div class="contact-text-item">
+                        <ion-icon name="call"></ion-icon>
+                        <a href="tel:+34617893031" data-i18n="contact.phone">+34 617 893 031</a>
+                    </div>
+
+                    <div class="contact-text-item">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        <a href="https://wa.me/34617893031" target="_blank">WhatsApp Chat</a>
+                    </div>
+
+                    <div class="contact-text-item">
+                        <ion-icon name="mail"></ion-icon>
+                        <a href="mailto:scarletdra@gmail.com" data-i18n="contact.email">scarletdra@gmail.com</a>
+                    </div>
+
+                    <div class="contact-text-item">
+                        <ion-icon name="location"></ion-icon>
+                        <span data-i18n="contact.loc">Barcelona, Espana</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+                <p style="margin-top: 40px; opacity: 0.8; font-size: 0.9rem;" data-i18n="footer.rights">© 2026 Dr. Scarlet Perez. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

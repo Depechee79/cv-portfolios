@@ -1,0 +1,324 @@
+/* Theme: Hospitality (Restaurant/Hotel) — Fine Dining Premium */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    /* Palette: Fine Dining — Dark, Sophisticated */
+    --primary-color: #1C1C1C;       /* Almost black — Michelin-star */
+    --secondary-color: #F7F4EF;     /* Warm cream — Linen elegance */
+    --accent-color: #B8956A;        /* Antique bronze gold */
+    --text-dark: #2A2A2A;           /* Soft black */
+    --text-light: #8A8A8A;          /* Neutral grey */
+    --white: #FFFFFF;
+
+    /* Spacing & Layout */
+    --container-padding: 24px;
+    --section-spacing: 80px;
+
+    /* Typography */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+/* HERO — Hotel luxury background */
+.hero {
+    background: linear-gradient(rgba(247, 244, 239, 0.88), rgba(247, 244, 239, 0.92)),
+        url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&q=80') center top/cover no-repeat;
+}
+
+/* ABOUT SECTION — Dark overlay + restaurant bg */
+.section-about {
+    background: linear-gradient(rgba(28, 28, 28, 0.92), rgba(28, 28, 28, 0.92)),
+        url('https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=1920&q=80') center/cover no-repeat fixed;
+    color: var(--white);
+}
+
+.section-about h2 {
+    color: var(--white);
+}
+
+.section-about p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.section-about .stat-badge {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(184, 149, 106, 0.3);
+    color: var(--white);
+}
+
+/* EXPERIENCE SECTION — Dark overlay + restaurant bg */
+.section-experience {
+    padding: var(--section-spacing) 0;
+    background: linear-gradient(rgba(28, 28, 28, 0.92), rgba(28, 28, 28, 0.92)),
+        url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80') center/cover no-repeat fixed;
+    color: var(--white);
+}
+
+.section-experience h2 {
+    color: var(--white);
+}
+
+.section-experience h3 {
+    color: var(--accent-color);
+}
+
+.section-experience .company-name,
+.section-experience .company-name span,
+.section-experience .company-name a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.section-experience p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.section-experience .timeline::before {
+    background-color: rgba(184, 149, 106, 0.3);
+}
+
+.section-experience .timeline-dot {
+    background-color: var(--primary-color);
+    border-color: var(--accent-color);
+}
+
+.section-experience .timeline-content {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section-experience .timeline-content:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.section-experience .timeline-date {
+    color: var(--accent-color);
+}
+
+.section-experience .btn-expand {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.section-experience .btn-expand:hover {
+    background: rgba(184, 149, 106, 0.15);
+}
+
+.section-experience .timeline-container.collapsed {
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.section-experience .timeline-container.collapsed::after {
+    background: linear-gradient(to bottom, transparent, rgba(28, 28, 28, 0.01));
+}
+
+/* SKILLS SECTION — Dark */
+.section-skills {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(28, 28, 28, 0.94), rgba(28, 28, 28, 0.94)),
+        url('https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=1920&q=80') center/cover no-repeat fixed;
+    color: var(--white);
+}
+
+.section-skills h2 {
+    color: var(--white);
+}
+
+.section-skills .skills-subtitle {
+    color: var(--white);
+}
+
+.section-skills .skill-tag {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(184, 149, 106, 0.3);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.section-skills .skill-tag:hover {
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.section-skills .lang-name {
+    color: var(--white);
+}
+
+.section-skills .lang-level {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.section-skills .lang-dot {
+    border-color: var(--accent-color);
+}
+
+.section-skills .lang-dot.filled {
+    background: var(--accent-color);
+}
+
+/* CONTACT SECTION — Light cream */
+.section-contact {
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+}
+
+.section-contact h2 {
+    color: var(--primary-color);
+}
+
+.contact-text-item {
+    color: var(--text-dark) !important;
+    opacity: 1 !important;
+}
+
+.contact-text-item a {
+    color: var(--text-dark);
+}
+
+/* REFERENCES SECTION */
+.section-references {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.references-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.reference-card {
+    text-align: center;
+    padding: 28px 20px;
+    background: var(--secondary-color);
+    border: 1px solid rgba(184, 149, 106, 0.2);
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reference-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.ref-icon {
+    margin-bottom: 12px;
+}
+
+.ref-icon ion-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+.ref-name {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 4px;
+}
+
+.ref-role {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.ref-company {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+.ref-note {
+    text-align: center;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+    .references-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+/* CUTLERY BURGER (Hospitality specific) */
+.cutlery-burger {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3px;
+}
+
+.cutlery-burger svg {
+    display: block;
+    height: 100%;
+    width: auto;
+    flex-shrink: 0;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.4s ease,
+                color 0.6s ease;
+    transform-origin: center center;
+}
+
+.burger-open .cutlery-spoon {
+    opacity: 0;
+    transform: scale(0.2);
+}
+
+.burger-open .cutlery-fork {
+    transform: translateX(5px) rotate(45deg);
+}
+
+.burger-open .cutlery-knife {
+    transform: translateX(-5px) rotate(-45deg);
+}
+
+/* Print: Dark sections should print light */
+@media print {
+    .section-about,
+    .section-experience,
+    .section-skills {
+        background: var(--secondary-color) !important;
+        color: var(--text-dark) !important;
+    }
+
+    .section-about h2,
+    .section-about p,
+    .section-about .stat-badge,
+    .section-experience h2,
+    .section-experience h3,
+    .section-skills h2,
+    .section-skills .skills-subtitle,
+    .section-skills .skill-tag,
+    .section-skills .lang-name {
+        color: var(--primary-color) !important;
+    }
+
+    .section-experience .company-name,
+    .section-experience .company-name span,
+    .section-experience .company-name a,
+    .section-experience p {
+        color: var(--text-dark) !important;
+    }
+
+    .section-experience .timeline-content {
+        background: var(--white) !important;
+        border-color: #eee !important;
+    }
+}
