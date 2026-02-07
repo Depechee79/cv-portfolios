@@ -1,0 +1,16 @@
+{
+  "name": "cv-portfolios",
+  "version": "1.0.0",
+  "description": "Data-driven CV portfolio generator",
+  "scripts": {
+    "generate": "node generate.js",
+    "generate:mireia": "node generate.js mireia",
+    "generate:***REMOVED***": "node generate.js ***REMOVED***",
+    "generate:all": "node generate.js mireia && node generate.js ***REMOVED***",
+    "serve:mireia": "npx serve profiles/mireia/dist -p 3000",
+    "serve:***REMOVED***": "npx serve profiles/***REMOVED***/dist -p 3001"
+  },
+  "keywords": ["cv", "portfolio", "generator"],
+  "author": "Aitor",
+  "license": "MIT"
+}
