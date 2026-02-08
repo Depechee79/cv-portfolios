@@ -60,11 +60,11 @@
     },
     "items": [
       {
-        "date": { "es": "2016 - 2022", "en": "2016 - 2022", "ca": "2016 - 2022" },
-        "school": { "es": "Universidad Católica Boliviana San Pablo", "en": "Universidad Católica Boliviana San Pablo", "ca": "Universidad Católica Boliviana San Pablo" },
-        "url": "https://www.ucb.edu.bo/carreras/medicina/",
-        "title": { "es": "Grado en Medicina y Cirugía", "en": "Degree in Medicine and Surgery", "ca": "Grau en Medicina i Cirurgia" },
-        "details": { "es": "Santa Cruz, Bolivia. Título homologado en España.", "en": "Santa Cruz, Bolivia. Degree validated in Spain.", "ca": "Santa Cruz, Bolívia. Títol homologat a Espanya." }
+        "date": { "es": "Enero 2026", "en": "January 2026", "ca": "Gener 2026" },
+        "school": { "es": "Ministerio de Sanidad", "en": "Ministry of Health", "ca": "Ministeri de Sanitat" },
+        "url": "https://www.sanidad.gob.es/areas/profesionesSanitarias/formacionEspecializada/home.htm",
+        "title": { "es": "Examen MIR", "en": "MIR Exam", "ca": "Examen MIR" },
+        "details": { "es": "Examen realizado el 24/01/2026.", "en": "Exam taken on 24/01/2026.", "ca": "Examen realitzat el 24/01/2026." }
       },
       {
         "date": { "es": "2025 - ACTUALIDAD", "en": "2025 - PRESENT", "ca": "2025 - ACTUALITAT" },
@@ -88,18 +88,18 @@
         "details": { "es": "Preparación para examen MIR.", "en": "MIR exam preparation.", "ca": "Preparació per examen MIR." }
       },
       {
-        "date": { "es": "Enero 2026", "en": "January 2026", "ca": "Gener 2026" },
-        "school": { "es": "Ministerio de Sanidad", "en": "Ministry of Health", "ca": "Ministeri de Sanitat" },
-        "url": "https://www.sanidad.gob.es/areas/profesionesSanitarias/formacionEspecializada/home.htm",
-        "title": { "es": "Examen MIR", "en": "MIR Exam", "ca": "Examen MIR" },
-        "details": { "es": "Examen realizado el 24/01/2026.", "en": "Exam taken on 24/01/2026.", "ca": "Examen realitzat el 24/01/2026." }
-      },
-      {
         "date": { "es": "2024", "en": "2024", "ca": "2024" },
         "school": { "es": "Generalitat de Catalunya", "en": "Generalitat de Catalunya", "ca": "Generalitat de Catalunya" },
         "url": "#",
         "title": { "es": "Ejercer como médico en Cataluña", "en": "Practice medicine in Catalonia", "ca": "Exercir com a metge a Catalunya" },
         "details": { "es": "Habilitación para ejercer en Catalunya.", "en": "Authorization to practice in Catalonia.", "ca": "Habilitació per exercir a Catalunya." }
+      },
+      {
+        "date": { "es": "2016 - 2022", "en": "2016 - 2022", "ca": "2016 - 2022" },
+        "school": { "es": "Universidad Católica Boliviana San Pablo", "en": "Universidad Católica Boliviana San Pablo", "ca": "Universidad Católica Boliviana San Pablo" },
+        "url": "https://www.ucb.edu.bo/carreras/medicina/",
+        "title": { "es": "Grado en Medicina y Cirugía", "en": "Degree in Medicine and Surgery", "ca": "Grau en Medicina i Cirurgia" },
+        "details": { "es": "Santa Cruz, Bolivia. Título homologado en España.", "en": "Santa Cruz, Bolivia. Degree validated in Spain.", "ca": "Santa Cruz, Bolívia. Títol homologat a Espanya." }
       }
     ]
   },

@@ -135,6 +135,13 @@
         "details": { "es": "Formación técnica avanzada en gestión de restauración y servicios de sala.", "en": "Advanced technical training in restaurant management and floor services.", "ca": "Formació tècnica avançada en gestió de restauració i serveis de sala." }
       },
       {
+        "date": { "es": "JUN - AGO 2018", "en": "JUN - AUG 2018", "ca": "JUN - AGO 2018" },
+        "school": { "es": "La Boqueria, Barcelona", "en": "La Boqueria, Barcelona", "ca": "La Boqueria, Barcelona" },
+        "url": "#",
+        "title": { "es": "Curso de Cocina", "en": "Cooking Class", "ca": "Curs de Cuina" },
+        "details": { "es": "Formación práctica en técnicas culinarias.", "en": "Hands-on training in culinary techniques.", "ca": "Formació pràctica en tècniques culinàries." }
+      },
+      {
         "date": { "es": "SEP 2016 - JUL 2018", "en": "SEP 2016 - JUL 2018", "ca": "SET 2016 - JUL 2018" },
         "school": { "es": "Institut Escola del Treball, Barcelona", "en": "Institut Escola del Treball, Barcelona", "ca": "Institut Escola del Treball, Barcelona" },
         "url": "#",
@@ -147,13 +154,6 @@
         "url": "#",
         "title": { "es": "Educación Secundaria Obligatoria (ESO)", "en": "General Certificate of Secondary Education (GCSE)", "ca": "Educació Secundària Obligatòria (ESO)" },
         "details": null
-      },
-      {
-        "date": { "es": "JUN - AGO 2018", "en": "JUN - AUG 2018", "ca": "JUN - AGO 2018" },
-        "school": { "es": "La Boqueria, Barcelona", "en": "La Boqueria, Barcelona", "ca": "La Boqueria, Barcelona" },
-        "url": "#",
-        "title": { "es": "Curso de Cocina", "en": "Cooking Class", "ca": "Curs de Cuina" },
-        "details": { "es": "Formación práctica en técnicas culinarias.", "en": "Hands-on training in culinary techniques.", "ca": "Formació pràctica en tècniques culinàries." }
       }
     ]
   },
