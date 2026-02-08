@@ -28,7 +28,7 @@ window.toggleTimeline = function (id, btn) {
         // Add scroll listener for auto-collapse at end (with debounce)
         let scrollTimeout = null;
         container._scrollEndHandler = function() {
-            // Debounce: wait 800ms after scroll stops at bottom
+            // Debounce: wait 1100ms after scroll stops at bottom
             if (scrollTimeout) clearTimeout(scrollTimeout);
             scrollTimeout = setTimeout(() => {
                 const scrollBottom = container.scrollTop + container.clientHeight;
@@ -38,7 +38,7 @@ window.toggleTimeline = function (id, btn) {
                 if (scrollBottom >= scrollMax - 5) {
                     collapseAndScrollNext(container, btn);
                 }
-            }, 800);
+            }, 1100);
         };
         container.addEventListener('scroll', container._scrollEndHandler);
     } else {
