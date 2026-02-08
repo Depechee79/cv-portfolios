@@ -989,8 +989,8 @@ section.section-about {
 }
 
 #experience .timeline-container.collapsed {
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 }
 
 #experience .timeline-container.collapsed::after {
