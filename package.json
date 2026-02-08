@@ -1,14 +1,15 @@
 {
   "name": "cv-portfolios",
-  "version": "1.0.0",
-  "description": "Data-driven CV portfolio generator",
+  "version": "2.0.0",
+  "description": "Data-driven CV portfolio generator — monorepo",
   "scripts": {
-    "generate": "node generate.js",
-    "generate:mireia": "node generate.js mireia",
-    "generate:***REMOVED***": "node generate.js ***REMOVED***",
-    "generate:all": "node generate.js mireia && node generate.js ***REMOVED***",
-    "serve:mireia": "npx serve profiles/mireia/dist -p 3000",
-    "serve:***REMOVED***": "npx serve profiles/***REMOVED***/dist -p 3001"
+    "generate": "node scripts/generate-portfolio.js",
+    "generate:mireia": "node scripts/generate-portfolio.js mireia",
+    "generate:***REMOVED***": "node scripts/generate-portfolio.js ***REMOVED***",
+    "generate:all": "node scripts/generate-portfolio.js mireia && node scripts/generate-portfolio.js ***REMOVED***",
+    "serve:mireia": "npx serve portfolios/mireia/dist -p 3000",
+    "serve:***REMOVED***": "npx serve portfolios/***REMOVED***/dist -p 3001",
+    "new-portfolio": "node scripts/new-portfolio.js"
   },
   "keywords": ["cv", "portfolio", "generator"],
   "author": "Aitor",

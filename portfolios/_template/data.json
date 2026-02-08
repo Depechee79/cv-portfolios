@@ -1,0 +1,151 @@
+{
+  "theme": "hospitality",
+  "languages": ["es", "en", "ca"],
+  "meta": {
+    "title": "Nombre Apellido | Cargo Profesional",
+    "favicon": "briefcase-outline"
+  },
+  "hero": {
+    "name": "Nombre Apellido",
+    "subtitle": {
+      "es": "CARGO PROFESIONAL",
+      "en": "PROFESSIONAL TITLE",
+      "ca": "CÀRREC PROFESSIONAL"
+    },
+    "current": {
+      "es": "Puesto Actual | Empresa",
+      "en": "Current Position | Company",
+      "ca": "Lloc Actual | Empresa"
+    },
+    "photo": "photo.jpg",
+    "cta": {
+      "es": "CONTACTAR",
+      "en": "CONTACT",
+      "ca": "CONTACTAR"
+    }
+  },
+  "nav": {
+    "home": { "es": "Inicio", "en": "Home", "ca": "Inici" },
+    "profile": { "es": "Perfil", "en": "Profile", "ca": "Perfil" },
+    "experience": { "es": "Experiencia", "en": "Experience", "ca": "Experiència" },
+    "education": { "es": "Formación", "en": "Education", "ca": "Formació" },
+    "skills": { "es": "Habilidades", "en": "Skills", "ca": "Habilitats" },
+    "references": { "es": "Referencias", "en": "References", "ca": "Referències" },
+    "contact": { "es": "Contacto", "en": "Contact", "ca": "Contacte" }
+  },
+  "about": {
+    "title": {
+      "es": "Perfil Profesional",
+      "en": "Professional Profile",
+      "ca": "Perfil Professional"
+    },
+    "desc": {
+      "es": "Descripción profesional aquí...",
+      "en": "Professional description here...",
+      "ca": "Descripció professional aquí..."
+    },
+    "stats": [
+      {
+        "es": "Estadística 1",
+        "en": "Stat 1",
+        "ca": "Estadística 1"
+      },
+      {
+        "es": "Estadística 2",
+        "en": "Stat 2",
+        "ca": "Estadística 2"
+      },
+      {
+        "es": "Estadística 3",
+        "en": "Stat 3",
+        "ca": "Estadística 3"
+      }
+    ]
+  },
+  "experience": {
+    "title": {
+      "es": "Experiencia Profesional",
+      "en": "Professional Experience",
+      "ca": "Experiència Professional"
+    },
+    "items": [
+      {
+        "date": { "es": "ENE 2024 - ACTUALIDAD", "en": "JAN 2024 - PRESENT", "ca": "GEN 2024 - ACTUALITAT" },
+        "place": { "es": "Empresa, Ciudad", "en": "Company, City", "ca": "Empresa, Ciutat" },
+        "url": "#",
+        "role": { "es": "Puesto", "en": "Role", "ca": "Lloc" },
+        "desc": { "es": "Descripción del puesto...", "en": "Role description...", "ca": "Descripció del lloc..." }
+      }
+    ]
+  },
+  "education": {
+    "title": {
+      "es": "Formación Académica",
+      "en": "Education",
+      "ca": "Formació Acadèmica"
+    },
+    "items": [
+      {
+        "date": { "es": "SEP 2018 - JUN 2022", "en": "SEP 2018 - JUN 2022", "ca": "SET 2018 - JUN 2022" },
+        "school": { "es": "Universidad / Centro", "en": "University / School", "ca": "Universitat / Centre" },
+        "url": "#",
+        "title": { "es": "Título obtenido", "en": "Degree obtained", "ca": "Títol obtingut" },
+        "details": { "es": "Detalles adicionales...", "en": "Additional details...", "ca": "Detalls addicionals..." }
+      }
+    ]
+  },
+  "skills": {
+    "title": {
+      "es": "Habilidades e Idiomas",
+      "en": "Skills & Languages",
+      "ca": "Habilitats i Idiomes"
+    },
+    "skills_title": {
+      "es": "Competencias",
+      "en": "Competencies",
+      "ca": "Competències"
+    },
+    "items": [
+      { "es": "Habilidad 1", "en": "Skill 1", "ca": "Habilitat 1" },
+      { "es": "Habilidad 2", "en": "Skill 2", "ca": "Habilitat 2" }
+    ],
+    "languages_title": {
+      "es": "Idiomas",
+      "en": "Languages",
+      "ca": "Idiomes"
+    },
+    "languages": [
+      { "name": { "es": "Español", "en": "Spanish", "ca": "Espanyol" }, "level": { "es": "Nativo", "en": "Native", "ca": "Natiu" }, "dots": 5 },
+      { "name": { "es": "Inglés", "en": "English", "ca": "Anglès" }, "level": { "es": "Intermedio", "en": "Intermediate", "ca": "Intermedi" }, "dots": 3 }
+    ]
+  },
+  "references": null,
+  "contact": {
+    "title": {
+      "es": "Contacto",
+      "en": "Contact",
+      "ca": "Contacte"
+    },
+    "phone": "+34 600 000 000",
+    "email": "email@ejemplo.com",
+    "location": {
+      "es": "Ciudad, España",
+      "en": "City, Spain",
+      "ca": "Ciutat, Espanya"
+    },
+    "whatsapp": "34600000000",
+    "linkedin": "#"
+  },
+  "footer": {
+    "rights": {
+      "es": "2026 Nombre Apellido. Todos los derechos reservados.",
+      "en": "2026 Name Surname. All rights reserved.",
+      "ca": "2026 Nom Cognom. Tots els drets reservats."
+    }
+  },
+  "buttons": {
+    "expand": { "es": "Ver todo", "en": "See all", "ca": "Veure tot" },
+    "collapse": { "es": "Cerrar", "en": "Close", "ca": "Tancar" }
+  },
+  "darkSections": ["about", "experience", "skills"]
+}
