@@ -463,8 +463,8 @@ section, header, footer {
 .timeline-container.collapsed {
     max-height: 55vh;
     overflow: hidden;
-    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 93%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 93%, transparent 100%);
 }
 
 .timeline-container.expanded {
@@ -989,8 +989,8 @@ section.section-about {
 }
 
 #experience .timeline-container.collapsed {
-    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 93%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 93%, transparent 100%);
 }
 
 #experience .timeline-container.collapsed::after {
