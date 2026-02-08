@@ -159,6 +159,9 @@ function buildTranslations(config) {
         if (config.buttons) {
             translations[lang]['btn.expand'] = config.buttons.expand[lang] || config.buttons.expand;
             translations[lang]['btn.collapse'] = config.buttons.collapse[lang] || config.buttons.collapse;
+            // Download button
+            const downloadLabels = { es: 'Descargar CV', en: 'Download CV', ca: 'Descarregar CV' };
+            translations[lang]['btn.download'] = downloadLabels[lang] || 'Download CV';
         }
     });
 
@@ -453,6 +456,12 @@ ${langItems}
                 <div class="social-links">
                     <a href="${config.contact.linkedin}" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
                 </div>
+
+                <button class="btn-download-cv" onclick="window.print()" title="Descargar CV en PDF">
+                    <ion-icon name="download-outline"></ion-icon>
+                    <span data-i18n="btn.download">Descargar CV</span>
+                </button>
+
                 <p style="margin-top: 40px; opacity: 0.8; font-size: 0.9rem;" data-i18n="footer.rights">© ${config.footer.rights.es}</p>
             </div>
         </footer>`;

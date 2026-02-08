@@ -832,9 +832,38 @@ footer.snap-visible > .container {
     }
 }
 
+/* DOWNLOAD CV BUTTON */
+.btn-download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-body);
+    margin-top: 25px;
+    letter-spacing: 0.5px;
+}
+
+.btn-download-cv ion-icon {
+    font-size: 1.2rem;
+}
+
+.btn-download-cv:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    opacity: 0.9;
+}
+
 /* Print styles */
 @media print {
-    .bottom-nav, .menu-overlay, .btn-expand-container {
+    .bottom-nav, .menu-overlay, .btn-expand-container, .btn-download-cv {
         display: none !important;
     }
 
