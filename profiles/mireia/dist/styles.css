@@ -138,10 +138,10 @@ section, header, footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 12vh;
+    padding-top: 8vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
@@ -461,14 +461,14 @@ section, header, footer {
 }
 
 .timeline-container.collapsed {
-    max-height: 55vh;
+    max-height: 68vh;
     overflow: hidden;
     mask-image: linear-gradient(to bottom, black 93%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 93%, transparent 100%);
 }
 
 .timeline-container.expanded {
-    max-height: 60vh;
+    max-height: 72vh;
     overflow-y: auto;
     overscroll-behavior-y: contain;
     mask-image: none;
