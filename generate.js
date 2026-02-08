@@ -199,6 +199,13 @@ function generateHTML(config) {
     // Build hero section
     let heroContent = '';
     if (isMedical && config.hero.university) {
+        // College info is optional
+        const collegeHtml = config.hero.college ? `
+                <div class="hero-details college-info">
+                    <p data-i18n="hero.college_name">${config.hero.college.name.es}</p>
+                    <p data-i18n="hero.col_num">Colegiada no ${config.hero.college.number}</p>
+                </div>` : '';
+
         heroContent = `
                 <div class="profile-frame">
                     <img src="photo.jpg" alt="${config.hero.name}" class="profile-img" id="hero-img">
@@ -215,12 +222,7 @@ function generateHTML(config) {
                             data-i18n="hero.uni">${config.hero.university.name.es}</a> (${config.hero.university.year})
                     </p>
                 </div>
-
-                <div class="hero-details college-info">
-                    <p data-i18n="hero.college_name">${config.hero.college.name.es}</p>
-                    <p data-i18n="hero.col_num">Colegiada no ${config.hero.college.number}</p>
-                </div>
-
+${collegeHtml}
                 <a href="#contact" class="btn-primary" data-i18n="hero.cta">${config.hero.cta.es}</a>`;
     } else {
         heroContent = `

@@ -2,15 +2,15 @@
   "theme": "medical",
   "languages": ["es", "en", "ca"],
   "meta": {
-    "title": "Dr. Scarlet Perez | Medicina Estetica",
+    "title": "Dra. Scarlet Perez | Medicina General y Estetica",
     "favicon": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9C%9A</text></svg>"
   },
   "hero": {
-    "name": "Dr. Scarlet Perez",
+    "name": "Dra. Scarlet Perez",
     "subtitle": {
-      "es": "MEDICO ESTETICO | CIRUJANO",
-      "en": "AESTHETIC PHYSICIAN | SURGEON",
-      "ca": "METGE ESTETIC | CIRURGIA"
+      "es": "MEDICINA GENERAL | MEDICINA ESTETICA",
+      "en": "GENERAL MEDICINE | AESTHETIC MEDICINE",
+      "ca": "MEDICINA GENERAL | MEDICINA ESTETICA"
     },
     "photo": "photo.jpg",
     "cta": {
@@ -31,14 +31,6 @@
         "en": "Medical Degree",
         "ca": "Grau en Medicina"
       }
-    },
-    "college": {
-      "name": {
-        "es": "Colegio Medico de Barcelona",
-        "en": "Barcelona Medical College",
-        "ca": "Col.legi Medic de Barcelona"
-      },
-      "number": "69466"
     }
   },
   "nav": {
@@ -68,18 +60,32 @@
     },
     "items": [
       {
+        "date": { "es": "2016 - 2022", "en": "2016 - 2022", "ca": "2016 - 2022" },
+        "school": { "es": "Universidad Catolica Boliviana San Pablo", "en": "Universidad Catolica Boliviana San Pablo", "ca": "Universidad Catolica Boliviana San Pablo" },
+        "url": "https://www.ucb.edu.bo/carreras/medicina/",
+        "title": { "es": "Grado en Medicina y Cirugia", "en": "Degree in Medicine and Surgery", "ca": "Grau en Medicina i Cirurgia" },
+        "details": { "es": "Santa Cruz, Bolivia. Titulo homologado en Espana.", "en": "Santa Cruz, Bolivia. Degree validated in Spain.", "ca": "Santa Cruz, Bolivia. Titol homologat a Espanya." }
+      },
+      {
         "date": { "es": "2025 - ACTUALIDAD", "en": "2025 - PRESENT", "ca": "2025 - ACTUALITAT" },
         "school": { "es": "UCV & European Medical College", "en": "UCV & European Medical College", "ca": "UCV & European Medical College" },
         "url": "https://www.ucv.es/oferta-academica/postgrados/ciencias-de-la-salud/master-universitario-en-medicina-estetica-y-rejuvenecimiento-integral",
-        "title": { "es": "Master en Medicina Estetica y Rejuvenecimiento Integral", "en": "Master in Aesthetic Medicine and Comprehensive Rejuvenation", "ca": "Master en Medicina Estetica i Rejoveniment Integral" },
+        "title": { "es": "Curso en Medicina Estetica y Rejuvenecimiento Integral", "en": "Course in Aesthetic Medicine and Comprehensive Rejuvenation", "ca": "Curs en Medicina Estetica i Rejoveniment Integral" },
         "details": { "es": "Sede: Barcelona. En curso.", "en": "Location: Barcelona. In progress.", "ca": "Seu: Barcelona. En curs." }
       },
       {
         "date": { "es": "2025 - ACTUALIDAD", "en": "2025 - PRESENT", "ca": "2025 - ACTUALITAT" },
         "school": { "es": "European Medical College", "en": "European Medical College", "ca": "European Medical College" },
         "url": "https://europeanmedicalcollege.com/master-medicina-restauracion-capilar/",
-        "title": { "es": "Master en Medicina y Restauracion Capilar", "en": "Master in Medicine and Hair Restoration", "ca": "Master en Medicina i Restauracio Capil.lar" },
+        "title": { "es": "Curso en Medicina y Restauracion Capilar", "en": "Course in Medicine and Hair Restoration", "ca": "Curs en Medicina i Restauracio Capil.lar" },
         "details": { "es": "En curso.", "en": "In progress.", "ca": "En curs." }
+      },
+      {
+        "date": { "es": "2024 - 2026", "en": "2024 - 2026", "ca": "2024 - 2026" },
+        "school": { "es": "AMIR", "en": "AMIR", "ca": "AMIR" },
+        "url": "https://www.academiamir.com/",
+        "title": { "es": "Curso Preparacion AMIR", "en": "AMIR Preparation Course", "ca": "Curs Preparacio AMIR" },
+        "details": { "es": "Preparacion para examen MIR.", "en": "MIR exam preparation.", "ca": "Preparacio per examen MIR." }
       },
       {
         "date": { "es": "Enero 2026", "en": "January 2026", "ca": "Gener 2026" },
@@ -89,11 +95,11 @@
         "details": { "es": "Examen realizado el 24/01/2026.", "en": "Exam taken on 24/01/2026.", "ca": "Examen realitzat el 24/01/2026." }
       },
       {
-        "date": { "es": "2016 - 2022", "en": "2016 - 2022", "ca": "2016 - 2022" },
-        "school": { "es": "Universidad Catolica Boliviana San Pablo", "en": "Universidad Catolica Boliviana San Pablo", "ca": "Universidad Catolica Boliviana San Pablo" },
-        "url": "https://www.ucb.edu.bo/carreras/medicina/",
-        "title": { "es": "Grado en Medicina y Cirugia", "en": "Degree in Medicine and Surgery", "ca": "Grau en Medicina i Cirurgia" },
-        "details": { "es": "Santa Cruz, Bolivia. Titulo homologado en Espana.", "en": "Santa Cruz, Bolivia. Degree validated in Spain.", "ca": "Santa Cruz, Bolivia. Titol homologat a Espanya." }
+        "date": { "es": "2024", "en": "2024", "ca": "2024" },
+        "school": { "es": "Generalitat de Catalunya", "en": "Generalitat de Catalunya", "ca": "Generalitat de Catalunya" },
+        "url": "#",
+        "title": { "es": "Ejercer como medico en Cataluna", "en": "Practice medicine in Catalonia", "ca": "Exercir com a metge a Catalunya" },
+        "details": { "es": "Habilitacion para ejercer en Catalunya.", "en": "Authorization to practice in Catalonia.", "ca": "Habilitacio per exercir a Catalunya." }
       }
     ]
   },
@@ -147,9 +153,9 @@
   },
   "footer": {
     "rights": {
-      "es": "2026 Dr. Scarlet Perez. Todos los derechos reservados.",
+      "es": "2026 Dra. Scarlet Perez. Todos los derechos reservados.",
       "en": "2026 Dr. Scarlet Perez. All rights reserved.",
-      "ca": "2026 Dr. Scarlet Perez. Tots els drets reservats."
+      "ca": "2026 Dra. Scarlet Perez. Tots els drets reservats."
     }
   },
   "buttons": {
