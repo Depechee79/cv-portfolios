@@ -24,19 +24,61 @@ window.toggleTimeline = function (id, btn) {
         if (icon) icon.setAttribute('name', 'chevron-up-outline');
 
         container.scrollTop = 0;
+
+        // Add scroll listener for auto-collapse at end
+        container._scrollEndHandler = function() {
+            const scrollBottom = container.scrollTop + container.clientHeight;
+            const scrollMax = container.scrollHeight;
+
+            // If scrolled to within 10px of bottom, collapse and scroll to next section
+            if (scrollBottom >= scrollMax - 10) {
+                collapseAndScrollNext(container, btn);
+            }
+        };
+        container.addEventListener('scroll', container._scrollEndHandler);
     } else {
         // COLLAPSE
-        container.classList.add('collapsed');
-        container.classList.remove('expanded');
-
-        const span = btn.querySelector('span');
-        const icon = btn.querySelector('ion-icon');
-        if (span) span.textContent = translations[currentLang]["btn.expand"] || "Ver todo";
-        if (icon) icon.setAttribute('name', 'chevron-down-outline');
-
-        container.scrollTop = 0;
+        collapseTimeline(container, btn);
     }
 };
+
+function collapseTimeline(container, btn) {
+    const currentLang = localStorage.getItem('preferredLang') || 'es';
+
+    container.classList.add('collapsed');
+    container.classList.remove('expanded');
+
+    // Remove scroll listener
+    if (container._scrollEndHandler) {
+        container.removeEventListener('scroll', container._scrollEndHandler);
+        container._scrollEndHandler = null;
+    }
+
+    const span = btn.querySelector('span');
+    const icon = btn.querySelector('ion-icon');
+    if (span) span.textContent = translations[currentLang]["btn.expand"] || "Ver todo";
+    if (icon) icon.setAttribute('name', 'chevron-down-outline');
+
+    container.scrollTop = 0;
+}
+
+function collapseAndScrollNext(container, btn) {
+    // First, collapse the timeline
+    collapseTimeline(container, btn);
+
+    // Find the parent section
+    const section = container.closest('section');
+    if (!section) return;
+
+    // Find the next sibling section
+    const nextSection = section.nextElementSibling;
+    if (nextSection && (nextSection.tagName === 'SECTION' || nextSection.tagName === 'FOOTER')) {
+        // Small delay to let collapse animation start
+        setTimeout(() => {
+            nextSection.scrollIntoView({ behavior: 'auto', block: 'start' });
+        }, 100);
+    }
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     // Language Switcher
@@ -197,21 +239,15 @@ function _snapVisibleTick() {
         _lastVisibleSection = bestSection;
 
         // Auto-collapse timelines when leaving experience/education sections
-        if (_lastVisibleSection &&
-            (_lastVisibleSection.id === 'experience' || _lastVisibleSection.id === 'education')) {
+        if (bestSection &&
+            (bestSection.id === 'experience' || bestSection.id === 'education')) {
             // Do nothing, user is viewing this section
         } else {
             var expandedTimelines = document.querySelectorAll('.timeline-container.expanded');
             expandedTimelines.forEach(function(tl) {
                 var btn = tl.parentElement.querySelector('.btn-expand');
                 if (btn) {
-                    tl.classList.remove('expanded');
-                    tl.classList.add('collapsed');
-                    var span = btn.querySelector('span');
-                    var icon = btn.querySelector('ion-icon');
-                    var currentLang = localStorage.getItem('preferredLang') || 'es';
-                    if (span) span.textContent = translations[currentLang]["btn.expand"] || "Ver todo";
-                    if (icon) icon.setAttribute('name', 'chevron-down-outline');
+                    collapseTimeline(tl, btn);
                 }
             });
         }
