@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Portfolios</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #c9a227, #f4d03f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p { color: #888; margin-bottom: 2rem; }
+        .profiles {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            width: 280px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border-color: rgba(201,162,39,0.3);
+        }
+        .card h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .card .role { color: #c9a227; font-size: 0.85rem; margin-bottom: 1rem; }
+        .card .desc { color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CV Portfolios</h1>
+        <p>Data-driven portfolio generator</p>
+        <div class="profiles">
+            <a href="profiles/mireia/dist/" class="card">
+                <h2>Mireia Muntaner</h2>
+                <div class="role">HOSPITALITY MANAGER</div>
+                <div class="desc">Restaurant & Hotel Management Professional</div>
+            </a>
+            <a href="profiles/scarlet/dist/" class="card">
+                <h2>Dr. Scarlet Perez</h2>
+                <div class="role">AESTHETIC PHYSICIAN</div>
+                <div class="desc">Medicine & Hair Restoration Specialist</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
