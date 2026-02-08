@@ -2,15 +2,15 @@
   "theme": "medical",
   "languages": ["es", "en", "ca"],
   "meta": {
-    "title": "Dra. Scarlet Perez | Medicina General y Estetica",
+    "title": "Dra. Scarlet Pérez | Medicina General y Estética",
     "favicon": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9C%9A</text></svg>"
   },
   "hero": {
-    "name": "Dra. Scarlet Perez",
+    "name": "Dra. Scarlet Pérez",
     "subtitle": {
-      "es": "MEDICINA GENERAL | MEDICINA ESTETICA",
+      "es": "MEDICINA GENERAL | MEDICINA ESTÉTICA",
       "en": "GENERAL MEDICINE | AESTHETIC MEDICINE",
-      "ca": "MEDICINA GENERAL | MEDICINA ESTETICA"
+      "ca": "MEDICINA GENERAL | MEDICINA ESTÈTICA"
     },
     "photo": "photo.jpg",
     "cta": {
@@ -20,9 +20,9 @@
     },
     "university": {
       "name": {
-        "es": "Universidad Catolica Boliviana San Pablo",
-        "en": "Universidad Catolica Boliviana San Pablo",
-        "ca": "Universidad Catolica Boliviana San Pablo"
+        "es": "Universidad Católica Boliviana San Pablo",
+        "en": "Universidad Católica Boliviana San Pablo",
+        "ca": "Universidad Católica Boliviana San Pablo"
       },
       "url": "https://www.ucb.edu.bo/carreras/medicina/",
       "year": "2022",
@@ -36,8 +36,8 @@
   "nav": {
     "home": { "es": "Inicio", "en": "Home", "ca": "Inici" },
     "about": { "es": "Perfil", "en": "Profile", "ca": "Perfil" },
-    "education": { "es": "Formacion", "en": "Education", "ca": "Formacio" },
-    "experience": { "es": "Experiencia", "en": "Experience", "ca": "Experiencia" },
+    "education": { "es": "Formación", "en": "Education", "ca": "Formació" },
+    "experience": { "es": "Experiencia", "en": "Experience", "ca": "Experiència" },
     "contact": { "es": "Contacto", "en": "Contact", "ca": "Contacte" }
   },
   "about": {
@@ -47,45 +47,45 @@
       "ca": "Perfil Professional"
     },
     "desc": {
-      "es": "Medico Cirujano con titulacion homologada en Espana. Actualmente ampliando especializacion con Masters en Medicina Estetica y Restauracion Capilar. Experiencia practica en atencion clinica, urgencias y coordinacion de pacientes. Comprometida con la excelencia medica y el trato humano.",
-      "en": "Medical Doctor with degree validated in Spain. Currently expanding specialization with Masters in Aesthetic Medicine and Hair Restoration. Practical experience in clinical care, emergencies and patient coordination. Committed to medical excellence and human care.",
-      "ca": "Metge Cirurgia amb titulacio homologada a Espanya. Actualment ampliant especialitzacio amb Masters en Medicina Estetica i Restauracio Capil.lar. Experiencia practica en atencio clinica, urgencies i coordinacio de pacients. Compromesa amb l'excel.lencia medica i el tracte huma."
+      "es": "Médico Cirujano con titulación homologada en España. Actualmente ampliando especialización con cursos en Medicina Estética y Restauración Capilar. Experiencia práctica en atención clínica, urgencias y coordinación de pacientes. Comprometida con la excelencia médica y el trato humano.",
+      "en": "Medical Doctor with degree validated in Spain. Currently expanding specialization with courses in Aesthetic Medicine and Hair Restoration. Practical experience in clinical care, emergencies and patient coordination. Committed to medical excellence and human care.",
+      "ca": "Metge Cirurgià amb titulació homologada a Espanya. Actualment ampliant especialització amb cursos en Medicina Estètica i Restauració Capil·lar. Experiència pràctica en atenció clínica, urgències i coordinació de pacients. Compromesa amb l'excel·lència mèdica i el tracte humà."
     }
   },
   "education": {
     "title": {
-      "es": "Formacion Academica",
+      "es": "Formación Académica",
       "en": "Education",
-      "ca": "Formacio Academica"
+      "ca": "Formació Acadèmica"
     },
     "items": [
       {
         "date": { "es": "2016 - 2022", "en": "2016 - 2022", "ca": "2016 - 2022" },
-        "school": { "es": "Universidad Catolica Boliviana San Pablo", "en": "Universidad Catolica Boliviana San Pablo", "ca": "Universidad Catolica Boliviana San Pablo" },
+        "school": { "es": "Universidad Católica Boliviana San Pablo", "en": "Universidad Católica Boliviana San Pablo", "ca": "Universidad Católica Boliviana San Pablo" },
         "url": "https://www.ucb.edu.bo/carreras/medicina/",
-        "title": { "es": "Grado en Medicina y Cirugia", "en": "Degree in Medicine and Surgery", "ca": "Grau en Medicina i Cirurgia" },
-        "details": { "es": "Santa Cruz, Bolivia. Titulo homologado en Espana.", "en": "Santa Cruz, Bolivia. Degree validated in Spain.", "ca": "Santa Cruz, Bolivia. Titol homologat a Espanya." }
+        "title": { "es": "Grado en Medicina y Cirugía", "en": "Degree in Medicine and Surgery", "ca": "Grau en Medicina i Cirurgia" },
+        "details": { "es": "Santa Cruz, Bolivia. Título homologado en España.", "en": "Santa Cruz, Bolivia. Degree validated in Spain.", "ca": "Santa Cruz, Bolívia. Títol homologat a Espanya." }
       },
       {
         "date": { "es": "2025 - ACTUALIDAD", "en": "2025 - PRESENT", "ca": "2025 - ACTUALITAT" },
         "school": { "es": "UCV & European Medical College", "en": "UCV & European Medical College", "ca": "UCV & European Medical College" },
         "url": "https://www.ucv.es/oferta-academica/postgrados/ciencias-de-la-salud/master-universitario-en-medicina-estetica-y-rejuvenecimiento-integral",
-        "title": { "es": "Curso en Medicina Estetica y Rejuvenecimiento Integral", "en": "Course in Aesthetic Medicine and Comprehensive Rejuvenation", "ca": "Curs en Medicina Estetica i Rejoveniment Integral" },
+        "title": { "es": "Curso en Medicina Estética y Rejuvenecimiento Integral", "en": "Course in Aesthetic Medicine and Comprehensive Rejuvenation", "ca": "Curs en Medicina Estètica i Rejoveniment Integral" },
         "details": { "es": "Sede: Barcelona. En curso.", "en": "Location: Barcelona. In progress.", "ca": "Seu: Barcelona. En curs." }
       },
       {
         "date": { "es": "2025 - ACTUALIDAD", "en": "2025 - PRESENT", "ca": "2025 - ACTUALITAT" },
         "school": { "es": "European Medical College", "en": "European Medical College", "ca": "European Medical College" },
         "url": "https://europeanmedicalcollege.com/master-medicina-restauracion-capilar/",
-        "title": { "es": "Curso en Medicina y Restauracion Capilar", "en": "Course in Medicine and Hair Restoration", "ca": "Curs en Medicina i Restauracio Capil.lar" },
+        "title": { "es": "Curso en Medicina y Restauración Capilar", "en": "Course in Medicine and Hair Restoration", "ca": "Curs en Medicina i Restauració Capil·lar" },
         "details": { "es": "En curso.", "en": "In progress.", "ca": "En curs." }
       },
       {
         "date": { "es": "2024 - 2026", "en": "2024 - 2026", "ca": "2024 - 2026" },
         "school": { "es": "AMIR", "en": "AMIR", "ca": "AMIR" },
         "url": "https://www.academiamir.com/",
-        "title": { "es": "Curso Preparacion AMIR", "en": "AMIR Preparation Course", "ca": "Curs Preparacio AMIR" },
-        "details": { "es": "Preparacion para examen MIR.", "en": "MIR exam preparation.", "ca": "Preparacio per examen MIR." }
+        "title": { "es": "Curso Preparación AMIR", "en": "AMIR Preparation Course", "ca": "Curs Preparació AMIR" },
+        "details": { "es": "Preparación para examen MIR.", "en": "MIR exam preparation.", "ca": "Preparació per examen MIR." }
       },
       {
         "date": { "es": "Enero 2026", "en": "January 2026", "ca": "Gener 2026" },
@@ -98,8 +98,8 @@
         "date": { "es": "2024", "en": "2024", "ca": "2024" },
         "school": { "es": "Generalitat de Catalunya", "en": "Generalitat de Catalunya", "ca": "Generalitat de Catalunya" },
         "url": "#",
-        "title": { "es": "Ejercer como medico en Cataluna", "en": "Practice medicine in Catalonia", "ca": "Exercir com a metge a Catalunya" },
-        "details": { "es": "Habilitacion para ejercer en Catalunya.", "en": "Authorization to practice in Catalonia.", "ca": "Habilitacio per exercir a Catalunya." }
+        "title": { "es": "Ejercer como médico en Cataluña", "en": "Practice medicine in Catalonia", "ca": "Exercir com a metge a Catalunya" },
+        "details": { "es": "Habilitación para ejercer en Catalunya.", "en": "Authorization to practice in Catalonia.", "ca": "Habilitació per exercir a Catalunya." }
       }
     ]
   },
@@ -107,29 +107,29 @@
     "title": {
       "es": "Experiencia Profesional",
       "en": "Professional Experience",
-      "ca": "Experiencia Professional"
+      "ca": "Experiència Professional"
     },
     "items": [
       {
         "date": { "es": "2022", "en": "2022", "ca": "2022" },
-        "place": { "es": "Caja Nacional de Salud - Bolivia", "en": "National Health Fund - Bolivia", "ca": "Caixa Nacional de Salut - Bolivia" },
+        "place": { "es": "Caja Nacional de Salud - Bolivia", "en": "National Health Fund - Bolivia", "ca": "Caixa Nacional de Salut - Bolívia" },
         "url": "https://www.cns.gob.bo/",
-        "role": { "es": "Internado Rotatorio Medico", "en": "Medical Internship", "ca": "Internat Rotatori Medic" },
-        "desc": { "es": "Rotaciones completas en Cirugia, Pediatria, Ginecologia y Medicina Interna.", "en": "Complete rotations in Surgery, Pediatrics, Gynecology and Internal Medicine.", "ca": "Rotacions completes en Cirurgia, Pediatria, Ginecologia i Medicina Interna." }
+        "role": { "es": "Internado Rotatorio Médico", "en": "Medical Internship", "ca": "Internat Rotatori Mèdic" },
+        "desc": { "es": "Rotaciones completas en Cirugía, Pediatría, Ginecología y Medicina Interna.", "en": "Complete rotations in Surgery, Pediatrics, Gynecology and Internal Medicine.", "ca": "Rotacions completes en Cirurgia, Pediatria, Ginecologia i Medicina Interna." }
       },
       {
         "date": { "es": "2020 - 2022", "en": "2020 - 2022", "ca": "2020 - 2022" },
         "place": { "es": "Feria Expocruz", "en": "Expocruz Fair", "ca": "Fira Expocruz" },
         "url": "https://fexpocruz.com.bo/",
-        "role": { "es": "Medico de Apoyo / Urgencias", "en": "Support Physician / Emergencies", "ca": "Metge de Suport / Urgencies" },
-        "desc": { "es": "Atencion primaria de urgencias, triaje y estabilizacion.", "en": "Primary emergency care, triage and stabilization.", "ca": "Atencio primaria d'urgencies, triatge i estabilitzacio." }
+        "role": { "es": "Médico de Apoyo / Urgencias", "en": "Support Physician / Emergencies", "ca": "Metge de Suport / Urgències" },
+        "desc": { "es": "Atención primaria de urgencias, triaje y estabilización.", "en": "Primary emergency care, triage and stabilization.", "ca": "Atenció primària d'urgències, triatge i estabilització." }
       },
       {
         "date": { "es": "2020 - 2022", "en": "2020 - 2022", "ca": "2020 - 2022" },
-        "place": { "es": "Centro Medico Perpetuo Socorro", "en": "Perpetuo Socorro Medical Center", "ca": "Centre Medic Perpetuo Socorro" },
+        "place": { "es": "Centro Médico Perpetuo Socorro", "en": "Perpetuo Socorro Medical Center", "ca": "Centre Mèdic Perpetuo Socorro" },
         "url": "#",
-        "role": { "es": "Rotaciones Clinicas", "en": "Clinical Rotations", "ca": "Rotacions Cliniques" },
-        "desc": { "es": "Asistencia en consultas externas y procedimientos menores.", "en": "Assistance in outpatient consultations and minor procedures.", "ca": "Assistencia en consultes externes i procediments menors." }
+        "role": { "es": "Rotaciones Clínicas", "en": "Clinical Rotations", "ca": "Rotacions Clíniques" },
+        "desc": { "es": "Asistencia en consultas externas y procedimientos menores.", "en": "Assistance in outpatient consultations and minor procedures.", "ca": "Assistència en consultes externes i procediments menors." }
       }
     ]
   },
@@ -144,7 +144,7 @@
     "phone": "+34 617 893 031",
     "email": "scarletdra@gmail.com",
     "location": {
-      "es": "Barcelona, Espana",
+      "es": "Barcelona, España",
       "en": "Barcelona, Spain",
       "ca": "Barcelona, Espanya"
     },
@@ -153,13 +153,13 @@
   },
   "footer": {
     "rights": {
-      "es": "2026 Dra. Scarlet Perez. Todos los derechos reservados.",
-      "en": "2026 Dr. Scarlet Perez. All rights reserved.",
-      "ca": "2026 Dra. Scarlet Perez. Tots els drets reservats."
+      "es": "2026 Dra. Scarlet Pérez. Todos los derechos reservados.",
+      "en": "2026 Dr. Scarlet Pérez. All rights reserved.",
+      "ca": "2026 Dra. Scarlet Pérez. Tots els drets reservats."
     }
   },
   "buttons": {
-    "expand": { "es": "Ver toda la formacion", "en": "See all education", "ca": "Veure tota la formacio" },
+    "expand": { "es": "Ver toda la formación", "en": "See all education", "ca": "Veure tota la formació" },
     "collapse": { "es": "Cerrar", "en": "Close", "ca": "Tancar" }
   },
   "darkSections": ["about", "experience", "contact"]
