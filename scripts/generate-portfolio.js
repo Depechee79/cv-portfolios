@@ -1,26 +1,29 @@
 /**
  * CV Portfolio Generator
- * Usage: node generate.js <profile>
- * Example: node generate.js mireia
+ * Usage: node scripts/generate-portfolio.js <portfolio>
+ * Example: node scripts/generate-portfolio.js mireia
  */
 
 const fs = require('fs');
 const path = require('path');
 
-// Get profile from command line
+// Root of monorepo (one level up from scripts/)
+const ROOT = path.join(__dirname, '..');
+
+// Get portfolio name from command line
 const profile = process.argv[2];
 
 if (!profile) {
-    console.error('Usage: node generate.js <profile>');
-    console.error('Example: node generate.js mireia');
+    console.error('Usage: node scripts/generate-portfolio.js <portfolio>');
+    console.error('Example: node scripts/generate-portfolio.js mireia');
     process.exit(1);
 }
 
-const profileDir = path.join(__dirname, 'profiles', profile);
-const configPath = path.join(profileDir, 'config.json');
+const profileDir = path.join(ROOT, 'portfolios', profile);
+const configPath = path.join(profileDir, 'data.json');
 
 if (!fs.existsSync(configPath)) {
-    console.error(`Config not found: ${configPath}`);
+    console.error(`Data file not found: ${configPath}`);
     process.exit(1);
 }
 
@@ -30,13 +33,13 @@ console.log(`Generating site for: ${profile}`);
 const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
 // Load base CSS
-const baseCSS = fs.readFileSync(path.join(__dirname, 'core', 'base.css'), 'utf8');
+const baseCSS = fs.readFileSync(path.join(ROOT, 'template', 'base.css'), 'utf8');
 
 // Load theme CSS
-const themeCSS = fs.readFileSync(path.join(__dirname, 'core', 'themes', `${config.theme}.css`), 'utf8');
+const themeCSS = fs.readFileSync(path.join(ROOT, 'template', 'themes', `${config.theme}.css`), 'utf8');
 
 // Load core JS
-const coreJS = fs.readFileSync(path.join(__dirname, 'core', 'core.js'), 'utf8');
+const coreJS = fs.readFileSync(path.join(ROOT, 'template', 'core.js'), 'utf8');
 
 // Create dist directory
 const distDir = path.join(profileDir, 'dist');
