@@ -119,17 +119,17 @@
       },
       {
         "date": { "es": "2020 - 2022", "en": "2020 - 2022", "ca": "2020 - 2022" },
-        "place": { "es": "Feria Expocruz", "en": "Expocruz Fair", "ca": "Fira Expocruz" },
-        "url": "https://fexpocruz.com.bo/",
-        "role": { "es": "Médico de Apoyo / Urgencias", "en": "Support Physician / Emergencies", "ca": "Metge de Suport / Urgències" },
-        "desc": { "es": "Atención primaria de urgencias, triaje y estabilización.", "en": "Primary emergency care, triage and stabilization.", "ca": "Atenció primària d'urgències, triatge i estabilització." }
-      },
-      {
-        "date": { "es": "2020 - 2022", "en": "2020 - 2022", "ca": "2020 - 2022" },
         "place": { "es": "Centro Médico Perpetuo Socorro", "en": "Perpetuo Socorro Medical Center", "ca": "Centre Mèdic Perpetuo Socorro" },
         "url": "#",
         "role": { "es": "Rotaciones Clínicas", "en": "Clinical Rotations", "ca": "Rotacions Clíniques" },
         "desc": { "es": "Asistencia en consultas externas y procedimientos menores.", "en": "Assistance in outpatient consultations and minor procedures.", "ca": "Assistència en consultes externes i procediments menors." }
+      },
+      {
+        "date": { "es": "2020 - 2022", "en": "2020 - 2022", "ca": "2020 - 2022" },
+        "place": { "es": "Feria Expocruz", "en": "Expocruz Fair", "ca": "Fira Expocruz" },
+        "url": "https://fexpocruz.com.bo/",
+        "role": { "es": "Médico de Apoyo / Urgencias", "en": "Support Physician / Emergencies", "ca": "Metge de Suport / Urgències" },
+        "desc": { "es": "Atención primaria de urgencias, triaje y estabilización.", "en": "Primary emergency care, triage and stabilization.", "ca": "Atenció primària d'urgències, triatge i estabilització." }
       }
     ]
   },

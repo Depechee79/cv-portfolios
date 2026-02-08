@@ -27,10 +27,10 @@
   "nav": {
     "home": { "es": "Inicio", "en": "Home", "ca": "Inici" },
     "profile": { "es": "Perfil", "en": "Profile", "ca": "Perfil" },
-    "experience": { "es": "Experiencia", "en": "Experience", "ca": "Experiencia" },
-    "education": { "es": "Formacion", "en": "Education", "ca": "Formacio" },
+    "experience": { "es": "Experiencia", "en": "Experience", "ca": "Experiència" },
+    "education": { "es": "Formación", "en": "Education", "ca": "Formació" },
     "skills": { "es": "Habilidades", "en": "Skills", "ca": "Habilitats" },
-    "references": { "es": "Referencias", "en": "References", "ca": "References" },
+    "references": { "es": "Referencias", "en": "References", "ca": "Referències" },
     "contact": { "es": "Contacto", "en": "Contact", "ca": "Contacte" }
   },
   "about": {
@@ -40,13 +40,13 @@
       "ca": "Perfil Professional"
     },
     "desc": {
-      "es": "Profesional de restauracion con mas de 6 anos de experiencia gestionando restaurantes en hoteles de 5 estrellas de lujo. Trayectoria internacional en cadenas de referencia como Melia Hotels International y Radisson, donde ha desarrollado una vision integral del negocio hotelero — desde la operativa diaria de sala y cocina hasta la coordinacion con recepcion, eventos y direccion. Especializada en estandares de marca, liderazgo de equipos y experiencia del huesped.",
-      "en": "Restaurant professional with over 6 years of experience managing restaurants within 5-star luxury hotels. International career across leading hotel chains such as Melia Hotels International and Radisson, developing a comprehensive understanding of the hospitality business — from daily front-of-house and kitchen operations to coordination with reception, events, and hotel management. Specialized in brand standards, team leadership, and guest experience.",
-      "ca": "Professional de restauracio amb mes de 6 anys d'experiencia gestionant restaurants en hotels de 5 estrelles de luxe. Trajectoria internacional en cadenes de referencia com Melia Hotels International i Radisson, on ha desenvolupat una visio integral del negoci hoteler — des de l'operativa diaria de sala i cuina fins a la coordinacio amb recepcio, esdeveniments i direccio. Especialitzada en estandards de marca, lideratge d'equips i experiencia de l'hoste."
+      "es": "Profesional de restauración con más de 6 años de experiencia gestionando restaurantes en hoteles de 5 estrellas de lujo. Trayectoria internacional en cadenas de referencia como Meliá Hotels International y Radisson, donde ha desarrollado una visión integral del negocio hotelero — desde la operativa diaria de sala y cocina hasta la coordinación con recepción, eventos y dirección. Especializada en estándares de marca, liderazgo de equipos y experiencia del huésped.",
+      "en": "Restaurant professional with over 6 years of experience managing restaurants within 5-star luxury hotels. International career across leading hotel chains such as Meliá Hotels International and Radisson, developing a comprehensive understanding of the hospitality business — from daily front-of-house and kitchen operations to coordination with reception, events, and hotel management. Specialized in brand standards, team leadership, and guest experience.",
+      "ca": "Professional de restauració amb més de 6 anys d'experiència gestionant restaurants en hotels de 5 estrelles de luxe. Trajectòria internacional en cadenes de referència com Meliá Hotels International i Radisson, on ha desenvolupat una visió integral del negoci hoteler — des de l'operativa diària de sala i cuina fins a la coordinació amb recepció, esdeveniments i direcció. Especialitzada en estàndards de marca, lideratge d'equips i experiència de l'hoste."
     },
     "stats": [
       {
-        "es": "+6 anos en F&B",
+        "es": "+6 años en F&B",
         "en": "6+ years in F&B",
         "ca": "+6 anys en F&B"
       },
@@ -66,86 +66,86 @@
     "title": {
       "es": "Experiencia Profesional",
       "en": "Professional Experience",
-      "ca": "Experiencia Professional"
+      "ca": "Experiència Professional"
     },
     "items": [
       {
         "date": { "es": "MAR 2025 - ACTUALIDAD", "en": "MAR 2025 - PRESENT", "ca": "MAR 2025 - ACTUALITAT" },
-        "place": { "es": "Melia Hotels International — Hotel Gran Melia Jakarta", "en": "Melia Hotels International — Hotel Gran Melia Jakarta", "ca": "Melia Hotels International — Hotel Gran Melia Jakarta" },
+        "place": { "es": "Meliá Hotels International — Hotel Gran Meliá Jakarta", "en": "Meliá Hotels International — Hotel Gran Meliá Jakarta", "ca": "Meliá Hotels International — Hotel Gran Meliá Jakarta" },
         "url": "https://www.melia.com/",
         "role": { "es": "Assistant Restaurant Manager", "en": "Assistant Restaurant Manager", "ca": "Assistant Restaurant Manager" },
-        "desc": { "es": "Gestion de operaciones diarias del restaurante. Supervision de equipos de servicio y coordinacion con cocina. Cumplimiento de estandares de marca Gran Melia.", "en": "Daily restaurant operations management. Service team supervision and kitchen coordination. Gran Melia brand standards compliance.", "ca": "Gestio d'operacions diaries del restaurant. Supervisio d'equips de servei i coordinacio amb cuina. Compliment d'estandards de marca Gran Melia." }
+        "desc": { "es": "Gestión de operaciones diarias del restaurante. Supervisión de equipos de servicio y coordinación con cocina. Cumplimiento de estándares de marca Gran Meliá.", "en": "Daily restaurant operations management. Service team supervision and kitchen coordination. Gran Meliá brand standards compliance.", "ca": "Gestió d'operacions diàries del restaurant. Supervisió d'equips de servei i coordinació amb cuina. Compliment d'estàndards de marca Gran Meliá." }
       },
       {
-        "date": { "es": "FEB 2024 - ACTUALIDAD", "en": "FEB 2024 - PRESENT", "ca": "FEB 2024 - ACTUALITAT" },
-        "place": { "es": "Melia Hotels International — Hotel Gran Melia Torre Melina", "en": "Melia Hotels International — Hotel Gran Melia Torre Melina", "ca": "Melia Hotels International — Hotel Gran Melia Torre Melina" },
+        "date": { "es": "FEB 2024 - MAR 2025", "en": "FEB 2024 - MAR 2025", "ca": "FEB 2024 - MAR 2025" },
+        "place": { "es": "Meliá Hotels International — Hotel Gran Meliá Torre Melina", "en": "Meliá Hotels International — Hotel Gran Meliá Torre Melina", "ca": "Meliá Hotels International — Hotel Gran Meliá Torre Melina" },
         "url": "https://www.melia.com/",
         "role": { "es": "Assistant Restaurant Manager", "en": "Assistant Restaurant Manager", "ca": "Assistant Restaurant Manager" },
-        "desc": { "es": "Gestion operativa de restaurante en hotel 5 estrellas Gran Lujo. Formacion y liderazgo de equipo de sala. Control de calidad y satisfaccion del huesped.", "en": "Operational management of restaurant in 5-star Grand Luxury hotel. Team training and floor leadership. Quality control and guest satisfaction.", "ca": "Gestio operativa de restaurant en hotel 5 estrelles Gran Luxe. Formacio i lideratge d'equip de sala. Control de qualitat i satisfaccio de l'hoste." }
+        "desc": { "es": "Gestión operativa de restaurante en hotel 5 estrellas Gran Lujo. Formación y liderazgo de equipo de sala. Control de calidad y satisfacción del huésped.", "en": "Operational management of restaurant in 5-star Grand Luxury hotel. Team training and floor leadership. Quality control and guest satisfaction.", "ca": "Gestió operativa de restaurant en hotel 5 estrelles Gran Luxe. Formació i lideratge d'equip de sala. Control de qualitat i satisfacció de l'hoste." }
       },
       {
         "date": { "es": "FEB 2022 - FEB 2024", "en": "FEB 2022 - FEB 2024", "ca": "FEB 2022 - FEB 2024" },
         "place": { "es": "Radisson Blu 1882 Barcelona", "en": "Radisson Blu 1882 Barcelona", "ca": "Radisson Blu 1882 Barcelona" },
         "url": "https://www.radissonhotels.com/",
         "role": { "es": "Food & Beverage Supervisor", "en": "Food & Beverage Supervisor", "ca": "Food & Beverage Supervisor" },
-        "desc": { "es": "Supervision de operaciones de F&B. Coordinacion de servicios de restaurante, bar y eventos. Gestion de inventarios y proveedores.", "en": "F&B operations supervision. Coordination of restaurant, bar, and event services. Inventory and supplier management.", "ca": "Supervisio d'operacions de F&B. Coordinacio de serveis de restaurant, bar i esdeveniments. Gestio d'inventaris i proveidors." }
+        "desc": { "es": "Supervisión de operaciones de F&B. Coordinación de servicios de restaurante, bar y eventos. Gestión de inventarios y proveedores.", "en": "F&B operations supervision. Coordination of restaurant, bar, and event services. Inventory and supplier management.", "ca": "Supervisió d'operacions de F&B. Coordinació de serveis de restaurant, bar i esdeveniments. Gestió d'inventaris i proveïdors." }
       },
       {
-        "date": { "es": "DIC 2019 - ACTUALIDAD", "en": "DEC 2019 - PRESENT", "ca": "DES 2019 - ACTUALITAT" },
+        "date": { "es": "DIC 2019 - FEB 2022", "en": "DEC 2019 - FEB 2022", "ca": "DES 2019 - FEB 2022" },
         "place": { "es": "Hotel Barcelona 1882", "en": "Hotel Barcelona 1882", "ca": "Hotel Barcelona 1882" },
         "url": "#",
         "role": { "es": "Camarera", "en": "Waitress", "ca": "Cambrera" },
-        "desc": { "es": "Servicio de sala en restaurante de hotel. Atencion directa al cliente internacional.", "en": "Hotel restaurant floor service. Direct attention to international guests.", "ca": "Servei de sala en restaurant d'hotel. Atencio directa al client internacional." }
+        "desc": { "es": "Servicio de sala en restaurante de hotel. Atención directa al cliente internacional.", "en": "Hotel restaurant floor service. Direct attention to international guests.", "ca": "Servei de sala en restaurant d'hotel. Atenció directa al client internacional." }
       },
       {
         "date": { "es": "OCT 2018 - FEB 2020", "en": "OCT 2018 - FEB 2020", "ca": "OCT 2018 - FEB 2020" },
         "place": { "es": "Arts Catering, Barcelona", "en": "Arts Catering, Barcelona", "ca": "Arts Catering, Barcelona" },
         "url": "#",
         "role": { "es": "Camarera de Banquetes y Eventos", "en": "Banquet / Event Waitress", "ca": "Cambrera de Banquets i Esdeveniments" },
-        "desc": { "es": "Servicio de catering en banquetes y eventos corporativos de alto nivel.", "en": "Catering service for high-level banquets and corporate events.", "ca": "Servei de catering en banquets i esdeveniments corporatius d'alt nivell." }
+        "desc": { "es": "Servicio de catering en banquetes y eventos corporativos de alto nivel.", "en": "Catering service for high-level banquets and corporate events.", "ca": "Servei de càtering en banquets i esdeveniments corporatius d'alt nivell." }
       },
       {
         "date": { "es": "OCT 2018 - MAY 2019", "en": "OCT 2018 - MAY 2019", "ca": "OCT 2018 - MAI 2019" },
         "place": { "es": "Sibaris Catering, Barcelona", "en": "Sibaris Catering, Barcelona", "ca": "Sibaris Catering, Barcelona" },
         "url": "#",
         "role": { "es": "Camarera de Banquetes y Eventos", "en": "Banquet / Event Waitress", "ca": "Cambrera de Banquets i Esdeveniments" },
-        "desc": { "es": "Servicio de catering en banquetes y eventos de empresa.", "en": "Catering service for banquets and corporate events.", "ca": "Servei de catering en banquets i esdeveniments d'empresa." }
+        "desc": { "es": "Servicio de catering en banquetes y eventos de empresa.", "en": "Catering service for banquets and corporate events.", "ca": "Servei de càtering en banquets i esdeveniments d'empresa." }
       }
     ]
   },
   "education": {
     "title": {
-      "es": "Formacion Academica",
+      "es": "Formación Académica",
       "en": "Education",
-      "ca": "Formacio Academica"
+      "ca": "Formació Acadèmica"
     },
     "items": [
       {
         "date": { "es": "SEP 2020 - MAR 2022", "en": "SEP 2020 - MAR 2022", "ca": "SET 2020 - MAR 2022" },
         "school": { "es": "OSTELEA, Tourism Management School", "en": "OSTELEA, Tourism Management School", "ca": "OSTELEA, Tourism Management School" },
         "url": "https://www.ostelea.com/",
-        "title": { "es": "Master en Gestion de Eventos, Protocolo y Turismo de Negocio", "en": "Master's in Event Management, Protocol & Business Tourism", "ca": "Master en Gestio d'Esdeveniments, Protocol i Turisme de Negoci" },
-        "details": { "es": "Barcelona. Especializacion en organizacion de eventos, protocolo empresarial y turismo MICE.", "en": "Barcelona. Specialization in event organization, business protocol, and MICE tourism.", "ca": "Barcelona. Especialitzacio en organitzacio d'esdeveniments, protocol empresarial i turisme MICE." }
+        "title": { "es": "Máster en Gestión de Eventos, Protocolo y Turismo de Negocio", "en": "Master's in Event Management, Protocol & Business Tourism", "ca": "Màster en Gestió d'Esdeveniments, Protocol i Turisme de Negoci" },
+        "details": { "es": "Barcelona. Especialización en organización de eventos, protocolo empresarial y turismo MICE.", "en": "Barcelona. Specialization in event organization, business protocol, and MICE tourism.", "ca": "Barcelona. Especialització en organització d'esdeveniments, protocol empresarial i turisme MICE." }
       },
       {
         "date": { "es": "SEP 2018 - JUL 2020", "en": "SEP 2018 - JUL 2020", "ca": "SET 2018 - JUL 2020" },
         "school": { "es": "Escola d'Hoteleria i Turisme de Barcelona", "en": "Barcelona School of Hospitality & Tourism", "ca": "Escola d'Hoteleria i Turisme de Barcelona" },
         "url": "https://www.ehtb.cat/",
-        "title": { "es": "Grado Superior en Direccion de Servicios de Restauracion", "en": "Higher Degree in Restaurant Service Management", "ca": "Grau Superior en Direccio de Serveis de Restauracio" },
-        "details": { "es": "Formacion tecnica avanzada en gestion de restauracion y servicios de sala.", "en": "Advanced technical training in restaurant management and floor services.", "ca": "Formacio tecnica avancada en gestio de restauracio i serveis de sala." }
+        "title": { "es": "Grado Superior en Dirección de Servicios de Restauración", "en": "Higher Degree in Restaurant Service Management", "ca": "Grau Superior en Direcció de Serveis de Restauració" },
+        "details": { "es": "Formación técnica avanzada en gestión de restauración y servicios de sala.", "en": "Advanced technical training in restaurant management and floor services.", "ca": "Formació tècnica avançada en gestió de restauració i serveis de sala." }
       },
       {
         "date": { "es": "SEP 2016 - JUL 2018", "en": "SEP 2016 - JUL 2018", "ca": "SET 2016 - JUL 2018" },
         "school": { "es": "Institut Escola del Treball, Barcelona", "en": "Institut Escola del Treball, Barcelona", "ca": "Institut Escola del Treball, Barcelona" },
         "url": "#",
         "title": { "es": "Bachillerato", "en": "General Certificate of Education", "ca": "Batxillerat" },
-        "details": { "es": "Educacion secundaria postobligatoria.", "en": "Post-compulsory secondary education.", "ca": "Educacio secundaria postobligatoria." }
+        "details": { "es": "Educación secundaria postobligatoria.", "en": "Post-compulsory secondary education.", "ca": "Educació secundària postobligatòria." }
       },
       {
         "date": { "es": "SEP 2012 - JUL 2016", "en": "SEP 2012 - JUL 2016", "ca": "SET 2012 - JUL 2016" },
         "school": { "es": "Institut Duc de Montblanc, Barcelona", "en": "Institut Duc de Montblanc, Barcelona", "ca": "Institut Duc de Montblanc, Barcelona" },
         "url": "#",
-        "title": { "es": "Educacion Secundaria Obligatoria (ESO)", "en": "General Certificate of Secondary Education (GCSE)", "ca": "Educacio Secundaria Obligatoria (ESO)" },
+        "title": { "es": "Educación Secundaria Obligatoria (ESO)", "en": "General Certificate of Secondary Education (GCSE)", "ca": "Educació Secundària Obligatòria (ESO)" },
         "details": null
       },
       {
@@ -153,7 +153,7 @@
         "school": { "es": "La Boqueria, Barcelona", "en": "La Boqueria, Barcelona", "ca": "La Boqueria, Barcelona" },
         "url": "#",
         "title": { "es": "Curso de Cocina", "en": "Cooking Class", "ca": "Curs de Cuina" },
-        "details": { "es": "Formacion practica en tecnicas culinarias.", "en": "Hands-on training in culinary techniques.", "ca": "Formacio practica en tecniques culinaries." }
+        "details": { "es": "Formación práctica en técnicas culinarias.", "en": "Hands-on training in culinary techniques.", "ca": "Formació pràctica en tècniques culinàries." }
       }
     ]
   },
@@ -166,17 +166,17 @@
     "skills_title": {
       "es": "Competencias",
       "en": "Competencies",
-      "ca": "Competencies"
+      "ca": "Competències"
     },
     "items": [
-      { "es": "Gestion operativa de restaurante", "en": "Restaurant Operations Management", "ca": "Gestio operativa de restaurant" },
-      { "es": "Liderazgo y formacion de equipos", "en": "Team Leadership & Training", "ca": "Lideratge i formacio d'equips" },
+      { "es": "Gestión operativa de restaurante", "en": "Restaurant Operations Management", "ca": "Gestió operativa de restaurant" },
+      { "es": "Liderazgo y formación de equipos", "en": "Team Leadership & Training", "ca": "Lideratge i formació d'equips" },
       { "es": "Control de costes y presupuestos", "en": "Cost Control & Budgeting", "ca": "Control de costos i pressupostos" },
-      { "es": "Estandares de marca y calidad", "en": "Brand Standards & Quality", "ca": "Estandards de marca i qualitat" },
-      { "es": "Experiencia del huesped", "en": "Guest Experience", "ca": "Experiencia de l'hoste" },
-      { "es": "Gestion de inventarios y proveedores", "en": "Inventory & Supplier Management", "ca": "Gestio d'inventaris i proveidors" },
-      { "es": "Planificacion de eventos y banquetes", "en": "Event & Banquet Planning", "ca": "Planificacio d'esdeveniments" },
-      { "es": "Coordinacion sala-cocina", "en": "Front-of-House & Kitchen Coordination", "ca": "Coordinacio sala-cuina" }
+      { "es": "Estándares de marca y calidad", "en": "Brand Standards & Quality", "ca": "Estàndards de marca i qualitat" },
+      { "es": "Experiencia del huésped", "en": "Guest Experience", "ca": "Experiència de l'hoste" },
+      { "es": "Gestión de inventarios y proveedores", "en": "Inventory & Supplier Management", "ca": "Gestió d'inventaris i proveïdors" },
+      { "es": "Planificación de eventos y banquetes", "en": "Event & Banquet Planning", "ca": "Planificació d'esdeveniments i banquets" },
+      { "es": "Coordinación sala-cocina", "en": "Front-of-House & Kitchen Coordination", "ca": "Coordinació sala-cuina" }
     ],
     "languages_title": {
       "es": "Idiomas",
@@ -184,38 +184,38 @@
       "ca": "Idiomes"
     },
     "languages": [
-      { "name": { "es": "Catalan", "en": "Catalan", "ca": "Catala" }, "level": { "es": "Nativo", "en": "Native", "ca": "Natiu" }, "dots": 5 },
-      { "name": { "es": "Espanol", "en": "Spanish", "ca": "Espanyol" }, "level": { "es": "Nativo", "en": "Native", "ca": "Natiu" }, "dots": 5 },
-      { "name": { "es": "Ingles", "en": "English", "ca": "Angles" }, "level": { "es": "Bilingue", "en": "Bilingual", "ca": "Bilingue" }, "dots": 5 }
+      { "name": { "es": "Catalán", "en": "Catalan", "ca": "Català" }, "level": { "es": "Nativo", "en": "Native", "ca": "Natiu" }, "dots": 5 },
+      { "name": { "es": "Español", "en": "Spanish", "ca": "Espanyol" }, "level": { "es": "Nativo", "en": "Native", "ca": "Natiu" }, "dots": 5 },
+      { "name": { "es": "Inglés", "en": "English", "ca": "Anglès" }, "level": { "es": "Bilingüe", "en": "Bilingual", "ca": "Bilingüe" }, "dots": 5 }
     ]
   },
   "references": {
     "title": {
       "es": "Referencias",
       "en": "References",
-      "ca": "References"
+      "ca": "Referències"
     },
     "items": [
       {
-        "name": "Aitor Xavier Zurutuza del Rio",
+        "name": "Aitor Xavier Zurutuza del Río",
         "role": { "es": "Restaurant Manager — Erre Urrechu", "en": "Restaurant Manager — Erre Urrechu", "ca": "Restaurant Manager — Erre Urrechu" },
-        "company": { "es": "Hotel Gran Melia Torre Melina, Barcelona", "en": "Hotel Gran Melia Torre Melina, Barcelona", "ca": "Hotel Gran Melia Torre Melina, Barcelona" }
+        "company": { "es": "Hotel Gran Meliá Torre Melina, Barcelona", "en": "Hotel Gran Meliá Torre Melina, Barcelona", "ca": "Hotel Gran Meliá Torre Melina, Barcelona" }
       },
       {
-        "name": "Fabian",
+        "name": "Fabián",
         "role": { "es": "F&B Manager", "en": "F&B Manager", "ca": "F&B Manager" },
-        "company": { "es": "Hotel Gran Melia Torre Melina, Barcelona", "en": "Hotel Gran Melia Torre Melina, Barcelona", "ca": "Hotel Gran Melia Torre Melina, Barcelona" }
+        "company": { "es": "Hotel Gran Meliá Torre Melina, Barcelona", "en": "Hotel Gran Meliá Torre Melina, Barcelona", "ca": "Hotel Gran Meliá Torre Melina, Barcelona" }
       },
       {
-        "name": "Inigo Perez Urrechu",
+        "name": "Íñigo Pérez Urrechu",
         "role": { "es": "Chef & Propietario — Grupo Urrechu", "en": "Chef & Owner — Grupo Urrechu", "ca": "Xef & Propietari — Grup Urrechu" },
-        "company": { "es": "Fundador de Restaurantes Urrechu y Zalacain", "en": "Founder of Restaurantes Urrechu and Zalacain", "ca": "Fundador de Restaurants Urrechu i Zalacain" }
+        "company": { "es": "Fundador de Restaurantes Urrechu y Zalacaín", "en": "Founder of Restaurantes Urrechu and Zalacaín", "ca": "Fundador de Restaurants Urrechu i Zalacaín" }
       }
     ],
     "note": {
-      "es": "Datos de contacto disponibles bajo peticion.",
+      "es": "Datos de contacto disponibles bajo petición.",
       "en": "Contact details available upon request.",
-      "ca": "Dades de contacte disponibles sota peticio."
+      "ca": "Dades de contacte disponibles sota petició."
     }
   },
   "contact": {
@@ -227,9 +227,9 @@
     "phone": "+34 615 410 012",
     "email": "mireiapuchaes@gmail.com",
     "location": {
-      "es": "Rubi, Barcelona, Espana",
-      "en": "Rubi, Barcelona, Spain",
-      "ca": "Rubi, Barcelona, Espanya"
+      "es": "Rubí, Barcelona, España",
+      "en": "Rubí, Barcelona, Spain",
+      "ca": "Rubí, Barcelona, Espanya"
     },
     "whatsapp": "34615410012",
     "linkedin": "#"
