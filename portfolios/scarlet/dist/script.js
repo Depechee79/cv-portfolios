@@ -59,7 +59,8 @@ const translations = {
     "contact.loc": "Barcelona, España",
     "footer.rights": "© 2026 Dra. Scarlet Pérez. Todos los derechos reservados.",
     "btn.expand": "Ver toda la formación",
-    "btn.collapse": "Cerrar"
+    "btn.collapse": "Cerrar",
+    "btn.download": "Descargar CV"
   },
   "en": {
     "nav.home": "Home",
@@ -117,7 +118,8 @@ const translations = {
     "contact.loc": "Barcelona, Spain",
     "footer.rights": "© 2026 Dr. Scarlet Pérez. All rights reserved.",
     "btn.expand": "See all education",
-    "btn.collapse": "Close"
+    "btn.collapse": "Close",
+    "btn.download": "Download CV"
   },
   "ca": {
     "nav.home": "Inici",
@@ -175,7 +177,8 @@ const translations = {
     "contact.loc": "Barcelona, Espanya",
     "footer.rights": "© 2026 Dra. Scarlet Pérez. Tots els drets reservats.",
     "btn.expand": "Veure tota la formació",
-    "btn.collapse": "Tancar"
+    "btn.collapse": "Tancar",
+    "btn.download": "Descarregar CV"
   }
 };
 

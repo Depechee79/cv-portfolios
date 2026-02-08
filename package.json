@@ -9,9 +9,14 @@
     "generate:all": "node scripts/generate-portfolio.js mireia && node scripts/generate-portfolio.js scarlet",
     "serve:mireia": "npx serve portfolios/mireia/dist -p 3000",
     "serve:scarlet": "npx serve portfolios/scarlet/dist -p 3001",
-    "new-portfolio": "node scripts/new-portfolio.js"
+    "new-portfolio": "node scripts/new-portfolio.js",
+    "parse-pdf": "node scripts/parse-pdf.js",
+    "pdf": "node scripts/generate-pdf.js",
+    "pdf:mireia": "node scripts/generate-pdf.js mireia",
+    "pdf:scarlet": "node scripts/generate-pdf.js scarlet"
   },
   "keywords": ["cv", "portfolio", "generator"],
   "author": "Aitor",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {}
 }

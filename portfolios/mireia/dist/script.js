@@ -99,7 +99,8 @@ const translations = {
     "contact.loc": "Rubí, Barcelona, España",
     "footer.rights": "© 2026 Mireia Puchaes Cremades. Todos los derechos reservados.",
     "btn.expand": "Ver todo",
-    "btn.collapse": "Cerrar"
+    "btn.collapse": "Cerrar",
+    "btn.download": "Descargar CV"
   },
   "en": {
     "nav.home": "Home",
@@ -197,7 +198,8 @@ const translations = {
     "contact.loc": "Rubí, Barcelona, Spain",
     "footer.rights": "© 2026 Mireia Puchaes Cremades. All rights reserved.",
     "btn.expand": "See all",
-    "btn.collapse": "Close"
+    "btn.collapse": "Close",
+    "btn.download": "Download CV"
   },
   "ca": {
     "nav.home": "Inici",
@@ -295,7 +297,8 @@ const translations = {
     "contact.loc": "Rubí, Barcelona, Espanya",
     "footer.rights": "© 2026 Mireia Puchaes Cremades. Tots els drets reservats.",
     "btn.expand": "Veure tot",
-    "btn.collapse": "Tancar"
+    "btn.collapse": "Tancar",
+    "btn.download": "Descarregar CV"
   }
 };
 
