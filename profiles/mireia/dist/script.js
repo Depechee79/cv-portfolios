@@ -320,15 +320,20 @@ window.toggleTimeline = function (id, btn) {
 
         container.scrollTop = 0;
 
-        // Add scroll listener for auto-collapse at end
+        // Add scroll listener for auto-collapse at end (with debounce)
+        let scrollTimeout = null;
         container._scrollEndHandler = function() {
-            const scrollBottom = container.scrollTop + container.clientHeight;
-            const scrollMax = container.scrollHeight;
+            // Debounce: wait 300ms after scroll stops
+            if (scrollTimeout) clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                const scrollBottom = container.scrollTop + container.clientHeight;
+                const scrollMax = container.scrollHeight;
 
-            // If scrolled to within 10px of bottom, collapse and scroll to next section
-            if (scrollBottom >= scrollMax - 10) {
-                collapseAndScrollNext(container, btn);
-            }
+                // If scrolled to within 5px of absolute bottom, collapse and scroll to next section
+                if (scrollBottom >= scrollMax - 5) {
+                    collapseAndScrollNext(container, btn);
+                }
+            }, 300);
         };
         container.addEventListener('scroll', container._scrollEndHandler);
     } else {
