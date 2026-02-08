@@ -1,0 +1,5 @@
+Netlify Legacy Deployment - Scarlet
+====================================
+Site ID: 3e3628f5-762e-4b42-aac5-f4243a86d55f
+Source: SCARLET/portfolio (standalone static site)
+Note: This is the old standalone deployment before migrating to the unified cv-portfolios generator.

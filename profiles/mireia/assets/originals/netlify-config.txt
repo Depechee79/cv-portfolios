@@ -1,0 +1,5 @@
+Netlify Legacy Deployment - Mireia
+===================================
+Site ID: 275e751a-f7b7-429a-a169-b5ae95fc9077
+Source: CV MIREIA/portfolio (standalone static site)
+Note: This is the old standalone deployment before migrating to the unified cv-portfolios generator.
