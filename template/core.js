@@ -25,43 +25,39 @@ window.toggleTimeline = function (id, btn) {
 
         container.scrollTop = 0;
 
-        // Check if content needs scrolling (scrollHeight > clientHeight)
-        // Small delay to let the DOM update after class change
-        setTimeout(() => {
-            const needsScroll = container.scrollHeight > container.clientHeight + 10;
+        // Install BOTH scroll and wheel handlers unconditionally.
+        // CSS transition on max-height (0.8s) makes a single early check unreliable
+        // — each handler checks the real-time state when its event fires.
 
-            if (needsScroll) {
-                // Content overflows: keep overscroll-behavior-y: contain
-                // and add scroll listener for auto-collapse at bottom
-                container.style.overscrollBehaviorY = 'contain';
-                let scrollTimeout = null;
-                container._scrollEndHandler = function() {
-                    if (scrollTimeout) clearTimeout(scrollTimeout);
-                    scrollTimeout = setTimeout(() => {
-                        const scrollBottom = container.scrollTop + container.clientHeight;
-                        const scrollMax = container.scrollHeight;
-                        if (scrollBottom >= scrollMax - 5) {
-                            collapseAndScrollNext(container, btn);
-                        }
-                    }, 800);
-                };
-                container.addEventListener('scroll', container._scrollEndHandler);
-            } else {
-                // Content fits without scrolling: intercept wheel events
-                // and auto-advance to next section on scroll down
-                container.style.overscrollBehaviorY = 'auto';
-                let wheelDebounce = null;
-                container._wheelHandler = function(e) {
-                    if (wheelDebounce) return;
-                    if (e.deltaY > 0) {
-                        e.preventDefault();
-                        wheelDebounce = setTimeout(function() { wheelDebounce = null; }, 500);
-                        collapseAndScrollNext(container, btn);
-                    }
-                };
-                container.addEventListener('wheel', container._wheelHandler, { passive: false });
+        // Scroll handler: auto-collapse when user scrolls to bottom (overflow case)
+        let scrollTimeout = null;
+        container._scrollEndHandler = function() {
+            if (scrollTimeout) clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                const scrollBottom = container.scrollTop + container.clientHeight;
+                const scrollMax = container.scrollHeight;
+                if (scrollBottom >= scrollMax - 5) {
+                    collapseAndScrollNext(container, btn);
+                }
+            }, 800);
+        };
+        container.addEventListener('scroll', container._scrollEndHandler);
+
+        // Wheel handler on the SECTION (not just the container) to also cover
+        // the gap area below the timeline where overflow:hidden traps scroll.
+        var section = container.closest('section');
+        let wheelDebounce = null;
+        container._wheelHandler = function(e) {
+            if (wheelDebounce) return;
+            // Check in real time whether content actually overflows
+            var contentOverflows = container.scrollHeight > container.clientHeight + 10;
+            if (!contentOverflows && e.deltaY > 0) {
+                e.preventDefault();
+                wheelDebounce = setTimeout(function() { wheelDebounce = null; }, 500);
+                collapseAndScrollNext(container, btn);
             }
-        }, 50);
+        };
+        (section || container).addEventListener('wheel', container._wheelHandler, { passive: false });
     } else {
         // COLLAPSE
         collapseTimeline(container, btn);
@@ -80,7 +76,9 @@ function collapseTimeline(container, btn) {
         container._scrollEndHandler = null;
     }
     if (container._wheelHandler) {
-        container.removeEventListener('wheel', container._wheelHandler);
+        // Wheel handler lives on the section (parent), not the container
+        var section = container.closest('section');
+        (section || container).removeEventListener('wheel', container._wheelHandler);
         container._wheelHandler = null;
     }
     container.style.overscrollBehaviorY = '';
