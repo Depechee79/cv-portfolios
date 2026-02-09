@@ -1,0 +1,259 @@
+{
+  "theme": "hospitality",
+  "languages": ["es", "en", "ca"],
+  "meta": {
+    "title": "Elena Montero Valls (Demo) | Directora de F&B",
+    "favicon": "business-outline"
+  },
+  "hero": {
+    "name": "Elena Montero Valls (Demo)",
+    "subtitle": {
+      "es": "DIRECTORA DE F&B",
+      "en": "F&B DIRECTOR",
+      "ca": "DIRECTORA DE F&B"
+    },
+    "current": {
+      "es": "Directora de F&B | Mandarin Oriental Barcelona",
+      "en": "F&B Director | Mandarin Oriental Barcelona",
+      "ca": "Directora de F&B | Mandarin Oriental Barcelona"
+    },
+    "photo": "photo.jpg",
+    "cta": {
+      "es": "CONTACTAR",
+      "en": "CONTACT",
+      "ca": "CONTACTAR"
+    }
+  },
+  "nav": {
+    "home": { "es": "Inicio", "en": "Home", "ca": "Inici" },
+    "profile": { "es": "Perfil", "en": "Profile", "ca": "Perfil" },
+    "experience": { "es": "Experiencia", "en": "Experience", "ca": "Experiència" },
+    "education": { "es": "Formación", "en": "Education", "ca": "Formació" },
+    "skills": { "es": "Habilidades", "en": "Skills", "ca": "Habilitats" },
+    "references": { "es": "Referencias", "en": "References", "ca": "Referències" },
+    "contact": { "es": "Contacto", "en": "Contact", "ca": "Contacte" }
+  },
+  "about": {
+    "title": {
+      "es": "Perfil Profesional",
+      "en": "Professional Profile",
+      "ca": "Perfil Professional"
+    },
+    "desc": {
+      "es": "Directora de Food & Beverage con más de 18 años de experiencia en hoteles de lujo y cadenas internacionales de primer nivel. Trayectoria progresiva desde sala hasta la dirección integral de operaciones de restauración en establecimientos como Mandarin Oriental, Hyatt y Marriott. Especializada en gestión de P&L, optimización de costes F&B, desarrollo de conceptos gastronómicos y formación de equipos multiculturales de alto rendimiento. Certificada WSET Level 3 y con un MBA en Dirección Hotelera por Les Roches. Apasionada por la excelencia en guest experience y la innovación en servicios de restauración.",
+      "en": "Food & Beverage Director with over 18 years of experience in luxury hotels and top-tier international chains. Progressive career from restaurant floor to comprehensive F&B operations management at properties including Mandarin Oriental, Hyatt, and Marriott. Specialized in P&L management, F&B cost optimization, gastronomic concept development, and high-performance multicultural team building. WSET Level 3 certified with an MBA in Hospitality Management from Les Roches. Passionate about guest experience excellence and innovation in food & beverage services.",
+      "ca": "Directora de Food & Beverage amb més de 18 anys d'experiència en hotels de luxe i cadenes internacionals de primer nivell. Trajectòria progressiva des de sala fins a la direcció integral d'operacions de restauració en establiments com Mandarin Oriental, Hyatt i Marriott. Especialitzada en gestió de P&L, optimització de costos F&B, desenvolupament de conceptes gastronòmics i formació d'equips multiculturals d'alt rendiment. Certificada WSET Level 3 i amb un MBA en Direcció Hotelera per Les Roches. Apassionada per l'excel·lència en guest experience i la innovació en serveis de restauració."
+    },
+    "stats": [
+      {
+        "es": "+18 años en hotelería de lujo",
+        "en": "18+ years in luxury hospitality",
+        "ca": "+18 anys en hoteleria de luxe"
+      },
+      {
+        "es": "Cadenas 5★ internacionales",
+        "en": "International 5★ chains",
+        "ca": "Cadenes 5★ internacionals"
+      },
+      {
+        "es": "Equipos de hasta 80 personas",
+        "en": "Teams of up to 80 people",
+        "ca": "Equips de fins a 80 persones"
+      }
+    ]
+  },
+  "experience": {
+    "title": {
+      "es": "Experiencia Profesional",
+      "en": "Professional Experience",
+      "ca": "Experiència Professional"
+    },
+    "items": [
+      {
+        "date": { "es": "ENE 2021 - ACTUALIDAD", "en": "JAN 2021 - PRESENT", "ca": "GEN 2021 - ACTUALITAT" },
+        "place": { "es": "Mandarin Oriental, Barcelona", "en": "Mandarin Oriental, Barcelona", "ca": "Mandarin Oriental, Barcelona" },
+        "url": "https://www.mandarinoriental.com/barcelona/",
+        "role": { "es": "Directora de F&B", "en": "F&B Director", "ca": "Directora de F&B" },
+        "desc": { "es": "Dirección integral de todas las operaciones de restauración del hotel: 2 restaurantes (incluyendo Moments ★★ Michelin), bar, banquetes, room service y minibar. Gestión de P&L con facturación anual de 8,5M€. Supervisión de equipo de 80 personas entre sala, cocina y stewarding. Implantación de sistema de revenue management en F&B con incremento del 12% en RevPASH. Coordinación directa con dirección general y propietarios.", "en": "Comprehensive management of all hotel F&B operations: 2 restaurants (including Moments ★★ Michelin), bar, banquets, room service, and minibar. P&L management with annual revenue of €8.5M. Supervision of 80-person team across front-of-house, kitchen, and stewarding. Implementation of F&B revenue management system achieving 12% RevPASH increase. Direct coordination with general management and ownership.", "ca": "Direcció integral de totes les operacions de restauració de l'hotel: 2 restaurants (inclòs Moments ★★ Michelin), bar, banquets, room service i minibar. Gestió de P&L amb facturació anual de 8,5M€. Supervisió d'equip de 80 persones entre sala, cuina i stewarding. Implantació de sistema de revenue management en F&B amb increment del 12% en RevPASH. Coordinació directa amb direcció general i propietaris." }
+      },
+      {
+        "date": { "es": "MAR 2017 - DIC 2020", "en": "MAR 2017 - DEC 2020", "ca": "MAR 2017 - DES 2020" },
+        "place": { "es": "Hyatt Regency Barcelona Tower", "en": "Hyatt Regency Barcelona Tower", "ca": "Hyatt Regency Barcelona Tower" },
+        "url": "https://www.hyatt.com/",
+        "role": { "es": "Assistant F&B Director", "en": "Assistant F&B Director", "ca": "Assistant F&B Director" },
+        "desc": { "es": "Brazo derecho del director de F&B en hotel de 280 habitaciones con 3 puntos de venta. Gestión operativa diaria, control de costes F&B (mantenido en 29%), planificación de eventos y banquetes de hasta 500 comensales. Formación y evaluación de equipos siguiendo estándares Hyatt. Liderazgo del proyecto de apertura del rooftop bar con concepto de coctelería de autor.", "en": "Right hand of the F&B Director at a 280-room hotel with 3 outlets. Daily operational management, F&B cost control (maintained at 29%), planning of events and banquets for up to 500 guests. Team training and evaluation following Hyatt standards. Led the rooftop bar opening project featuring signature cocktail concept.", "ca": "Braç dret del director de F&B en hotel de 280 habitacions amb 3 punts de venda. Gestió operativa diària, control de costos F&B (mantingut al 29%), planificació d'esdeveniments i banquets de fins a 500 comensals. Formació i avaluació d'equips seguint estàndards Hyatt. Lideratge del projecte d'obertura del rooftop bar amb concepte de cocteleria d'autor." }
+      },
+      {
+        "date": { "es": "SEP 2014 - FEB 2017", "en": "SEP 2014 - FEB 2017", "ca": "SET 2014 - FEB 2017" },
+        "place": { "es": "Hotel Arts Barcelona — The Ritz-Carlton", "en": "Hotel Arts Barcelona — The Ritz-Carlton", "ca": "Hotel Arts Barcelona — The Ritz-Carlton" },
+        "url": "https://www.hotelartsbarcelona.com/",
+        "role": { "es": "Restaurant Manager", "en": "Restaurant Manager", "ca": "Restaurant Manager" },
+        "desc": { "es": "Responsable de la operación integral del restaurante principal del hotel (120 cubiertos). Gestión de equipo de 22 personas. Supervisión de estándares de servicio Ritz-Carlton (Gold Standards). Organización de wine dinners y eventos gastronómicos. Incremento del ticket medio en un 18% mediante upselling estratégico y maridajes.", "en": "Responsible for the full operation of the hotel's main restaurant (120 covers). Management of a 22-person team. Supervision of Ritz-Carlton service standards (Gold Standards). Organization of wine dinners and gastronomic events. Increased average check by 18% through strategic upselling and pairings.", "ca": "Responsable de l'operació integral del restaurant principal de l'hotel (120 coberts). Gestió d'equip de 22 persones. Supervisió d'estàndards de servei Ritz-Carlton (Gold Standards). Organització de wine dinners i esdeveniments gastronòmics. Increment del tiquet mitjà en un 18% mitjançant upselling estratègic i maridatges." }
+      },
+      {
+        "date": { "es": "ENE 2012 - AGO 2014", "en": "JAN 2012 - AUG 2014", "ca": "GEN 2012 - AGO 2014" },
+        "place": { "es": "W Barcelona", "en": "W Barcelona", "ca": "W Barcelona" },
+        "url": "https://www.marriott.com/hotels/travel/bcnwh-w-barcelona/",
+        "role": { "es": "Assistant Restaurant Manager", "en": "Assistant Restaurant Manager", "ca": "Assistant Restaurant Manager" },
+        "desc": { "es": "Supervisión de servicio en restaurante BRAVO y terraza SALT. Gestión de turnos, control de inventarios y coordinación con cocina. Implementación de SOPs de servicio. Participación en aperturas de temporada y eventos VIP con capacidad de hasta 200 personas.", "en": "Service supervision at BRAVO restaurant and SALT terrace. Shift management, inventory control, and kitchen coordination. Implementation of service SOPs. Participation in seasonal openings and VIP events for up to 200 guests.", "ca": "Supervisió de servei al restaurant BRAVO i terrassa SALT. Gestió de torns, control d'inventaris i coordinació amb cuina. Implementació de SOPs de servei. Participació en obertures de temporada i esdeveniments VIP amb capacitat de fins a 200 persones." }
+      },
+      {
+        "date": { "es": "JUN 2010 - DIC 2011", "en": "JUN 2010 - DEC 2011", "ca": "JUN 2010 - DES 2011" },
+        "place": { "es": "Marriott Barcelona Hotel — Renaissance", "en": "Marriott Barcelona Hotel — Renaissance", "ca": "Marriott Barcelona Hotel — Renaissance" },
+        "url": "https://www.marriott.com/",
+        "role": { "es": "Supervisora de Sala", "en": "Floor Supervisor", "ca": "Supervisora de Sala" },
+        "desc": { "es": "Coordinación del equipo de sala en restaurante buffet y à la carte (160 cubiertos). Supervisión de montajes para eventos corporativos. Primer contacto con gestión de estándares de marca Marriott y programa Voyager de formación interna.", "en": "Dining room team coordination at buffet and à la carte restaurant (160 covers). Supervision of setups for corporate events. First exposure to Marriott brand standards management and internal Voyager training program.", "ca": "Coordinació de l'equip de sala en restaurant buffet i à la carte (160 coberts). Supervisió de muntatges per a esdeveniments corporatius. Primer contacte amb gestió d'estàndards de marca Marriott i programa Voyager de formació interna." }
+      },
+      {
+        "date": { "es": "SEP 2008 - MAY 2010", "en": "SEP 2008 - MAY 2010", "ca": "SET 2008 - MAI 2010" },
+        "place": { "es": "Hotel Majestic, Barcelona", "en": "Hotel Majestic, Barcelona", "ca": "Hotel Majestic, Barcelona" },
+        "url": "https://www.hotelmajestic.es/",
+        "role": { "es": "Camarera de Sala — Fine Dining", "en": "Waitress — Fine Dining", "ca": "Cambrera de Sala — Fine Dining" },
+        "desc": { "es": "Servicio de sala en restaurante gastronómico del Hotel Majestic GL. Atención directa a comensal en fine dining con protocolo de servicio clásico. Servicio de vinos y recomendación de carta. Colaboración en eventos privados y cenas de gala.", "en": "Dining room service at Hotel Majestic GL's gastronomic restaurant. Direct guest attention in fine dining with classic service protocol. Wine service and menu recommendations. Collaboration in private events and gala dinners.", "ca": "Servei de sala al restaurant gastronòmic de l'Hotel Majestic GL. Atenció directa al comensal en fine dining amb protocol de servei clàssic. Servei de vins i recomanació de carta. Col·laboració en esdeveniments privats i sopars de gala." }
+      },
+      {
+        "date": { "es": "JUN 2006 - AGO 2008", "en": "JUN 2006 - AUG 2008", "ca": "JUN 2006 - AGO 2008" },
+        "place": { "es": "Restaurant La Dama, Barcelona", "en": "La Dama Restaurant, Barcelona", "ca": "Restaurant La Dama, Barcelona" },
+        "url": "#",
+        "role": { "es": "Camarera / Ayudante de Sala", "en": "Waitress / Dining Room Assistant", "ca": "Cambrera / Ajudant de Sala" },
+        "desc": { "es": "Primeras armas en restauración de alto nivel en restaurante clásico del Eixample. Aprendizaje de protocolo, servicio de gueridón, trinchado en sala y atención al comensal. Simultaneado con estudios universitarios.", "en": "First steps in high-end dining at a classic Eixample restaurant. Learning protocol, gueridon service, tableside carving, and guest attention. Combined with university studies.", "ca": "Primeres armes en restauració d'alt nivell en restaurant clàssic de l'Eixample. Aprenentatge de protocol, servei de gueridó, treball en sala i atenció al comensal. Simultanejat amb estudis universitaris." }
+      }
+    ]
+  },
+  "education": {
+    "title": {
+      "es": "Formación Académica",
+      "en": "Education",
+      "ca": "Formació Acadèmica"
+    },
+    "items": [
+      {
+        "date": { "es": "SEP 2015 - JUN 2017", "en": "SEP 2015 - JUN 2017", "ca": "SET 2015 - JUN 2017" },
+        "school": { "es": "Les Roches Marbella — International School of Hotel Management", "en": "Les Roches Marbella — International School of Hotel Management", "ca": "Les Roches Marbella — International School of Hotel Management" },
+        "url": "https://lesroches.edu/",
+        "title": { "es": "MBA en Dirección Hotelera Internacional", "en": "MBA in International Hotel Management", "ca": "MBA en Direcció Hotelera Internacional" },
+        "details": { "es": "Especialización en Revenue Management y F&B Operations. Proyecto final: modelo de optimización de RevPASH para hoteles de 5 estrellas. Programa ejecutivo compaginado con actividad profesional.", "en": "Specialization in Revenue Management and F&B Operations. Final project: RevPASH optimization model for 5-star hotels. Executive program combined with professional activity.", "ca": "Especialització en Revenue Management i F&B Operations. Projecte final: model d'optimització de RevPASH per a hotels de 5 estrelles. Programa executiu compaginat amb activitat professional." }
+      },
+      {
+        "date": { "es": "SEP 2003 - JUN 2007", "en": "SEP 2003 - JUN 2007", "ca": "SET 2003 - JUN 2007" },
+        "school": { "es": "CETT-UB — Escola Universitària d'Hoteleria i Turisme", "en": "CETT-UB — University School of Hospitality & Tourism", "ca": "CETT-UB — Escola Universitària d'Hoteleria i Turisme" },
+        "url": "https://www.cett.es/",
+        "title": { "es": "Grado en Turismo y Gestión Hotelera", "en": "Degree in Tourism & Hotel Management", "ca": "Grau en Turisme i Gestió Hotelera" },
+        "details": { "es": "Formación integral en gestión hotelera, operaciones de restauración y marketing turístico. Prácticas en Hotel Majestic Barcelona.", "en": "Comprehensive training in hotel management, restaurant operations, and tourism marketing. Internship at Hotel Majestic Barcelona.", "ca": "Formació integral en gestió hotelera, operacions de restauració i màrqueting turístic. Pràctiques a l'Hotel Majestic Barcelona." }
+      },
+      {
+        "date": { "es": "2019", "en": "2019", "ca": "2019" },
+        "school": { "es": "Wine & Spirit Education Trust (WSET)", "en": "Wine & Spirit Education Trust (WSET)", "ca": "Wine & Spirit Education Trust (WSET)" },
+        "url": "https://www.wsetglobal.com/",
+        "title": { "es": "WSET Level 3 — Award in Wines", "en": "WSET Level 3 — Award in Wines", "ca": "WSET Level 3 — Award in Wines" },
+        "details": { "es": "Certificación avanzada en cata, regiones vinícolas mundiales, viticultura y vinificación. Examen teórico-práctico con cata a ciegas.", "en": "Advanced certification in tasting, world wine regions, viticulture, and winemaking. Theoretical-practical exam with blind tasting.", "ca": "Certificació avançada en tast, regions vinícoles mundials, viticultura i vinificació. Examen teòric-pràctic amb tast a cegues." }
+      },
+      {
+        "date": { "es": "2020", "en": "2020", "ca": "2020" },
+        "school": { "es": "Cornell University — School of Hotel Administration (Online)", "en": "Cornell University — School of Hotel Administration (Online)", "ca": "Cornell University — School of Hotel Administration (Online)" },
+        "url": "https://sha.cornell.edu/",
+        "title": { "es": "Certificado en Revenue Management para F&B", "en": "Certificate in F&B Revenue Management", "ca": "Certificat en Revenue Management per a F&B" },
+        "details": { "es": "Programa online especializado en estrategias de pricing, RevPASH y optimización de asientos en restaurantes de hotel.", "en": "Online program specialized in pricing strategies, RevPASH, and seat optimization in hotel restaurants.", "ca": "Programa online especialitzat en estratègies de pricing, RevPASH i optimització de seients en restaurants d'hotel." }
+      },
+      {
+        "date": { "es": "2013", "en": "2013", "ca": "2013" },
+        "school": { "es": "Asociación Española de Sumilleres", "en": "Spanish Sommelier Association", "ca": "Associació Espanyola de Sumillers" },
+        "url": "#",
+        "title": { "es": "Curso de Sumillería Profesional", "en": "Professional Sommelier Course", "ca": "Curs de Sumilleria Professional" },
+        "details": { "es": "Formación en servicio de vinos, maridaje, gestión de bodega y carta de vinos para restauración.", "en": "Training in wine service, food pairing, cellar management, and wine list design for restaurants.", "ca": "Formació en servei de vins, maridatge, gestió de celler i carta de vins per a restauració." }
+      }
+    ]
+  },
+  "skills": {
+    "title": {
+      "es": "Habilidades e Idiomas",
+      "en": "Skills & Languages",
+      "ca": "Habilitats i Idiomes"
+    },
+    "skills_title": {
+      "es": "Competencias",
+      "en": "Competencies",
+      "ca": "Competències"
+    },
+    "items": [
+      { "es": "Gestión de P&L y presupuestos F&B", "en": "P&L management & F&B budgeting", "ca": "Gestió de P&L i pressupostos F&B" },
+      { "es": "Control de costes de alimentos y bebidas", "en": "Food & beverage cost control", "ca": "Control de costos d'aliments i begudes" },
+      { "es": "Revenue management (RevPASH)", "en": "Revenue management (RevPASH)", "ca": "Revenue management (RevPASH)" },
+      { "es": "Formación y liderazgo de equipos", "en": "Team training & leadership", "ca": "Formació i lideratge d'equips" },
+      { "es": "Estándares de marca y guest experience", "en": "Brand standards & guest experience", "ca": "Estàndards de marca i guest experience" },
+      { "es": "Planificación de eventos y banquetes", "en": "Event & banquet planning", "ca": "Planificació d'esdeveniments i banquets" },
+      { "es": "Sumillería y gestión de carta de vinos", "en": "Sommellerie & wine list management", "ca": "Sumilleria i gestió de carta de vins" },
+      { "es": "Protocolo y servicio de lujo", "en": "Luxury service protocol", "ca": "Protocol i servei de luxe" },
+      { "es": "Desarrollo de conceptos gastronómicos", "en": "Gastronomic concept development", "ca": "Desenvolupament de conceptes gastronòmics" },
+      { "es": "Opera PMS, Micros POS, STR, Revinate", "en": "Opera PMS, Micros POS, STR, Revinate", "ca": "Opera PMS, Micros POS, STR, Revinate" }
+    ],
+    "languages_title": {
+      "es": "Idiomas",
+      "en": "Languages",
+      "ca": "Idiomes"
+    },
+    "languages": [
+      { "name": { "es": "Catalán", "en": "Catalan", "ca": "Català" }, "level": { "es": "Nativo", "en": "Native", "ca": "Natiu" }, "dots": 5 },
+      { "name": { "es": "Español", "en": "Spanish", "ca": "Espanyol" }, "level": { "es": "Nativo", "en": "Native", "ca": "Natiu" }, "dots": 5 },
+      { "name": { "es": "Inglés", "en": "English", "ca": "Anglès" }, "level": { "es": "Bilingüe", "en": "Bilingual", "ca": "Bilingüe" }, "dots": 5 },
+      { "name": { "es": "Francés", "en": "French", "ca": "Francès" }, "level": { "es": "Intermedio", "en": "Intermediate", "ca": "Intermedi" }, "dots": 3 }
+    ]
+  },
+  "references": {
+    "title": {
+      "es": "Referencias",
+      "en": "References",
+      "ca": "Referències"
+    },
+    "items": [
+      {
+        "name": "Thomas Keller-Richter",
+        "role": { "es": "General Manager", "en": "General Manager", "ca": "General Manager" },
+        "company": { "es": "Mandarin Oriental, Barcelona", "en": "Mandarin Oriental, Barcelona", "ca": "Mandarin Oriental, Barcelona" }
+      },
+      {
+        "name": "Cristina Pérez Domínguez",
+        "role": { "es": "Directora Regional de Operaciones", "en": "Regional Director of Operations", "ca": "Directora Regional d'Operacions" },
+        "company": { "es": "Hyatt Hotels — Europa del Sur", "en": "Hyatt Hotels — Southern Europe", "ca": "Hyatt Hotels — Europa del Sud" }
+      },
+      {
+        "name": "Àlex Ferrer Gironès",
+        "role": { "es": "Director de F&B", "en": "F&B Director", "ca": "Director de F&B" },
+        "company": { "es": "Hotel Arts Barcelona — The Ritz-Carlton", "en": "Hotel Arts Barcelona — The Ritz-Carlton", "ca": "Hotel Arts Barcelona — The Ritz-Carlton" }
+      }
+    ],
+    "note": {
+      "es": "Datos de contacto disponibles bajo petición.",
+      "en": "Contact details available upon request.",
+      "ca": "Dades de contacte disponibles sota petició."
+    }
+  },
+  "contact": {
+    "title": {
+      "es": "Contacto Profesional",
+      "en": "Professional Contact",
+      "ca": "Contacte Professional"
+    },
+    "phone": "+34 658 921 473",
+    "email": "elena.montero.fb@gmail.com",
+    "location": {
+      "es": "Barcelona, España",
+      "en": "Barcelona, Spain",
+      "ca": "Barcelona, Espanya"
+    },
+    "whatsapp": "34658921473",
+    "linkedin": "#"
+  },
+  "footer": {
+    "rights": {
+      "es": "2026 Elena Montero Valls. Todos los derechos reservados. · Portfolio de demostración — Registra3D CV Premium",
+      "en": "2026 Elena Montero Valls. All rights reserved. · Demo portfolio — Registra3D CV Premium",
+      "ca": "2026 Elena Montero Valls. Tots els drets reservats. · Portfolio de demostració — Registra3D CV Premium"
+    }
+  },
+  "buttons": {
+    "expand": { "es": "Ver todo", "en": "See all", "ca": "Veure tot" },
+    "collapse": { "es": "Cerrar", "en": "Close", "ca": "Tancar" }
+  },
+  "darkSections": ["about", "experience", "skills"]
+}
