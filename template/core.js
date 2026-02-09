@@ -31,7 +31,7 @@ window.toggleTimeline = function (id, btn) {
             const needsScroll = container.scrollHeight > container.clientHeight + 10;
 
             if (needsScroll) {
-                // Content overflows: keep overscroll-behavior-y: contain (from CSS)
+                // Content overflows: keep overscroll-behavior-y: contain
                 // and add scroll listener for auto-collapse at bottom
                 container.style.overscrollBehaviorY = 'contain';
                 let scrollTimeout = null;
@@ -47,9 +47,19 @@ window.toggleTimeline = function (id, btn) {
                 };
                 container.addEventListener('scroll', container._scrollEndHandler);
             } else {
-                // Content fits without scrolling: allow scroll events to
-                // propagate to #app-scroller so snap navigation continues
+                // Content fits without scrolling: intercept wheel events
+                // and auto-advance to next section on scroll down
                 container.style.overscrollBehaviorY = 'auto';
+                let wheelDebounce = null;
+                container._wheelHandler = function(e) {
+                    if (wheelDebounce) return;
+                    if (e.deltaY > 0) {
+                        e.preventDefault();
+                        wheelDebounce = setTimeout(function() { wheelDebounce = null; }, 500);
+                        collapseAndScrollNext(container, btn);
+                    }
+                };
+                container.addEventListener('wheel', container._wheelHandler, { passive: false });
             }
         }, 50);
     } else {
@@ -64,10 +74,14 @@ function collapseTimeline(container, btn) {
     container.classList.add('collapsed');
     container.classList.remove('expanded');
 
-    // Remove scroll listener and reset overscroll override
+    // Remove scroll and wheel listeners, reset overscroll override
     if (container._scrollEndHandler) {
         container.removeEventListener('scroll', container._scrollEndHandler);
         container._scrollEndHandler = null;
+    }
+    if (container._wheelHandler) {
+        container.removeEventListener('wheel', container._wheelHandler);
+        container._wheelHandler = null;
     }
     container.style.overscrollBehaviorY = '';
 
@@ -139,12 +153,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!burgerBtn || !menuOverlay) return;
 
         menuOverlay.classList.toggle('open');
+        const isOpen = menuOverlay.classList.contains('open');
+
         if (cutleryBurger) {
-            cutleryBurger.classList.toggle('burger-open');
+            // Hospitality theme: cutlery → X animation via CSS class
+            cutleryBurger.classList.toggle('burger-open', isOpen);
+        } else {
+            // Generic theme (medical etc.): swap ion-icon between menu ↔ close
+            const icon = burgerBtn.querySelector('ion-icon');
+            if (icon) {
+                icon.setAttribute('name', isOpen ? 'close-outline' : 'menu-outline');
+            }
         }
-        // Toggle gold colors when menu overlay is open (dark background)
+        // Toggle accent colors when menu overlay is open (dark background)
         if (bottomNav) {
-            bottomNav.classList.toggle('menu-open', menuOverlay.classList.contains('open'));
+            bottomNav.classList.toggle('menu-open', isOpen);
         }
     };
 
@@ -158,7 +181,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (menuOverlay) menuOverlay.classList.remove('open');
             if (burgerBtn) {
                 const cutleryBurger = burgerBtn.querySelector('.cutlery-burger');
-                if (cutleryBurger) cutleryBurger.classList.remove('burger-open');
+                if (cutleryBurger) {
+                    cutleryBurger.classList.remove('burger-open');
+                } else {
+                    const icon = burgerBtn.querySelector('ion-icon');
+                    if (icon) icon.setAttribute('name', 'menu-outline');
+                }
             }
             if (bottomNav) bottomNav.classList.remove('menu-open');
 
