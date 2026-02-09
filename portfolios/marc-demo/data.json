@@ -1,0 +1,252 @@
+{
+  "theme": "hospitality",
+  "languages": ["es", "en", "ca"],
+  "meta": {
+    "title": "Marc Beltrán Soler (Demo) | Chef Ejecutivo",
+    "favicon": "restaurant-outline"
+  },
+  "hero": {
+    "name": "Marc Beltrán Soler (Demo)",
+    "subtitle": {
+      "es": "CHEF EJECUTIVO",
+      "en": "EXECUTIVE CHEF",
+      "ca": "XEF EXECUTIU"
+    },
+    "current": {
+      "es": "Chef Ejecutivo | Hotel Arts Barcelona, The Ritz-Carlton",
+      "en": "Executive Chef | Hotel Arts Barcelona, The Ritz-Carlton",
+      "ca": "Xef Executiu | Hotel Arts Barcelona, The Ritz-Carlton"
+    },
+    "photo": "photo.jpg",
+    "cta": {
+      "es": "CONTACTAR",
+      "en": "CONTACT",
+      "ca": "CONTACTAR"
+    }
+  },
+  "nav": {
+    "home": { "es": "Inicio", "en": "Home", "ca": "Inici" },
+    "profile": { "es": "Perfil", "en": "Profile", "ca": "Perfil" },
+    "experience": { "es": "Experiencia", "en": "Experience", "ca": "Experiència" },
+    "education": { "es": "Formación", "en": "Education", "ca": "Formació" },
+    "skills": { "es": "Habilidades", "en": "Skills", "ca": "Habilitats" },
+    "references": { "es": "Referencias", "en": "References", "ca": "Referències" },
+    "contact": { "es": "Contacto", "en": "Contact", "ca": "Contacte" }
+  },
+  "about": {
+    "title": {
+      "es": "Perfil Profesional",
+      "en": "Professional Profile",
+      "ca": "Perfil Professional"
+    },
+    "desc": {
+      "es": "Chef ejecutivo con más de 12 años de trayectoria en alta cocina mediterránea y técnicas de vanguardia. Formado en la Escola d'Hoteleria Hofmann y curtido en cocinas con estrella Michelin bajo la dirección de chefs de referencia internacional. Especializado en cocina de temporada y producto de proximidad, gestión integral de brigadas de hasta 25 cocineros y desarrollo de conceptos gastronómicos para hoteles de 5 estrellas Gran Lujo. Obsesionado con la excelencia en el producto, el emplatado y la experiencia del comensal.",
+      "en": "Executive chef with over 12 years of experience in contemporary Mediterranean haute cuisine and avant-garde techniques. Trained at Hofmann School of Hospitality and forged in Michelin-starred kitchens under internationally renowned chefs. Specialized in seasonal and locally-sourced cuisine, comprehensive management of kitchen brigades of up to 25 cooks, and development of gastronomic concepts for 5-star Grand Luxury hotels. Driven by excellence in product, plating, and the dining experience.",
+      "ca": "Xef executiu amb més de 12 anys de trajectòria en alta cuina mediterrània i tècniques d'avantguarda. Format a l'Escola d'Hoteleria Hofmann i forjat en cuines amb estrella Michelin sota la direcció de xefs de referència internacional. Especialitzat en cuina de temporada i producte de proximitat, gestió integral de brigades de fins a 25 cuiners i desenvolupament de conceptes gastronòmics per a hotels de 5 estrelles Gran Luxe. Obsessionat amb l'excel·lència en el producte, l'emplatat i l'experiència del comensal."
+    },
+    "stats": [
+      {
+        "es": "+12 años en alta cocina",
+        "en": "12+ years in haute cuisine",
+        "ca": "+12 anys en alta cuina"
+      },
+      {
+        "es": "Cocinas con ★ Michelin",
+        "en": "Michelin ★ kitchens",
+        "ca": "Cuines amb ★ Michelin"
+      },
+      {
+        "es": "Brigadas de hasta 25 pax",
+        "en": "Brigades up to 25 cooks",
+        "ca": "Brigades de fins a 25 pax"
+      }
+    ]
+  },
+  "experience": {
+    "title": {
+      "es": "Experiencia Profesional",
+      "en": "Professional Experience",
+      "ca": "Experiència Professional"
+    },
+    "items": [
+      {
+        "date": { "es": "SEP 2022 - ACTUALIDAD", "en": "SEP 2022 - PRESENT", "ca": "SET 2022 - ACTUALITAT" },
+        "place": { "es": "Hotel Arts Barcelona — The Ritz-Carlton", "en": "Hotel Arts Barcelona — The Ritz-Carlton", "ca": "Hotel Arts Barcelona — The Ritz-Carlton" },
+        "url": "https://www.hotelartsbarcelona.com/",
+        "role": { "es": "Chef Ejecutivo", "en": "Executive Chef", "ca": "Xef Executiu" },
+        "desc": { "es": "Dirección de todas las operaciones culinarias del hotel: restaurante gastronómico, brasserie, banquetes y room service. Gestión de brigada de 25 cocineros y 4 jefes de partida. Diseño de carta estacional con producto de lonja y huerta propia. Food cost sostenido por debajo del 28%.", "en": "Direction of all culinary operations: gastronomic restaurant, brasserie, banquets, and room service. Management of a 25-cook brigade and 4 sous chefs. Seasonal menu design with fish market and own garden produce. Food cost consistently below 28%.", "ca": "Direcció de totes les operacions culinàries de l'hotel: restaurant gastronòmic, brasserie, banquets i room service. Gestió de brigada de 25 cuiners i 4 caps de partida. Disseny de carta estacional amb producte de llotja i hort propi. Food cost sostingut per sota del 28%." }
+      },
+      {
+        "date": { "es": "MAR 2019 - AGO 2022", "en": "MAR 2019 - AUG 2022", "ca": "MAR 2019 - AGO 2022" },
+        "place": { "es": "Mandarin Oriental Barcelona — Restaurante Moments (★★ Michelin)", "en": "Mandarin Oriental Barcelona — Moments Restaurant (★★ Michelin)", "ca": "Mandarin Oriental Barcelona — Restaurant Moments (★★ Michelin)" },
+        "url": "https://www.mandarinoriental.com/barcelona/",
+        "role": { "es": "Segundo de Cocina / Sous Chef", "en": "Sous Chef", "ca": "Segon de Cuina / Sous Chef" },
+        "desc": { "es": "Brazo derecho de la chef Carme Ruscalleda en cocina con 2 estrellas Michelin. Coordinación de 18 cocineros en servicio. Desarrollo de nuevas elaboraciones y supervisión de mise en place. Formación del equipo en técnicas de vanguardia y estándares Michelin.", "en": "Right hand of chef Carme Ruscalleda in a 2 Michelin-star kitchen. Coordination of 18 cooks during service. Development of new dishes and mise en place supervision. Team training in avant-garde techniques and Michelin standards.", "ca": "Braç dret de la xef Carme Ruscalleda en cuina amb 2 estrelles Michelin. Coordinació de 18 cuiners en servei. Desenvolupament de noves elaboracions i supervisió de mise en place. Formació de l'equip en tècniques d'avantguarda i estàndards Michelin." }
+      },
+      {
+        "date": { "es": "ENE 2017 - FEB 2019", "en": "JAN 2017 - FEB 2019", "ca": "GEN 2017 - FEB 2019" },
+        "place": { "es": "Restaurante Cinc Sentits, Barcelona (★ Michelin)", "en": "Cinc Sentits Restaurant, Barcelona (★ Michelin)", "ca": "Restaurant Cinc Sentits, Barcelona (★ Michelin)" },
+        "url": "https://www.cincsentits.com/",
+        "role": { "es": "Jefe de Partida — Partida Caliente", "en": "Chef de Partie — Hot Section", "ca": "Cap de Partida — Partida Calenta" },
+        "desc": { "es": "Responsable de la partida caliente en restaurante con estrella Michelin. Gestión de 4 cocineros. Elaboraciones de producto local con técnicas contemporáneas. Participación en el diseño del menú degustación.", "en": "Head of the hot section in a Michelin-starred restaurant. Management of 4 cooks. Local product preparations with contemporary techniques. Participation in tasting menu design.", "ca": "Responsable de la partida calenta en restaurant amb estrella Michelin. Gestió de 4 cuiners. Elaboracions de producte local amb tècniques contemporànies. Participació en el disseny del menú degustació." }
+      },
+      {
+        "date": { "es": "JUN 2015 - DIC 2016", "en": "JUN 2015 - DEC 2016", "ca": "JUN 2015 - DES 2016" },
+        "place": { "es": "El Celler de Can Roca, Girona (★★★ Michelin)", "en": "El Celler de Can Roca, Girona (★★★ Michelin)", "ca": "El Celler de Can Roca, Girona (★★★ Michelin)" },
+        "url": "https://cellercanroca.com/",
+        "role": { "es": "Stagiaire / Cocinero", "en": "Stagiaire / Cook", "ca": "Stagiaire / Cuiner" },
+        "desc": { "es": "Stage de 6 meses y posterior contrato en el mejor restaurante del mundo (2013, 2015). Inmersión en cocina creativa, pastelería de vanguardia y perfumería culinaria junto a los hermanos Roca.", "en": "6-month stage followed by contract at the world's best restaurant (2013, 2015). Immersion in creative cuisine, avant-garde pastry, and culinary perfumery alongside the Roca brothers.", "ca": "Stage de 6 mesos i posterior contracte al millor restaurant del món (2013, 2015). Immersió en cuina creativa, pastisseria d'avantguarda i perfumeria culinària amb els germans Roca." }
+      },
+      {
+        "date": { "es": "SEP 2014 - MAY 2015", "en": "SEP 2014 - MAY 2015", "ca": "SET 2014 - MAI 2015" },
+        "place": { "es": "Hotel W Barcelona — Restaurant BRAVO", "en": "W Barcelona Hotel — BRAVO Restaurant", "ca": "Hotel W Barcelona — Restaurant BRAVO" },
+        "url": "https://www.marriott.com/hotels/travel/bcnwh-w-barcelona/",
+        "role": { "es": "Jefe de Partida — Partida Fría", "en": "Chef de Partie — Cold Section", "ca": "Cap de Partida — Partida Freda" },
+        "desc": { "es": "Gestión de la partida fría en restaurante de hotel 5 estrellas. Diseño de entrantes y ensaladas del menú. Coordinación con proveedores de producto fresco local.", "en": "Management of the cold section at a 5-star hotel restaurant. Starter and salad menu design. Coordination with local fresh produce suppliers.", "ca": "Gestió de la partida freda en restaurant d'hotel 5 estrelles. Disseny d'entrants i amanides del menú. Coordinació amb proveïdors de producte fresc local." }
+      },
+      {
+        "date": { "es": "SEP 2013 - AGO 2014", "en": "SEP 2013 - AUG 2014", "ca": "SET 2013 - AGO 2014" },
+        "place": { "es": "Hofmann Restaurant, Barcelona (★ Michelin)", "en": "Hofmann Restaurant, Barcelona (★ Michelin)", "ca": "Restaurant Hofmann, Barcelona (★ Michelin)" },
+        "url": "https://www.hofmann-bcn.com/",
+        "role": { "es": "Commis de Cocina", "en": "Commis Chef", "ca": "Commis de Cuina" },
+        "desc": { "es": "Primeras armas profesionales en el restaurante de la escuela Hofmann bajo la dirección de Mey Hofmann. Rotación por todas las partidas: fría, caliente, pastelería y cuarto frío.", "en": "First professional experience at Hofmann school restaurant under Mey Hofmann's direction. Rotation through all sections: cold, hot, pastry, and garde manger.", "ca": "Primeres armes professionals al restaurant de l'escola Hofmann sota la direcció de Mey Hofmann. Rotació per totes les partides: freda, calenta, pastisseria i quart fred." }
+      },
+      {
+        "date": { "es": "JUL 2012 - AGO 2013", "en": "JUL 2012 - AUG 2013", "ca": "JUL 2012 - AGO 2013" },
+        "place": { "es": "Restaurante Cal Pep, Barcelona", "en": "Cal Pep Restaurant, Barcelona", "ca": "Restaurant Cal Pep, Barcelona" },
+        "url": "https://www.calpep.com/",
+        "role": { "es": "Ayudante de Cocina", "en": "Kitchen Assistant", "ca": "Ajudant de Cuina" },
+        "desc": { "es": "Apoyo en cocina de barra y sala en uno de los referentes de cocina de mercado de Barcelona. Manejo de producto fresco de la Boqueria. Aprendizaje directo de Pep Manubens.", "en": "Support in bar and dining kitchen at one of Barcelona's market cuisine icons. Fresh produce handling from La Boqueria. Direct mentorship from Pep Manubens.", "ca": "Suport en cuina de barra i sala en un dels referents de cuina de mercat de Barcelona. Maneig de producte fresc de la Boqueria. Aprenentatge directe de Pep Manubens." }
+      }
+    ]
+  },
+  "education": {
+    "title": {
+      "es": "Formación Académica",
+      "en": "Education",
+      "ca": "Formació Acadèmica"
+    },
+    "items": [
+      {
+        "date": { "es": "SEP 2010 - JUN 2013", "en": "SEP 2010 - JUN 2013", "ca": "SET 2010 - JUN 2013" },
+        "school": { "es": "Escola d'Hoteleria Hofmann, Barcelona", "en": "Hofmann School of Hospitality, Barcelona", "ca": "Escola d'Hoteleria Hofmann, Barcelona" },
+        "url": "https://www.hofmann-bcn.com/",
+        "title": { "es": "Diploma Superior en Cocina y Gastronomía", "en": "Higher Diploma in Cuisine & Gastronomy", "ca": "Diploma Superior en Cuina i Gastronomia" },
+        "details": { "es": "3 años de formación intensiva. Prácticas en restaurante Hofmann (★ Michelin). Premio al mejor alumno de promoción 2013.", "en": "3 years of intensive training. Internship at Hofmann Restaurant (★ Michelin). Best student award, class of 2013.", "ca": "3 anys de formació intensiva. Pràctiques al restaurant Hofmann (★ Michelin). Premi al millor alumne de promoció 2013." }
+      },
+      {
+        "date": { "es": "MAR - MAY 2018", "en": "MAR - MAY 2018", "ca": "MAR - MAI 2018" },
+        "school": { "es": "Basque Culinary Center, San Sebastián", "en": "Basque Culinary Center, San Sebastián", "ca": "Basque Culinary Center, Sant Sebastià" },
+        "url": "https://www.bculinary.com/",
+        "title": { "es": "Programa de Innovación y Creatividad Culinaria", "en": "Culinary Innovation & Creativity Program", "ca": "Programa d'Innovació i Creativitat Culinària" },
+        "details": { "es": "Curso intensivo en nuevas técnicas, I+D gastronómico y desarrollo de conceptos.", "en": "Intensive course in new techniques, gastronomic R&D, and concept development.", "ca": "Curs intensiu en noves tècniques, R+D gastronòmic i desenvolupament de conceptes." }
+      },
+      {
+        "date": { "es": "2016", "en": "2016", "ca": "2016" },
+        "school": { "es": "APPCC Formación, Barcelona", "en": "HACCP Training, Barcelona", "ca": "APPCC Formació, Barcelona" },
+        "url": "#",
+        "title": { "es": "Certificado APPCC y Seguridad Alimentaria Avanzada", "en": "HACCP & Advanced Food Safety Certificate", "ca": "Certificat APPCC i Seguretat Alimentària Avançada" },
+        "details": { "es": "Análisis de peligros y puntos de control crítico. Normativa europea de higiene alimentaria.", "en": "Hazard analysis and critical control points. European food hygiene regulations.", "ca": "Anàlisi de perills i punts de control crític. Normativa europea d'higiene alimentària." }
+      },
+      {
+        "date": { "es": "2014", "en": "2014", "ca": "2014" },
+        "school": { "es": "Ajuntament de Barcelona", "en": "Barcelona City Council", "ca": "Ajuntament de Barcelona" },
+        "url": "#",
+        "title": { "es": "Manipulador de Alimentos — Nivel Avanzado", "en": "Food Handler Certificate — Advanced Level", "ca": "Manipulador d'Aliments — Nivell Avançat" },
+        "details": null
+      }
+    ]
+  },
+  "skills": {
+    "title": {
+      "es": "Habilidades e Idiomas",
+      "en": "Skills & Languages",
+      "ca": "Habilitats i Idiomes"
+    },
+    "skills_title": {
+      "es": "Competencias",
+      "en": "Competencies",
+      "ca": "Competències"
+    },
+    "items": [
+      { "es": "Cocina mediterránea contemporánea", "en": "Contemporary Mediterranean cuisine", "ca": "Cuina mediterrània contemporània" },
+      { "es": "Técnicas de vanguardia", "en": "Avant-garde techniques", "ca": "Tècniques d'avantguarda" },
+      { "es": "Gestión de brigada de cocina", "en": "Kitchen brigade management", "ca": "Gestió de brigada de cuina" },
+      { "es": "Diseño de cartas y menús degustación", "en": "Menu & tasting menu design", "ca": "Disseny de cartes i menús degustació" },
+      { "es": "Control de escandallos y food cost", "en": "Recipe costing & food cost control", "ca": "Control d'escandalls i food cost" },
+      { "es": "APPCC y seguridad alimentaria", "en": "HACCP & food safety", "ca": "APPCC i seguretat alimentària" },
+      { "es": "Gestión de proveedores y producto", "en": "Supplier & produce management", "ca": "Gestió de proveïdors i producte" },
+      { "es": "Cocina de temporada y km 0", "en": "Seasonal & zero-km cuisine", "ca": "Cuina de temporada i km 0" },
+      { "es": "Emplatado y presentación", "en": "Plating & presentation", "ca": "Emplatat i presentació" },
+      { "es": "Formación y mentoría de equipo", "en": "Team training & mentoring", "ca": "Formació i mentoria d'equip" }
+    ],
+    "languages_title": {
+      "es": "Idiomas",
+      "en": "Languages",
+      "ca": "Idiomes"
+    },
+    "languages": [
+      { "name": { "es": "Catalán", "en": "Catalan", "ca": "Català" }, "level": { "es": "Nativo", "en": "Native", "ca": "Natiu" }, "dots": 5 },
+      { "name": { "es": "Español", "en": "Spanish", "ca": "Espanyol" }, "level": { "es": "Nativo", "en": "Native", "ca": "Natiu" }, "dots": 5 },
+      { "name": { "es": "Inglés", "en": "English", "ca": "Anglès" }, "level": { "es": "Intermedio-alto", "en": "Upper-intermediate", "ca": "Intermedi-alt" }, "dots": 4 },
+      { "name": { "es": "Francés", "en": "French", "ca": "Francès" }, "level": { "es": "Básico", "en": "Basic", "ca": "Bàsic" }, "dots": 2 }
+    ]
+  },
+  "references": {
+    "title": {
+      "es": "Referencias",
+      "en": "References",
+      "ca": "Referències"
+    },
+    "items": [
+      {
+        "name": "Jordi Vilà",
+        "role": { "es": "Chef & Propietario — Alkimia (★ Michelin)", "en": "Chef & Owner — Alkimia (★ Michelin)", "ca": "Xef & Propietari — Alkimia (★ Michelin)" },
+        "company": { "es": "Barcelona", "en": "Barcelona", "ca": "Barcelona" }
+      },
+      {
+        "name": "Roberto Martínez",
+        "role": { "es": "Director de F&B", "en": "F&B Director", "ca": "Director de F&B" },
+        "company": { "es": "Hotel Arts Barcelona — The Ritz-Carlton", "en": "Hotel Arts Barcelona — The Ritz-Carlton", "ca": "Hotel Arts Barcelona — The Ritz-Carlton" }
+      },
+      {
+        "name": "Mey Hofmann",
+        "role": { "es": "Directora & Fundadora", "en": "Director & Founder", "ca": "Directora & Fundadora" },
+        "company": { "es": "Escola d'Hoteleria Hofmann, Barcelona", "en": "Hofmann School of Hospitality, Barcelona", "ca": "Escola d'Hoteleria Hofmann, Barcelona" }
+      }
+    ],
+    "note": {
+      "es": "Datos de contacto disponibles bajo petición.",
+      "en": "Contact details available upon request.",
+      "ca": "Dades de contacte disponibles sota petició."
+    }
+  },
+  "contact": {
+    "title": {
+      "es": "Contacto Profesional",
+      "en": "Professional Contact",
+      "ca": "Contacte Professional"
+    },
+    "phone": "+34 672 415 089",
+    "email": "marc.beltran.chef@gmail.com",
+    "location": {
+      "es": "Barcelona, España",
+      "en": "Barcelona, Spain",
+      "ca": "Barcelona, Espanya"
+    },
+    "whatsapp": "34672415089",
+    "linkedin": "#"
+  },
+  "footer": {
+    "rights": {
+      "es": "2026 Marc Beltrán Soler. Todos los derechos reservados. · Portfolio de demostración — Registra3D CV Premium",
+      "en": "2026 Marc Beltrán Soler. All rights reserved. · Demo portfolio — Registra3D CV Premium",
+      "ca": "2026 Marc Beltrán Soler. Tots els drets reservats. · Portfolio de demostració — Registra3D CV Premium"
+    }
+  },
+  "buttons": {
+    "expand": { "es": "Ver todo", "en": "See all", "ca": "Veure tot" },
+    "collapse": { "es": "Cerrar", "en": "Close", "ca": "Tancar" }
+  },
+  "darkSections": ["about", "experience", "skills"]
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="hero.name">Elena Montero Valls (Demo) | Directora de F&B</title>
+    <link rel="icon" href="business-outline">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <nav class="bottom-nav">
+        <div class="lang-switcher-bottom">
+            <button class="lang-btn-bottom active" data-lang="es">ES</button>
+            <button class="lang-btn-bottom" data-lang="en">EN</button>
+            <button class="lang-btn-bottom" data-lang="ca">CA</button>
+        </div>
+
+        <div class="burger-menu-container">
+            <button id="burger-btn" aria-label="Menu" onclick="toggleBurgerMenu()">
+                
+                <div class="cutlery-burger">
+                    <svg class="cutlery-spoon" viewBox="0 0 100 463" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47 0L32 8L22 22L14 37L9 53L5 69L2 86L0 103L0 120L2 137L8 153L18 166L30 177L40 190L40 207L39 224L39 241L38 258L37 275L36 292L34 309L33 326L31 342L29 359L28 376L26 393L26 410L27 427L29 444L37 458L53 463L66 452L70 436L71 419L71 402L70 385L69 368L68 352L66 335L65 318L63 301L62 284L61 267L60 250L60 233L59 216L59 199L61 183L74 172L87 161L96 147L100 130L100 113L99 96L97 80L94 63L90 47L83 31L75 16L63 5L47 0Z" fill="currentColor"/>
+                    </svg>
+                    <svg class="cutlery-fork" viewBox="0 0 100 650" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L7 37L3 75L1 112L0 150L0 188L12 223L33 254L36 291L32 329L29 366L25 404L22 442L20 479L18 517L17 555L19 592L24 630L52 650L77 624L82 587L81 549L78 511L74 474L71 436L68 399L66 361L64 323L64 285L70 249L91 218L100 182L100 144L99 106L96 68L93 31L86 5L84 43L83 81L81 118L72 145L69 108L67 70L66 32L61 4L59 41L58 79L56 117L47 147L43 110L42 72L41 34L37 2L34 39L32 77L30 115L23 149L18 112L17 74L16 36L13 0Z" fill="currentColor"/>
+                    </svg>
+                    <svg class="cutlery-knife" viewBox="0 0 100 835" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37 0L23 25L18 53L14 82L13 111L11 141L11 170L11 199L11 228L11 257L11 286L11 316L11 345L12 374L16 403L23 431L25 460L24 489L23 519L22 548L19 577L17 606L13 635L9 664L6 693L2 722L0 751L1 780L6 808L23 831L52 835L74 817L81 789L82 760L80 731L76 702L73 673L69 644L66 615L64 586L62 557L61 527L60 498L59 469L61 440L72 413L84 386L93 359L99 330L100 301L100 272L99 243L97 214L95 185L92 156L89 127L85 98L79 69L72 41L60 14L37 0Z" fill="currentColor"/>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu-overlay">
+        <ul class="menu-links">
+            <li><a href="#hero" class="menu-link" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="#about" class="menu-link" data-i18n="nav.profile">Perfil</a></li>
+            <li><a href="#education" class="menu-link" data-i18n="nav.education">Formacion</a></li>
+            <li><a href="#experience" class="menu-link" data-i18n="nav.experience">Experiencia</a></li>
+            <li><a href="#references" class="menu-link" data-i18n="nav.references">Referencias</a></li>
+            <li><a href="#skills" class="menu-link" data-i18n="nav.skills">Habilidades</a></li>
+            <li><a href="#contact" class="menu-link" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+    </div>
+
+    <main id="app-scroller">
+
+        <header class="hero" id="hero">
+            <div class="container hero-content">
+
+                <div class="profile-frame">
+                    <img src="photo.jpg" alt="Elena Montero Valls (Demo)" class="profile-img">
+                </div>
+
+                <span class="subtitle" data-i18n="hero.subtitle">DIRECTORA DE F&B</span>
+                <h1 data-i18n="hero.name">Elena Montero Valls (Demo)</h1>
+
+                <div class="hero-details">
+                    <p style="font-size: 1rem; font-weight: 500;" data-i18n="hero.current">
+                        Directora de F&B | Mandarin Oriental Barcelona
+                    </p>
+                    <div style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">
+                        English | Catala | Espanol
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn-primary" data-i18n="hero.cta">CONTACTAR</a>
+            </div>
+        </header>
+
+        <section class="section-about" id="about">
+            <div class="container">
+                <h2 data-i18n="about.title">Perfil Profesional</h2>
+                <div class="about-text">
+                    <p data-i18n="about.desc">Directora de Food & Beverage con más de 18 años de experiencia en hoteles de lujo y cadenas internacionales de primer nivel. Trayectoria progresiva desde sala hasta la dirección integral de operaciones de restauración en establecimientos como Mandarin Oriental, Hyatt y Marriott. Especializada en gestión de P&L, optimización de costes F&B, desarrollo de conceptos gastronómicos y formación de equipos multiculturales de alto rendimiento. Certificada WSET Level 3 y con un MBA en Dirección Hotelera por Les Roches. Apasionada por la excelencia en guest experience y la innovación en servicios de restauración.</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-badge" data-i18n="about.stat1">+18 años en hotelería de lujo</div>
+                    <div class="stat-badge" data-i18n="about.stat2">Cadenas 5★ internacionales</div>
+                    <div class="stat-badge" data-i18n="about.stat3">Equipos de hasta 80 personas</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-education" id="education">
+            <div class="container">
+                <h2 data-i18n="edu.title">Formación Académica</h2>
+
+                <div class="timeline-container collapsed" id="edu-timeline">
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.1.date">SEP 2015 - JUN 2017</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://lesroches.edu/" target="_blank" class="school-link" data-i18n="edu.1.school">Les Roches Marbella — International School of Hotel Management</a>
+                                </div>
+                                <h3 data-i18n="edu.1.title">MBA en Dirección Hotelera Internacional</h3>
+                                <p data-i18n="edu.1.details">Especialización en Revenue Management y F&B Operations. Proyecto final: modelo de optimización de RevPASH para hoteles de 5 estrellas. Programa ejecutivo compaginado con actividad profesional.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.2.date">SEP 2003 - JUN 2007</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.cett.es/" target="_blank" class="school-link" data-i18n="edu.2.school">CETT-UB — Escola Universitària d'Hoteleria i Turisme</a>
+                                </div>
+                                <h3 data-i18n="edu.2.title">Grado en Turismo y Gestión Hotelera</h3>
+                                <p data-i18n="edu.2.details">Formación integral en gestión hotelera, operaciones de restauración y marketing turístico. Prácticas en Hotel Majestic Barcelona.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.3.date">2019</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.wsetglobal.com/" target="_blank" class="school-link" data-i18n="edu.3.school">Wine & Spirit Education Trust (WSET)</a>
+                                </div>
+                                <h3 data-i18n="edu.3.title">WSET Level 3 — Award in Wines</h3>
+                                <p data-i18n="edu.3.details">Certificación avanzada en cata, regiones vinícolas mundiales, viticultura y vinificación. Examen teórico-práctico con cata a ciegas.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.4.date">2020</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://sha.cornell.edu/" target="_blank" class="school-link" data-i18n="edu.4.school">Cornell University — School of Hotel Administration (Online)</a>
+                                </div>
+                                <h3 data-i18n="edu.4.title">Certificado en Revenue Management para F&B</h3>
+                                <p data-i18n="edu.4.details">Programa online especializado en estrategias de pricing, RevPASH y optimización de asientos en restaurantes de hotel.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.5.date">2013</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <span data-i18n="edu.5.school">Asociación Española de Sumilleres</span>
+                                </div>
+                                <h3 data-i18n="edu.5.title">Curso de Sumillería Profesional</h3>
+                                <p data-i18n="edu.5.details">Formación en servicio de vinos, maridaje, gestión de bodega y carta de vinos para restauración.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-expand-container">
+                    <button class="btn-expand" onclick="toggleTimeline('edu-timeline', this)">
+                        <span data-i18n="btn.expand">Ver todo</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-experience" id="experience">
+            <div class="container">
+                <h2 data-i18n="exp.title">Experiencia Profesional</h2>
+
+                <div class="timeline-container collapsed" id="exp-timeline">
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.1.date">ENE 2021 - ACTUALIDAD</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.mandarinoriental.com/barcelona/" target="_blank" data-i18n="exp.1.place">Mandarin Oriental, Barcelona</a>
+                                </div>
+                                <h3 data-i18n="exp.1.role">Directora de F&B</h3>
+                                <p data-i18n="exp.1.desc">Dirección integral de todas las operaciones de restauración del hotel: 2 restaurantes (incluyendo Moments ★★ Michelin), bar, banquetes, room service y minibar. Gestión de P&L con facturación anual de 8,5M€. Supervisión de equipo de 80 personas entre sala, cocina y stewarding. Implantación de sistema de revenue management en F&B con incremento del 12% en RevPASH. Coordinación directa con dirección general y propietarios.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.2.date">MAR 2017 - DIC 2020</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.hyatt.com/" target="_blank" data-i18n="exp.2.place">Hyatt Regency Barcelona Tower</a>
+                                </div>
+                                <h3 data-i18n="exp.2.role">Assistant F&B Director</h3>
+                                <p data-i18n="exp.2.desc">Brazo derecho del director de F&B en hotel de 280 habitaciones con 3 puntos de venta. Gestión operativa diaria, control de costes F&B (mantenido en 29%), planificación de eventos y banquetes de hasta 500 comensales. Formación y evaluación de equipos siguiendo estándares Hyatt. Liderazgo del proyecto de apertura del rooftop bar con concepto de coctelería de autor.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.3.date">SEP 2014 - FEB 2017</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.hotelartsbarcelona.com/" target="_blank" data-i18n="exp.3.place">Hotel Arts Barcelona — The Ritz-Carlton</a>
+                                </div>
+                                <h3 data-i18n="exp.3.role">Restaurant Manager</h3>
+                                <p data-i18n="exp.3.desc">Responsable de la operación integral del restaurante principal del hotel (120 cubiertos). Gestión de equipo de 22 personas. Supervisión de estándares de servicio Ritz-Carlton (Gold Standards). Organización de wine dinners y eventos gastronómicos. Incremento del ticket medio en un 18% mediante upselling estratégico y maridajes.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.4.date">ENE 2012 - AGO 2014</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.marriott.com/hotels/travel/bcnwh-w-barcelona/" target="_blank" data-i18n="exp.4.place">W Barcelona</a>
+                                </div>
+                                <h3 data-i18n="exp.4.role">Assistant Restaurant Manager</h3>
+                                <p data-i18n="exp.4.desc">Supervisión de servicio en restaurante BRAVO y terraza SALT. Gestión de turnos, control de inventarios y coordinación con cocina. Implementación de SOPs de servicio. Participación en aperturas de temporada y eventos VIP con capacidad de hasta 200 personas.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.5.date">JUN 2010 - DIC 2011</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.marriott.com/" target="_blank" data-i18n="exp.5.place">Marriott Barcelona Hotel — Renaissance</a>
+                                </div>
+                                <h3 data-i18n="exp.5.role">Supervisora de Sala</h3>
+                                <p data-i18n="exp.5.desc">Coordinación del equipo de sala en restaurante buffet y à la carte (160 cubiertos). Supervisión de montajes para eventos corporativos. Primer contacto con gestión de estándares de marca Marriott y programa Voyager de formación interna.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.6.date">SEP 2008 - MAY 2010</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.hotelmajestic.es/" target="_blank" data-i18n="exp.6.place">Hotel Majestic, Barcelona</a>
+                                </div>
+                                <h3 data-i18n="exp.6.role">Camarera de Sala — Fine Dining</h3>
+                                <p data-i18n="exp.6.desc">Servicio de sala en restaurante gastronómico del Hotel Majestic GL. Atención directa a comensal en fine dining con protocolo de servicio clásico. Servicio de vinos y recomendación de carta. Colaboración en eventos privados y cenas de gala.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.7.date">JUN 2006 - AGO 2008</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <span data-i18n="exp.7.place">Restaurant La Dama, Barcelona</span>
+                                </div>
+                                <h3 data-i18n="exp.7.role">Camarera / Ayudante de Sala</h3>
+                                <p data-i18n="exp.7.desc">Primeras armas en restauración de alto nivel en restaurante clásico del Eixample. Aprendizaje de protocolo, servicio de gueridón, trinchado en sala y atención al comensal. Simultaneado con estudios universitarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-expand-container">
+                    <button class="btn-expand" onclick="toggleTimeline('exp-timeline', this)">
+                        <span data-i18n="btn.expand">Ver todo</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-references" id="references">
+            <div class="container">
+                <h2 data-i18n="ref.title">Referencias</h2>
+
+                <div class="references-grid">
+
+                    <div class="reference-card">
+                        <div class="ref-icon"><ion-icon name="person-circle-outline"></ion-icon></div>
+                        <h3 class="ref-name" data-i18n="ref.1.name">Thomas Keller-Richter</h3>
+                        <p class="ref-role" data-i18n="ref.1.role">General Manager</p>
+                        <p class="ref-company" data-i18n="ref.1.company">Mandarin Oriental, Barcelona</p>
+                    </div>
+
+                    <div class="reference-card">
+                        <div class="ref-icon"><ion-icon name="person-circle-outline"></ion-icon></div>
+                        <h3 class="ref-name" data-i18n="ref.2.name">Cristina Pérez Domínguez</h3>
+                        <p class="ref-role" data-i18n="ref.2.role">Directora Regional de Operaciones</p>
+                        <p class="ref-company" data-i18n="ref.2.company">Hyatt Hotels — Europa del Sur</p>
+                    </div>
+
+                    <div class="reference-card">
+                        <div class="ref-icon"><ion-icon name="person-circle-outline"></ion-icon></div>
+                        <h3 class="ref-name" data-i18n="ref.3.name">Àlex Ferrer Gironès</h3>
+                        <p class="ref-role" data-i18n="ref.3.role">Director de F&B</p>
+                        <p class="ref-company" data-i18n="ref.3.company">Hotel Arts Barcelona — The Ritz-Carlton</p>
+                    </div>
+                </div>
+
+                <p class="ref-note" data-i18n="ref.note">Datos de contacto disponibles bajo petición.</p>
+            </div>
+        </section>
+
+        <section class="section-skills" id="skills">
+            <div class="container">
+                <h2 data-i18n="skills.title">Habilidades e Idiomas</h2>
+
+                <div class="skills-container">
+                    <h3 class="skills-subtitle" data-i18n="skills.skills_title">Competencias</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag" data-i18n="skills.s1">Gestión de P&L y presupuestos F&B</span>
+                        <span class="skill-tag" data-i18n="skills.s2">Control de costes de alimentos y bebidas</span>
+                        <span class="skill-tag" data-i18n="skills.s3">Revenue management (RevPASH)</span>
+                        <span class="skill-tag" data-i18n="skills.s4">Formación y liderazgo de equipos</span>
+                        <span class="skill-tag" data-i18n="skills.s5">Estándares de marca y guest experience</span>
+                        <span class="skill-tag" data-i18n="skills.s6">Planificación de eventos y banquetes</span>
+                        <span class="skill-tag" data-i18n="skills.s7">Sumillería y gestión de carta de vinos</span>
+                        <span class="skill-tag" data-i18n="skills.s8">Protocolo y servicio de lujo</span>
+                        <span class="skill-tag" data-i18n="skills.s9">Desarrollo de conceptos gastronómicos</span>
+                        <span class="skill-tag" data-i18n="skills.s10">Opera PMS, Micros POS, STR, Revinate</span>
+                    </div>
+
+                    <h3 class="skills-subtitle" data-i18n="skills.lang_title">Idiomas</h3>
+                    <div class="lang-grid">
+
+                        <div class="lang-item">
+                            <div class="lang-name" data-i18n="skills.l1.name">Catalán</div>
+                            <div class="lang-level" data-i18n="skills.l1.level">Nativo</div>
+                            <div class="lang-dots">
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                            </div>
+                        </div>
+
+                        <div class="lang-item">
+                            <div class="lang-name" data-i18n="skills.l2.name">Español</div>
+                            <div class="lang-level" data-i18n="skills.l2.level">Nativo</div>
+                            <div class="lang-dots">
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                            </div>
+                        </div>
+
+                        <div class="lang-item">
+                            <div class="lang-name" data-i18n="skills.l3.name">Inglés</div>
+                            <div class="lang-level" data-i18n="skills.l3.level">Bilingüe</div>
+                            <div class="lang-dots">
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                            </div>
+                        </div>
+
+                        <div class="lang-item">
+                            <div class="lang-name" data-i18n="skills.l4.name">Francés</div>
+                            <div class="lang-level" data-i18n="skills.l4.level">Intermedio</div>
+                            <div class="lang-dots">
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot"></span>
+                                <span class="lang-dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="section-contact" id="contact">
+            <div class="container">
+                <h2 data-i18n="contact.title">Contacto Profesional</h2>
+
+                <div style="margin-top: 40px; margin-bottom: 40px;">
+                    <div class="contact-text-item">
+                        <ion-icon name="call"></ion-icon>
+                        <a href="tel:+34658921473" data-i18n="contact.phone">+34 658 921 473</a>
+                    </div>
+
+                    <div class="contact-text-item">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        <a href="https://wa.me/34658921473" target="_blank">WhatsApp Chat</a>
+                    </div>
+
+                    <div class="contact-text-item">
+                        <ion-icon name="mail"></ion-icon>
+                        <a href="mailto:elena.montero.fb@gmail.com" data-i18n="contact.email">elena.montero.fb@gmail.com</a>
+                    </div>
+
+                    <div class="contact-text-item">
+                        <ion-icon name="location"></ion-icon>
+                        <span data-i18n="contact.loc">Barcelona, España</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+
+                <a class="btn-download-cv" href="Elena-Montero-Valls-Demo-CV.pdf" download title="Descargar CV en PDF">
+                    <ion-icon name="download-outline"></ion-icon>
+                    <span data-i18n="btn.download">Descargar CV</span>
+                </a>
+
+                <p style="margin-top: 40px; opacity: 0.8; font-size: 0.9rem;" data-i18n="footer.rights">© 2026 Elena Montero Valls. Todos los derechos reservados. · Portfolio de demostración — Registra3D CV Premium</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

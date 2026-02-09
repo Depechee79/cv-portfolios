@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="hero.name">Marc Beltrán Soler (Demo) | Chef Ejecutivo</title>
+    <link rel="icon" href="restaurant-outline">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <nav class="bottom-nav">
+        <div class="lang-switcher-bottom">
+            <button class="lang-btn-bottom active" data-lang="es">ES</button>
+            <button class="lang-btn-bottom" data-lang="en">EN</button>
+            <button class="lang-btn-bottom" data-lang="ca">CA</button>
+        </div>
+
+        <div class="burger-menu-container">
+            <button id="burger-btn" aria-label="Menu" onclick="toggleBurgerMenu()">
+                
+                <div class="cutlery-burger">
+                    <svg class="cutlery-spoon" viewBox="0 0 100 463" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47 0L32 8L22 22L14 37L9 53L5 69L2 86L0 103L0 120L2 137L8 153L18 166L30 177L40 190L40 207L39 224L39 241L38 258L37 275L36 292L34 309L33 326L31 342L29 359L28 376L26 393L26 410L27 427L29 444L37 458L53 463L66 452L70 436L71 419L71 402L70 385L69 368L68 352L66 335L65 318L63 301L62 284L61 267L60 250L60 233L59 216L59 199L61 183L74 172L87 161L96 147L100 130L100 113L99 96L97 80L94 63L90 47L83 31L75 16L63 5L47 0Z" fill="currentColor"/>
+                    </svg>
+                    <svg class="cutlery-fork" viewBox="0 0 100 650" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L7 37L3 75L1 112L0 150L0 188L12 223L33 254L36 291L32 329L29 366L25 404L22 442L20 479L18 517L17 555L19 592L24 630L52 650L77 624L82 587L81 549L78 511L74 474L71 436L68 399L66 361L64 323L64 285L70 249L91 218L100 182L100 144L99 106L96 68L93 31L86 5L84 43L83 81L81 118L72 145L69 108L67 70L66 32L61 4L59 41L58 79L56 117L47 147L43 110L42 72L41 34L37 2L34 39L32 77L30 115L23 149L18 112L17 74L16 36L13 0Z" fill="currentColor"/>
+                    </svg>
+                    <svg class="cutlery-knife" viewBox="0 0 100 835" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37 0L23 25L18 53L14 82L13 111L11 141L11 170L11 199L11 228L11 257L11 286L11 316L11 345L12 374L16 403L23 431L25 460L24 489L23 519L22 548L19 577L17 606L13 635L9 664L6 693L2 722L0 751L1 780L6 808L23 831L52 835L74 817L81 789L82 760L80 731L76 702L73 673L69 644L66 615L64 586L62 557L61 527L60 498L59 469L61 440L72 413L84 386L93 359L99 330L100 301L100 272L99 243L97 214L95 185L92 156L89 127L85 98L79 69L72 41L60 14L37 0Z" fill="currentColor"/>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu-overlay">
+        <ul class="menu-links">
+            <li><a href="#hero" class="menu-link" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="#about" class="menu-link" data-i18n="nav.profile">Perfil</a></li>
+            <li><a href="#education" class="menu-link" data-i18n="nav.education">Formacion</a></li>
+            <li><a href="#experience" class="menu-link" data-i18n="nav.experience">Experiencia</a></li>
+            <li><a href="#references" class="menu-link" data-i18n="nav.references">Referencias</a></li>
+            <li><a href="#skills" class="menu-link" data-i18n="nav.skills">Habilidades</a></li>
+            <li><a href="#contact" class="menu-link" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+    </div>
+
+    <main id="app-scroller">
+
+        <header class="hero" id="hero">
+            <div class="container hero-content">
+
+                <div class="profile-frame">
+                    <img src="photo.jpg" alt="Marc Beltrán Soler (Demo)" class="profile-img">
+                </div>
+
+                <span class="subtitle" data-i18n="hero.subtitle">CHEF EJECUTIVO</span>
+                <h1 data-i18n="hero.name">Marc Beltrán Soler (Demo)</h1>
+
+                <div class="hero-details">
+                    <p style="font-size: 1rem; font-weight: 500;" data-i18n="hero.current">
+                        Chef Ejecutivo | Hotel Arts Barcelona, The Ritz-Carlton
+                    </p>
+                    <div style="margin-top: 10px; font-size: 0.9rem; opacity: 0.7;">
+                        English | Catala | Espanol
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn-primary" data-i18n="hero.cta">CONTACTAR</a>
+            </div>
+        </header>
+
+        <section class="section-about" id="about">
+            <div class="container">
+                <h2 data-i18n="about.title">Perfil Profesional</h2>
+                <div class="about-text">
+                    <p data-i18n="about.desc">Chef ejecutivo con más de 12 años de trayectoria en alta cocina mediterránea y técnicas de vanguardia. Formado en la Escola d'Hoteleria Hofmann y curtido en cocinas con estrella Michelin bajo la dirección de chefs de referencia internacional. Especializado en cocina de temporada y producto de proximidad, gestión integral de brigadas de hasta 25 cocineros y desarrollo de conceptos gastronómicos para hoteles de 5 estrellas Gran Lujo. Obsesionado con la excelencia en el producto, el emplatado y la experiencia del comensal.</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-badge" data-i18n="about.stat1">+12 años en alta cocina</div>
+                    <div class="stat-badge" data-i18n="about.stat2">Cocinas con ★ Michelin</div>
+                    <div class="stat-badge" data-i18n="about.stat3">Brigadas de hasta 25 pax</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-education" id="education">
+            <div class="container">
+                <h2 data-i18n="edu.title">Formación Académica</h2>
+
+                <div class="timeline-container collapsed" id="edu-timeline">
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.1.date">SEP 2010 - JUN 2013</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.hofmann-bcn.com/" target="_blank" class="school-link" data-i18n="edu.1.school">Escola d'Hoteleria Hofmann, Barcelona</a>
+                                </div>
+                                <h3 data-i18n="edu.1.title">Diploma Superior en Cocina y Gastronomía</h3>
+                                <p data-i18n="edu.1.details">3 años de formación intensiva. Prácticas en restaurante Hofmann (★ Michelin). Premio al mejor alumno de promoción 2013.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.2.date">MAR - MAY 2018</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.bculinary.com/" target="_blank" class="school-link" data-i18n="edu.2.school">Basque Culinary Center, San Sebastián</a>
+                                </div>
+                                <h3 data-i18n="edu.2.title">Programa de Innovación y Creatividad Culinaria</h3>
+                                <p data-i18n="edu.2.details">Curso intensivo en nuevas técnicas, I+D gastronómico y desarrollo de conceptos.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.3.date">2016</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <span data-i18n="edu.3.school">APPCC Formación, Barcelona</span>
+                                </div>
+                                <h3 data-i18n="edu.3.title">Certificado APPCC y Seguridad Alimentaria Avanzada</h3>
+                                <p data-i18n="edu.3.details">Análisis de peligros y puntos de control crítico. Normativa europea de higiene alimentaria.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="edu.4.date">2014</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <span data-i18n="edu.4.school">Ajuntament de Barcelona</span>
+                                </div>
+                                <h3 data-i18n="edu.4.title">Manipulador de Alimentos — Nivel Avanzado</h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-expand-container">
+                    <button class="btn-expand" onclick="toggleTimeline('edu-timeline', this)">
+                        <span data-i18n="btn.expand">Ver todo</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-experience" id="experience">
+            <div class="container">
+                <h2 data-i18n="exp.title">Experiencia Profesional</h2>
+
+                <div class="timeline-container collapsed" id="exp-timeline">
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.1.date">SEP 2022 - ACTUALIDAD</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.hotelartsbarcelona.com/" target="_blank" data-i18n="exp.1.place">Hotel Arts Barcelona — The Ritz-Carlton</a>
+                                </div>
+                                <h3 data-i18n="exp.1.role">Chef Ejecutivo</h3>
+                                <p data-i18n="exp.1.desc">Dirección de todas las operaciones culinarias del hotel: restaurante gastronómico, brasserie, banquetes y room service. Gestión de brigada de 25 cocineros y 4 jefes de partida. Diseño de carta estacional con producto de lonja y huerta propia. Food cost sostenido por debajo del 28%.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.2.date">MAR 2019 - AGO 2022</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.mandarinoriental.com/barcelona/" target="_blank" data-i18n="exp.2.place">Mandarin Oriental Barcelona — Restaurante Moments (★★ Michelin)</a>
+                                </div>
+                                <h3 data-i18n="exp.2.role">Segundo de Cocina / Sous Chef</h3>
+                                <p data-i18n="exp.2.desc">Brazo derecho de la chef Carme Ruscalleda en cocina con 2 estrellas Michelin. Coordinación de 18 cocineros en servicio. Desarrollo de nuevas elaboraciones y supervisión de mise en place. Formación del equipo en técnicas de vanguardia y estándares Michelin.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.3.date">ENE 2017 - FEB 2019</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.cincsentits.com/" target="_blank" data-i18n="exp.3.place">Restaurante Cinc Sentits, Barcelona (★ Michelin)</a>
+                                </div>
+                                <h3 data-i18n="exp.3.role">Jefe de Partida — Partida Caliente</h3>
+                                <p data-i18n="exp.3.desc">Responsable de la partida caliente en restaurante con estrella Michelin. Gestión de 4 cocineros. Elaboraciones de producto local con técnicas contemporáneas. Participación en el diseño del menú degustación.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.4.date">JUN 2015 - DIC 2016</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://cellercanroca.com/" target="_blank" data-i18n="exp.4.place">El Celler de Can Roca, Girona (★★★ Michelin)</a>
+                                </div>
+                                <h3 data-i18n="exp.4.role">Stagiaire / Cocinero</h3>
+                                <p data-i18n="exp.4.desc">Stage de 6 meses y posterior contrato en el mejor restaurante del mundo (2013, 2015). Inmersión en cocina creativa, pastelería de vanguardia y perfumería culinaria junto a los hermanos Roca.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.5.date">SEP 2014 - MAY 2015</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.marriott.com/hotels/travel/bcnwh-w-barcelona/" target="_blank" data-i18n="exp.5.place">Hotel W Barcelona — Restaurant BRAVO</a>
+                                </div>
+                                <h3 data-i18n="exp.5.role">Jefe de Partida — Partida Fría</h3>
+                                <p data-i18n="exp.5.desc">Gestión de la partida fría en restaurante de hotel 5 estrellas. Diseño de entrantes y ensaladas del menú. Coordinación con proveedores de producto fresco local.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.6.date">SEP 2013 - AGO 2014</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.hofmann-bcn.com/" target="_blank" data-i18n="exp.6.place">Hofmann Restaurant, Barcelona (★ Michelin)</a>
+                                </div>
+                                <h3 data-i18n="exp.6.role">Commis de Cocina</h3>
+                                <p data-i18n="exp.6.desc">Primeras armas profesionales en el restaurante de la escuela Hofmann bajo la dirección de Mey Hofmann. Rotación por todas las partidas: fría, caliente, pastelería y cuarto frío.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date" data-i18n="exp.7.date">JUL 2012 - AGO 2013</span>
+                            <div class="timeline-content">
+                                <div class="company-name">
+                                    <a href="https://www.calpep.com/" target="_blank" data-i18n="exp.7.place">Restaurante Cal Pep, Barcelona</a>
+                                </div>
+                                <h3 data-i18n="exp.7.role">Ayudante de Cocina</h3>
+                                <p data-i18n="exp.7.desc">Apoyo en cocina de barra y sala en uno de los referentes de cocina de mercado de Barcelona. Manejo de producto fresco de la Boqueria. Aprendizaje directo de Pep Manubens.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-expand-container">
+                    <button class="btn-expand" onclick="toggleTimeline('exp-timeline', this)">
+                        <span data-i18n="btn.expand">Ver todo</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-references" id="references">
+            <div class="container">
+                <h2 data-i18n="ref.title">Referencias</h2>
+
+                <div class="references-grid">
+
+                    <div class="reference-card">
+                        <div class="ref-icon"><ion-icon name="person-circle-outline"></ion-icon></div>
+                        <h3 class="ref-name" data-i18n="ref.1.name">Jordi Vilà</h3>
+                        <p class="ref-role" data-i18n="ref.1.role">Chef & Propietario — Alkimia (★ Michelin)</p>
+                        <p class="ref-company" data-i18n="ref.1.company">Barcelona</p>
+                    </div>
+
+                    <div class="reference-card">
+                        <div class="ref-icon"><ion-icon name="person-circle-outline"></ion-icon></div>
+                        <h3 class="ref-name" data-i18n="ref.2.name">Roberto Martínez</h3>
+                        <p class="ref-role" data-i18n="ref.2.role">Director de F&B</p>
+                        <p class="ref-company" data-i18n="ref.2.company">Hotel Arts Barcelona — The Ritz-Carlton</p>
+                    </div>
+
+                    <div class="reference-card">
+                        <div class="ref-icon"><ion-icon name="person-circle-outline"></ion-icon></div>
+                        <h3 class="ref-name" data-i18n="ref.3.name">Mey Hofmann</h3>
+                        <p class="ref-role" data-i18n="ref.3.role">Directora & Fundadora</p>
+                        <p class="ref-company" data-i18n="ref.3.company">Escola d'Hoteleria Hofmann, Barcelona</p>
+                    </div>
+                </div>
+
+                <p class="ref-note" data-i18n="ref.note">Datos de contacto disponibles bajo petición.</p>
+            </div>
+        </section>
+
+        <section class="section-skills" id="skills">
+            <div class="container">
+                <h2 data-i18n="skills.title">Habilidades e Idiomas</h2>
+
+                <div class="skills-container">
+                    <h3 class="skills-subtitle" data-i18n="skills.skills_title">Competencias</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag" data-i18n="skills.s1">Cocina mediterránea contemporánea</span>
+                        <span class="skill-tag" data-i18n="skills.s2">Técnicas de vanguardia</span>
+                        <span class="skill-tag" data-i18n="skills.s3">Gestión de brigada de cocina</span>
+                        <span class="skill-tag" data-i18n="skills.s4">Diseño de cartas y menús degustación</span>
+                        <span class="skill-tag" data-i18n="skills.s5">Control de escandallos y food cost</span>
+                        <span class="skill-tag" data-i18n="skills.s6">APPCC y seguridad alimentaria</span>
+                        <span class="skill-tag" data-i18n="skills.s7">Gestión de proveedores y producto</span>
+                        <span class="skill-tag" data-i18n="skills.s8">Cocina de temporada y km 0</span>
+                        <span class="skill-tag" data-i18n="skills.s9">Emplatado y presentación</span>
+                        <span class="skill-tag" data-i18n="skills.s10">Formación y mentoría de equipo</span>
+                    </div>
+
+                    <h3 class="skills-subtitle" data-i18n="skills.lang_title">Idiomas</h3>
+                    <div class="lang-grid">
+
+                        <div class="lang-item">
+                            <div class="lang-name" data-i18n="skills.l1.name">Catalán</div>
+                            <div class="lang-level" data-i18n="skills.l1.level">Nativo</div>
+                            <div class="lang-dots">
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                            </div>
+                        </div>
+
+                        <div class="lang-item">
+                            <div class="lang-name" data-i18n="skills.l2.name">Español</div>
+                            <div class="lang-level" data-i18n="skills.l2.level">Nativo</div>
+                            <div class="lang-dots">
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                            </div>
+                        </div>
+
+                        <div class="lang-item">
+                            <div class="lang-name" data-i18n="skills.l3.name">Inglés</div>
+                            <div class="lang-level" data-i18n="skills.l3.level">Intermedio-alto</div>
+                            <div class="lang-dots">
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot"></span>
+                            </div>
+                        </div>
+
+                        <div class="lang-item">
+                            <div class="lang-name" data-i18n="skills.l4.name">Francés</div>
+                            <div class="lang-level" data-i18n="skills.l4.level">Básico</div>
+                            <div class="lang-dots">
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot filled"></span>
+                                <span class="lang-dot"></span>
+                                <span class="lang-dot"></span>
+                                <span class="lang-dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="section-contact" id="contact">
+            <div class="container">
+                <h2 data-i18n="contact.title">Contacto Profesional</h2>
+
+                <div style="margin-top: 40px; margin-bottom: 40px;">
+                    <div class="contact-text-item">
+                        <ion-icon name="call"></ion-icon>
+                        <a href="tel:+34672415089" data-i18n="contact.phone">+34 672 415 089</a>
+                    </div>
+
+                    <div class="contact-text-item">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        <a href="https://wa.me/34672415089" target="_blank">WhatsApp Chat</a>
+                    </div>
+
+                    <div class="contact-text-item">
+                        <ion-icon name="mail"></ion-icon>
+                        <a href="mailto:marc.beltran.chef@gmail.com" data-i18n="contact.email">marc.beltran.chef@gmail.com</a>
+                    </div>
+
+                    <div class="contact-text-item">
+                        <ion-icon name="location"></ion-icon>
+                        <span data-i18n="contact.loc">Barcelona, España</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+
+                <a class="btn-download-cv" href="Marc-Beltrán-Soler-Demo-CV.pdf" download title="Descargar CV en PDF">
+                    <ion-icon name="download-outline"></ion-icon>
+                    <span data-i18n="btn.download">Descargar CV</span>
+                </a>
+
+                <p style="margin-top: 40px; opacity: 0.8; font-size: 0.9rem;" data-i18n="footer.rights">© 2026 Marc Beltrán Soler. Todos los derechos reservados. · Portfolio de demostración — Registra3D CV Premium</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
