@@ -85,6 +85,139 @@ function buildLangDots(count) {
     return html;
 }
 
+// ── Content density analysis ──
+function calculateContentScore(data) {
+    let score = 0;
+
+    // Experience items (weight: 2 each)
+    if (data.experience && data.experience.items) {
+        score += data.experience.items.length * 2;
+    }
+
+    // Education items (weight: 1.5 each)
+    if (data.education && data.education.items) {
+        score += data.education.items.length * 1.5;
+    }
+
+    // Skills (weight: 0.5 each)
+    if (data.skills && data.skills.items) {
+        score += data.skills.items.length * 0.5;
+    }
+
+    // Languages (weight: 1 each)
+    if (data.skills && data.skills.languages) {
+        score += data.skills.languages.length;
+    }
+
+    // References section (weight: 3)
+    if (data.references && data.references.items) {
+        score += 3;
+    }
+
+    // About section (weight: 2)
+    if (data.about) {
+        score += 2;
+    }
+
+    return score;
+}
+
+function getAdaptiveSizing(score) {
+    // score < 15 = sparse (Scarlet: ~3*2 + 6*1.5 + 2 = 19... let's recalculate)
+    // Scarlet: 3 exp * 2 + 6 edu * 1.5 + 0 skills + 0 lang + 0 ref + 2 about = 17
+    // Mireia:  6 exp * 2 + 5 edu * 1.5 + 8 skills * 0.5 + 3 lang + 3 ref + 2 about = 12 + 7.5 + 4 + 3 + 3 + 2 = 31.5
+
+    if (score >= 25) {
+        // Dense: compact layout (Mireia)
+        return {
+            label: 'compact',
+            css: `
+                /* Compact: dense content — tight spacing */
+                .sidebar { padding: 12mm 4.5mm 8mm 4.5mm; }
+                .sidebar-photo { width: 36mm; height: 36mm; margin-bottom: 3.5mm; }
+                .sidebar-name { font-size: 11.5pt; margin-bottom: 0.8mm; }
+                .sidebar-subtitle { font-size: 6.5pt; margin-bottom: 4mm; }
+                .sidebar-divider { margin: 3mm auto; }
+                .sidebar-section-title { font-size: 7pt; margin-bottom: 2mm; }
+                .contact-item { margin-bottom: 2mm; font-size: 7pt; }
+                .skill-item { font-size: 6.5pt; padding: 1mm 2.5mm; margin-bottom: 1mm; }
+                .main { padding: 12mm 9mm 8mm 9mm; }
+                .section { margin-bottom: 4.5mm; }
+                .section-title { font-size: 10pt; padding-bottom: 1.5mm; margin-bottom: 3mm; }
+                .about-text { font-size: 8pt; line-height: 1.5; }
+                .timeline-item { margin-bottom: 3.5mm; }
+                .timeline-place { font-size: 8.5pt; }
+                .timeline-date { font-size: 6.5pt; }
+                .timeline-role { font-size: 8pt; }
+                .timeline-desc { font-size: 7pt; }
+                .edu-school { font-size: 6.5pt; }
+                body { font-size: 8.5pt; }
+            `
+        };
+    }
+
+    if (score >= 18) {
+        // Medium: balanced layout
+        return {
+            label: 'balanced',
+            css: `
+                /* Balanced: moderate content — comfortable spacing */
+                .sidebar { padding: 14mm 5mm 10mm 5mm; }
+                .sidebar-photo { width: 40mm; height: 40mm; margin-bottom: 4mm; }
+                .sidebar-name { font-size: 12.5pt; margin-bottom: 1mm; }
+                .sidebar-subtitle { font-size: 7pt; margin-bottom: 5mm; }
+                .sidebar-divider { margin: 3.5mm auto; }
+                .sidebar-section-title { font-size: 7.5pt; margin-bottom: 2.5mm; }
+                .contact-item { margin-bottom: 2.5mm; font-size: 7.5pt; }
+                .skill-item { font-size: 7pt; padding: 1.2mm 3mm; margin-bottom: 1.2mm; }
+                .main { padding: 14mm 10mm 10mm 10mm; }
+                .section { margin-bottom: 6mm; }
+                .section-title { font-size: 11pt; padding-bottom: 2mm; margin-bottom: 4mm; }
+                .about-text { font-size: 8.5pt; line-height: 1.55; }
+                .timeline-item { margin-bottom: 5mm; }
+                .timeline-place { font-size: 9pt; }
+                .timeline-date { font-size: 7pt; }
+                .timeline-role { font-size: 8.5pt; }
+                .timeline-desc { font-size: 7.5pt; line-height: 1.45; }
+                .edu-school { font-size: 7pt; }
+                body { font-size: 9pt; line-height: 1.45; }
+            `
+        };
+    }
+
+    // Sparse: generous layout (less common, very few items)
+    return {
+        label: 'spacious',
+        css: `
+            /* Spacious: sparse content — generous spacing */
+            .sidebar { padding: 16mm 5.5mm 12mm 5.5mm; }
+            .sidebar-photo { width: 44mm; height: 44mm; margin-bottom: 5mm; }
+            .sidebar-name { font-size: 13pt; margin-bottom: 1.5mm; }
+            .sidebar-subtitle { font-size: 7.5pt; margin-bottom: 6mm; }
+            .sidebar-divider { margin: 4mm auto; width: 22mm; }
+            .sidebar-section-title { font-size: 8pt; margin-bottom: 3mm; }
+            .contact-item { margin-bottom: 3mm; font-size: 8pt; }
+            .contact-icon { width: 3.5mm; height: 3.5mm; }
+            .skill-item { font-size: 7.5pt; padding: 1.5mm 3.5mm; margin-bottom: 1.5mm; }
+            .main { padding: 16mm 11mm 12mm 11mm; }
+            .section { margin-bottom: 8mm; }
+            .section-title { font-size: 11.5pt; padding-bottom: 2.5mm; margin-bottom: 5mm; }
+            .about-text { font-size: 9pt; line-height: 1.6; }
+            .timeline-item { margin-bottom: 6mm; }
+            .timeline-place { font-size: 9.5pt; }
+            .timeline-date { font-size: 7.5pt; }
+            .timeline-role { font-size: 9pt; }
+            .timeline-desc { font-size: 8pt; line-height: 1.5; }
+            .edu-school { font-size: 7.5pt; }
+            .ref-name { font-size: 8pt; }
+            .ref-role { font-size: 7.5pt; }
+            .ref-company { font-size: 7pt; }
+            body { font-size: 9.5pt; line-height: 1.5; }
+            .qr-wrapper { width: 20mm; height: 20mm; }
+        `
+    };
+}
+
 // ── Main ──
 async function generatePDF() {
     let puppeteer, QRCode;
@@ -248,6 +381,11 @@ async function generatePDF() {
         `;
     }
 
+    // ── Adaptive sizing based on content density ──
+    const contentScore = calculateContentScore(data);
+    const sizing = getAdaptiveSizing(contentScore);
+    console.log(`   Content score: ${contentScore} → layout: ${sizing.label}`);
+
     // ── Load template and replace placeholders ──
     let html = fs.readFileSync(templatePath, 'utf8');
 
@@ -276,7 +414,8 @@ async function generatePDF() {
         '{{ABOUT_SECTION}}': aboutSection,
         '{{EXPERIENCE_SECTION}}': experienceSection,
         '{{EDUCATION_SECTION}}': educationSection,
-        '{{REFERENCES_SECTION}}': referencesSection
+        '{{REFERENCES_SECTION}}': referencesSection,
+        '{{ADAPTIVE_STYLES}}': sizing.css
     };
 
     for (const [placeholder, value] of Object.entries(replacements)) {

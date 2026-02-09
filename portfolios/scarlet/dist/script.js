@@ -209,24 +209,26 @@ window.toggleTimeline = function (id, btn) {
             const needsScroll = container.scrollHeight > container.clientHeight + 10;
 
             if (needsScroll) {
-                // Add scroll listener for auto-collapse at end (with debounce)
+                // Content overflows: keep overscroll-behavior-y: contain (from CSS)
+                // and add scroll listener for auto-collapse at bottom
+                container.style.overscrollBehaviorY = 'contain';
                 let scrollTimeout = null;
                 container._scrollEndHandler = function() {
-                    // Debounce: wait 800ms after scroll stops at bottom
                     if (scrollTimeout) clearTimeout(scrollTimeout);
                     scrollTimeout = setTimeout(() => {
                         const scrollBottom = container.scrollTop + container.clientHeight;
                         const scrollMax = container.scrollHeight;
-
-                        // If scrolled to within 5px of absolute bottom, collapse and scroll to next section
                         if (scrollBottom >= scrollMax - 5) {
                             collapseAndScrollNext(container, btn);
                         }
                     }, 800);
                 };
                 container.addEventListener('scroll', container._scrollEndHandler);
+            } else {
+                // Content fits without scrolling: allow scroll events to
+                // propagate to #app-scroller so snap navigation continues
+                container.style.overscrollBehaviorY = 'auto';
             }
-            // If content doesn't need scroll, user will manually close with button
         }, 50);
     } else {
         // COLLAPSE
@@ -240,11 +242,12 @@ function collapseTimeline(container, btn) {
     container.classList.add('collapsed');
     container.classList.remove('expanded');
 
-    // Remove scroll listener
+    // Remove scroll listener and reset overscroll override
     if (container._scrollEndHandler) {
         container.removeEventListener('scroll', container._scrollEndHandler);
         container._scrollEndHandler = null;
     }
+    container.style.overscrollBehaviorY = '';
 
     const span = btn.querySelector('span');
     const icon = btn.querySelector('ion-icon');

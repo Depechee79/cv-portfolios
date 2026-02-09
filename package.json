@@ -15,8 +15,16 @@
     "pdf:mireia": "node scripts/generate-pdf.js mireia",
     "pdf:scarlet": "node scripts/generate-pdf.js scarlet"
   },
-  "keywords": ["cv", "portfolio", "generator"],
+  "keywords": [
+    "cv",
+    "portfolio",
+    "generator"
+  ],
   "author": "Aitor",
   "license": "MIT",
-  "devDependencies": {}
+  "dependencies": {
+    "pdf-parse": "^2.4.5",
+    "puppeteer": "^24.37.2",
+    "qrcode": "^1.5.4"
+  }
 }
