@@ -168,6 +168,11 @@ function buildTranslations(config) {
     return translations;
 }
 
+// Compute PDF filename (same logic as generate-pdf.js)
+function getPdfFilename(heroName) {
+    return `${heroName.replace(/[^a-zA-ZáéíóúñÁÉÍÓÚÑàèìòùÀÈÌÒÙ ]/g, '').replace(/\s+/g, '-')}-CV.pdf`;
+}
+
 // Generate HTML from config
 function generateHTML(config) {
     const isMedical = config.theme === 'medical';
@@ -457,10 +462,10 @@ ${langItems}
                     <a href="${config.contact.linkedin}" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
                 </div>
 
-                <button class="btn-download-cv" onclick="window.print()" title="Descargar CV en PDF">
+                <a class="btn-download-cv" href="${getPdfFilename(config.hero.name)}" download title="Descargar CV en PDF">
                     <ion-icon name="download-outline"></ion-icon>
                     <span data-i18n="btn.download">Descargar CV</span>
-                </button>
+                </a>
 
                 <p style="margin-top: 40px; opacity: 0.8; font-size: 0.9rem;" data-i18n="footer.rights">© ${config.footer.rights.es}</p>
             </div>

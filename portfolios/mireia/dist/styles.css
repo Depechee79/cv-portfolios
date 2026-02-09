@@ -849,6 +849,7 @@ footer.snap-visible > .container {
     font-family: var(--font-body);
     margin-top: 25px;
     letter-spacing: 0.5px;
+    text-decoration: none;
 }
 
 .btn-download-cv ion-icon {
