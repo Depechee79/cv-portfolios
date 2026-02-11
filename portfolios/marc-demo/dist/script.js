@@ -523,6 +523,31 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.querySelector('.bottom-nav')) {
         document.querySelector('.bottom-nav').style.setProperty('--nav-adaptive-color', 'rgb(28,28,28)');
     }
+
+    // Scroll animations — IntersectionObserver
+    var animElements = document.querySelectorAll('.animate-on-scroll');
+    if (animElements.length > 0 && 'IntersectionObserver' in window) {
+        var animObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    animObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            root: document.getElementById('app-scroller'),
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        animElements.forEach(function(el) {
+            animObserver.observe(el);
+        });
+    } else {
+        // Fallback: show all elements immediately
+        animElements.forEach(function(el) {
+            el.classList.add('visible');
+        });
+    }
 });
 
 // Adaptive nav colors — scroll-synced loop

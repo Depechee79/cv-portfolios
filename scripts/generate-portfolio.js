@@ -257,14 +257,14 @@ ${collegeHtml}
     if (config.about) {
         const statsHtml = config.about.stats ? `
                 <div class="stats-grid">
-                    ${config.about.stats.map((stat, i) => `<div class="stat-badge" data-i18n="about.stat${i+1}">${stat.es}</div>`).join('\n                    ')}
+                    ${config.about.stats.map((stat, i) => `<div class="stat-badge animate-on-scroll animate-delay-${i+1}" data-i18n="about.stat${i+1}">${stat.es}</div>`).join('\n                    ')}
                 </div>` : '';
 
         aboutSection = `
         <section class="section-about" id="about">
             <div class="container">
-                <h2 data-i18n="about.title">${config.about.title.es}</h2>
-                <div class="about-text">
+                <h2 class="animate-on-scroll" data-i18n="about.title">${config.about.title.es}</h2>
+                <div class="about-text animate-on-scroll animate-delay-1">
                     <p data-i18n="about.desc">${config.about.desc.es}</p>
                 </div>
                 ${statsHtml}
@@ -279,7 +279,7 @@ ${collegeHtml}
             const n = i + 1;
             const detailsHtml = item.details ? `<p data-i18n="edu.${n}.details">${item.details.es}</p>` : '';
             return `
-                        <div class="timeline-item">
+                        <div class="timeline-item animate-on-scroll">
                             <div class="timeline-dot"></div>
                             <span class="timeline-date" data-i18n="edu.${n}.date">${item.date.es}</span>
                             <div class="timeline-content">
@@ -320,7 +320,7 @@ ${timelineItems}
         const timelineItems = config.experience.items.map((item, i) => {
             const n = i + 1;
             return `
-                        <div class="timeline-item">
+                        <div class="timeline-item animate-on-scroll">
                             <div class="timeline-dot"></div>
                             <span class="timeline-date" data-i18n="exp.${n}.date">${item.date.es}</span>
                             <div class="timeline-content">
@@ -389,7 +389,7 @@ ${cards}
     let skillsSection = '';
     if (config.skills) {
         const skillTags = config.skills.items.map((item, i) =>
-            `<span class="skill-tag" data-i18n="skills.s${i+1}">${item.es}</span>`
+            `<span class="skill-tag animate-on-scroll animate-delay-${Math.min(i+1, 3)}" data-i18n="skills.s${i+1}">${item.es}</span>`
         ).join('\n                        ');
 
         const langItems = config.skills.languages.map((item, i) => {
@@ -397,7 +397,7 @@ ${cards}
                 `<span class="lang-dot${d < item.dots ? ' filled' : ''}"></span>`
             ).join('\n                                ');
             return `
-                        <div class="lang-item">
+                        <div class="lang-item animate-on-scroll animate-delay-${Math.min(i+1, 3)}">
                             <div class="lang-name" data-i18n="skills.l${i+1}.name">${item.name.es}</div>
                             <div class="lang-level" data-i18n="skills.l${i+1}.level">${item.level.es}</div>
                             <div class="lang-dots">
@@ -433,22 +433,22 @@ ${langItems}
                 <h2 data-i18n="contact.title">${config.contact.title.es}</h2>
 
                 <div style="margin-top: 40px; margin-bottom: 40px;">
-                    <div class="contact-text-item">
+                    <div class="contact-text-item animate-on-scroll">
                         <ion-icon name="call"></ion-icon>
                         <a href="tel:${config.contact.phone.replace(/\s/g, '')}" data-i18n="contact.phone">${config.contact.phone}</a>
                     </div>
 
-                    <div class="contact-text-item">
+                    <div class="contact-text-item animate-on-scroll animate-delay-1">
                         <ion-icon name="logo-whatsapp"></ion-icon>
                         <a href="https://wa.me/${config.contact.whatsapp}" target="_blank">WhatsApp Chat</a>
                     </div>
 
-                    <div class="contact-text-item">
+                    <div class="contact-text-item animate-on-scroll animate-delay-2">
                         <ion-icon name="mail"></ion-icon>
                         <a href="mailto:${config.contact.email}" data-i18n="contact.email">${config.contact.email}</a>
                     </div>
 
-                    <div class="contact-text-item">
+                    <div class="contact-text-item animate-on-scroll animate-delay-3">
                         <ion-icon name="location"></ion-icon>
                         <span data-i18n="contact.loc">${config.contact.location.es}</span>
                     </div>
@@ -537,8 +537,43 @@ const finalJS = coreJS
     .replace('{{TRANSLATIONS}}', JSON.stringify(translations, null, 2))
     .replace('{{DARK_SECTIONS}}', darkSections);
 
-// Generate CSS (base + theme)
-const finalCSS = baseCSS + '\n\n/* ══════════════════════════════════════ */\n/* THEME: ' + config.theme.toUpperCase() + ' */\n/* ══════════════════════════════════════ */\n\n' + themeCSS;
+// Generate per-section background CSS overrides (if sectionBackgrounds defined)
+let sectionBgCSS = '';
+if (config.sectionBackgrounds) {
+    const sectionSelectors = {
+        hero: '.hero',
+        about: '.section-about',
+        experience: config.theme === 'hospitality' ? '.section-experience' : '.section-education#experience',
+        education: '.section-education#education',
+        skills: '.section-skills',
+        contact: '.section-contact'
+    };
+    const darkSectionIds = config.darkSections || [];
+    const lines = ['\n/* ══════════════════════════════════════ */\n/* PER-SECTION BACKGROUNDS */\n/* ══════════════════════════════════════ */\n'];
+    Object.keys(config.sectionBackgrounds).forEach(function(sectionId) {
+        const url = config.sectionBackgrounds[sectionId];
+        const selector = sectionSelectors[sectionId];
+        if (!selector || !url) return;
+        const isDark = darkSectionIds.indexOf(sectionId) !== -1;
+        const isHero = sectionId === 'hero';
+        if (isDark) {
+            lines.push(selector + ' {');
+            lines.push("    background: linear-gradient(rgba(28, 28, 28, 0.88), rgba(28, 28, 28, 0.88)),");
+            lines.push("        url('" + url + "') center/cover no-repeat;");
+            lines.push("    background-attachment: scroll;");
+            lines.push('}');
+        } else if (isHero) {
+            lines.push(selector + ' {');
+            lines.push("    background: linear-gradient(rgba(247, 244, 239, 0.88), rgba(247, 244, 239, 0.92)),");
+            lines.push("        url('" + url + "') center top/cover no-repeat;");
+            lines.push('}');
+        }
+    });
+    sectionBgCSS = lines.join('\n');
+}
+
+// Generate CSS (base + theme + per-section overrides)
+const finalCSS = baseCSS + '\n\n/* ══════════════════════════════════════ */\n/* THEME: ' + config.theme.toUpperCase() + ' */\n/* ══════════════════════════════════════ */\n\n' + themeCSS + sectionBgCSS;
 
 // Generate HTML
 const finalHTML = generateHTML(config);
