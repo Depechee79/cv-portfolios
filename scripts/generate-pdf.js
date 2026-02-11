@@ -57,6 +57,20 @@ const THEMES = {
         fontHeading: 'Montserrat',
         fontBody: 'Lato'
     },
+    'hospitality-light': {
+        accent: '#B8976A',
+        sidebarBg: '#1C1C1C',
+        sidebarText: '#e0d8cf',
+        sidebarTextMuted: '#8a8178',
+        sidebarNameColor: '#FFFFFF',
+        sidebarDivider: 'rgba(184,151,106,0.3)',
+        skillBg: 'rgba(184,151,106,0.15)',
+        skillText: '#d4c4ac',
+        qrDark: '#B8976A',
+        qrLight: '#ffffff',
+        fontHeading: 'Montserrat',
+        fontBody: 'Lato'
+    },
     medical: {
         accent: '#d4af37',
         sidebarBg: '#1a4f5a',
