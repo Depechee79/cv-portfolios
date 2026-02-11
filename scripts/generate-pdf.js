@@ -341,7 +341,7 @@ async function generatePDF() {
         const items = data.education.items.map(item => `
             <div class="timeline-item">
                 <div class="timeline-header">
-                    <span class="timeline-place">${item.title[lang]}</span>
+                    <span class="edu-title">${item.title[lang]}</span>
                     <span class="timeline-date">${item.date[lang]}</span>
                 </div>
                 <div class="edu-school">${item.school[lang]}</div>
