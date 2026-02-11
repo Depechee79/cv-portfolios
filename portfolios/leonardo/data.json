@@ -46,9 +46,9 @@
     },
     "stats": [
       {
-        "es": "+10 años en F&B",
-        "en": "10+ years in F&B",
-        "ca": "+10 anys en F&B"
+        "es": "+20 años en hostelería",
+        "en": "20+ years in hospitality",
+        "ca": "+20 anys en hostaleria"
       },
       {
         "es": "+100 personas lideradas",
@@ -96,6 +96,20 @@
         "url": "https://www.somosesencia.es/en/essences/bestial-beach-club",
         "role": { "es": "Director General", "en": "General Manager", "ca": "Director General" },
         "desc": { "es": "Dirección integral de las operaciones del icónico beach club mediterráneo. Gestión de un equipo amplio y desarrollo de ingresos significativos mediante conceptos de menú innovadores y promociones estacionales. Implementación de estrategias comerciales rentables y toma de decisiones basada en datos para maximizar la rentabilidad.", "en": "Comprehensive direction of operations at the iconic Mediterranean beach club. Management of a large team and significant revenue development through innovative menu concepts and seasonal promotions. Implementation of profitable business strategies and data-driven decision-making to maximize profitability.", "ca": "Direcció integral de les operacions de l'icònic beach club mediterrani. Gestió d'un equip ampli i desenvolupament d'ingressos significatius mitjançant conceptes de menú innovadors i promocions estacionals. Implementació d'estratègies comercials rendibles i presa de decisions basada en dades per maximitzar la rendibilitat." }
+      },
+      {
+        "date": { "es": "2008 — 2015", "en": "2008 — 2015", "ca": "2008 — 2015" },
+        "place": { "es": "Txapela — AN Grup", "en": "Txapela — AN Grup", "ca": "Txapela — AN Grup" },
+        "url": "https://www.txapela.com/",
+        "role": { "es": "Director de Restaurante", "en": "Restaurant Director", "ca": "Director de Restaurant" },
+        "desc": { "es": "Dirección integral del restaurante Txapela en una de las ubicaciones más emblemáticas de Barcelona. Gestión operativa y de equipos en un establecimiento de alto volumen especializado en cocina vasca y de pintxos. Responsable de la cuenta de resultados, la experiencia del cliente y la coordinación con la central del grupo.", "en": "Comprehensive management of Txapela restaurant in one of Barcelona's most iconic locations. Operational and team management in a high-volume establishment specializing in Basque cuisine and pintxos. Responsible for P&L, guest experience, and coordination with the group's headquarters.", "ca": "Direcció integral del restaurant Txapela en una de les ubicacions més emblemàtiques de Barcelona. Gestió operativa i d'equips en un establiment d'alt volum especialitzat en cuina basca i pintxos. Responsable del compte de resultats, l'experiència del client i la coordinació amb la central del grup." }
+      },
+      {
+        "date": { "es": "2002 — 2008", "en": "2002 — 2008", "ca": "2002 — 2008" },
+        "place": { "es": "Chilam Balam", "en": "Chilam Balam", "ca": "Chilam Balam" },
+        "url": "",
+        "role": { "es": "Propietario y Director", "en": "Owner & Director", "ca": "Propietari i Director" },
+        "desc": { "es": "Fundación y dirección de restaurante de cocina mexicana auténtica en la emblemática Avenida Gaudí de Barcelona. Gestión integral del negocio: concepto gastronómico, operaciones, equipo, proveedores y relación con clientes. Seis años de trayectoria empresarial hasta el impacto de la crisis económica de 2008.", "en": "Founded and directed an authentic Mexican cuisine restaurant on Barcelona's emblematic Avenida Gaudí. End-to-end business management: gastronomic concept, operations, team, suppliers, and client relations. Six years of entrepreneurial track record until the impact of the 2008 economic crisis.", "ca": "Fundació i direcció de restaurant de cuina mexicana autèntica a l'emblemàtica Avinguda Gaudí de Barcelona. Gestió integral del negoci: concepte gastronòmic, operacions, equip, proveïdors i relació amb clients. Sis anys de trajectòria empresarial fins a l'impacte de la crisi econòmica de 2008." }
       }
     ]
   },
@@ -162,8 +176,9 @@
     },
     "languages": [
       { "name": { "es": "Español", "en": "Spanish", "ca": "Espanyol" }, "level": { "es": "Nativo", "en": "Native", "ca": "Natiu" }, "dots": 5 },
-      { "name": { "es": "Inglés", "en": "English", "ca": "Anglès" }, "level": { "es": "Avanzado", "en": "Advanced", "ca": "Avançat" }, "dots": 4 },
-      { "name": { "es": "Catalán", "en": "Catalan", "ca": "Català" }, "level": { "es": "Intermedio", "en": "Intermediate", "ca": "Intermedi" }, "dots": 3 }
+      { "name": { "es": "Inglés", "en": "English", "ca": "Anglès" }, "level": { "es": "Avanzado (C1)", "en": "Advanced (C1)", "ca": "Avançat (C1)" }, "dots": 4 },
+      { "name": { "es": "Catalán", "en": "Catalan", "ca": "Català" }, "level": { "es": "Avanzado (C1)", "en": "Advanced (C1)", "ca": "Avançat (C1)" }, "dots": 4 },
+      { "name": { "es": "Francés", "en": "French", "ca": "Francès" }, "level": { "es": "Intermedio alto (B2)", "en": "Upper intermediate (B2)", "ca": "Intermedi alt (B2)" }, "dots": 3 }
     ]
   },
   "references": null,
@@ -176,12 +191,12 @@
     "phone": "+34 692 40 54 56",
     "email": "leonardo.gomez.arvea@gmail.com",
     "location": {
-      "es": "Passatge Canti, Poblenou, Barcelona",
-      "en": "Passatge Canti, Poblenou, Barcelona",
-      "ca": "Passatge Canti, Poblenou, Barcelona"
+      "es": "Passatge de Canti 9, 1º 2ª, Poblenou, Barcelona",
+      "en": "Passatge de Canti 9, 1º 2ª, Poblenou, Barcelona",
+      "ca": "Passatge de Canti 9, 1r 2a, Poblenou, Barcelona"
     },
     "whatsapp": "34692405456",
-    "linkedin": "#"
+    "linkedin": "https://www.linkedin.com/in/leogomezarvea"
   },
   "footer": {
     "rights": {
