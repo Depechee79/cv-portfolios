@@ -197,19 +197,19 @@
     },
     "items": [
       {
-        "name": "Aitor Xavier Zurutuza del Río",
-        "role": { "es": "Restaurant Manager — Erre Urrechu", "en": "Restaurant Manager — Erre Urrechu", "ca": "Restaurant Manager — Erre Urrechu" },
-        "company": { "es": "Hotel Gran Meliá Torre Melina, Barcelona", "en": "Hotel Gran Meliá Torre Melina, Barcelona", "ca": "Hotel Gran Meliá Torre Melina, Barcelona" }
+        "name": "Carmine Donadio",
+        "role": { "es": "F&B Director", "en": "F&B Director", "ca": "F&B Director" },
+        "company": { "es": "Gran Meliá Jakarta", "en": "Gran Meliá Jakarta", "ca": "Gran Meliá Jakarta" }
       },
       {
-        "name": "Fabián",
+        "name": "Airam Lorenzo",
+        "role": { "es": "F&B Director", "en": "F&B Director", "ca": "F&B Director" },
+        "company": { "es": "Gran Meliá Torre Melina", "en": "Gran Meliá Torre Melina", "ca": "Gran Meliá Torre Melina" }
+      },
+      {
+        "name": "Aitor Urrechu",
         "role": { "es": "F&B Manager", "en": "F&B Manager", "ca": "F&B Manager" },
-        "company": { "es": "Hotel Gran Meliá Torre Melina, Barcelona", "en": "Hotel Gran Meliá Torre Melina, Barcelona", "ca": "Hotel Gran Meliá Torre Melina, Barcelona" }
-      },
-      {
-        "name": "Íñigo Pérez Urrechu",
-        "role": { "es": "Chef & Propietario — Grupo Urrechu", "en": "Chef & Owner — Grupo Urrechu", "ca": "Xef & Propietari — Grup Urrechu" },
-        "company": { "es": "Fundador de Restaurantes Urrechu y Zalacaín", "en": "Founder of Restaurantes Urrechu and Zalacaín", "ca": "Fundador de Restaurants Urrechu i Zalacaín" }
+        "company": { "es": "Oteiza Akelarre", "en": "Oteiza Akelarre", "ca": "Oteiza Akelarre" }
       }
     ],
     "note": {
