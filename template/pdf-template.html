@@ -48,6 +48,7 @@
             height: 36mm;
             border-radius: 50%;
             object-fit: cover;
+            object-position: center 20%;
             border: 2px solid {{ACCENT}};
             margin-bottom: 3.5mm;
             flex-shrink: 0;
@@ -258,17 +259,21 @@
             padding-left: 3mm;
         }
 
-        /* ── Timeline items (experience + education) ── */
+        /* ── Timeline items (experience + education) — card style ── */
         .timeline-item {
-            margin-bottom: 3mm;
-            padding-bottom: 3mm;
-            border-bottom: 0.3mm solid #eee;
+            margin-bottom: 2.5mm;
+            padding: 2.5mm 3mm;
+            border-left: 0.7mm solid {{ACCENT}};
+            border-radius: 1mm;
+            background: #fafaf8;
+        }
+
+        .timeline-item:nth-child(even) {
+            background: #ffffff;
         }
 
         .timeline-item:last-child {
-            border-bottom: none;
             margin-bottom: 0;
-            padding-bottom: 0;
         }
 
         .timeline-header {
