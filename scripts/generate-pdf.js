@@ -60,7 +60,7 @@ const THEMES = {
     'hospitality-light': {
         accent: '#2D5A3D',
         sidebarAccent: 'rgba(255,255,255,0.40)',
-        sidebarBg: '#1C2622',
+        sidebarBg: '#2D5A3D',
         sidebarText: 'rgba(255,255,255,0.80)',
         sidebarTextMuted: 'rgba(255,255,255,0.35)',
         sidebarNameColor: '#FFFFFF',
@@ -68,7 +68,7 @@ const THEMES = {
         skillBg: 'rgba(255,255,255,0.05)',
         skillText: 'rgba(255,255,255,0.75)',
         qrDark: '#C8D4CC',
-        qrLight: '#1C2622',
+        qrLight: '#2D5A3D',
         fontHeading: 'Montserrat',
         fontBody: 'Lato'
     },
