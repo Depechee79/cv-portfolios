@@ -226,7 +226,7 @@ section, header, footer {
     height: auto;
     padding: 8px 5px;
     gap: 8px;
-    border-color: var(--accent-color);
+    border-color: var(--nav-adaptive-color, var(--accent-color));
     background: transparent;
 }
 
@@ -914,6 +914,55 @@ footer.snap-visible > .container {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     opacity: 0.9;
+}
+
+/* MOBILE: Expandable sections — sticky title + controlled scroll */
+@media (max-width: 768px) {
+    /* Disable snap globally when a section is expanded */
+    #app-scroller.snap-disabled {
+        scroll-snap-type: none;
+    }
+
+    /* Section becomes the scroll container instead of the timeline */
+    section.section-expanded {
+        overflow-y: auto;
+        overflow-x: hidden;
+        justify-content: flex-start;
+        scroll-snap-align: none;
+        scroll-snap-stop: normal;
+        -webkit-overflow-scrolling: touch;
+        padding-top: 0;
+    }
+
+    /* Sticky title — stays visible at top while content scrolls */
+    /* Background color is set dynamically via JS (--sticky-bg) */
+    section.section-expanded > .container > h2 {
+        position: sticky;
+        top: 0;
+        z-index: 15;
+        background: var(--sticky-bg, var(--white, #FFFFFF));
+        padding-top: 25px;
+        padding-bottom: 15px;
+        margin-bottom: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* h2 underline stays with sticky title */
+    section.section-expanded > .container > h2::after {
+        bottom: 0;
+    }
+
+    /* Timeline container delegates scroll to parent section */
+    section.section-expanded .timeline-container.expanded {
+        max-height: none;
+        overflow-y: visible;
+        overscroll-behavior-y: auto;
+    }
+
+    /* Ensure btn-expand is reachable at bottom */
+    section.section-expanded .btn-expand-container {
+        padding-bottom: 30px;
+    }
 }
 
 /* Print styles */

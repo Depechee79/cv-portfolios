@@ -206,6 +206,36 @@ window.toggleTimeline = function (id, btn) {
 
         container.scrollTop = 0;
 
+        // MOBILE: Section becomes scroll container with sticky title
+        if (window.innerWidth <= 768) {
+            var section = container.closest('section');
+            var scroller = document.getElementById('app-scroller');
+            if (section) {
+                // Determine sticky title background:
+                // 1. Try backgroundColor (works for solid color sections)
+                // 2. For gradient/image backgrounds, sample a pixel from the section
+                var sectionBg = getComputedStyle(section).backgroundColor;
+                var isTransparent = !sectionBg || sectionBg === 'transparent' || sectionBg === 'rgba(0, 0, 0, 0)';
+                if (isTransparent) {
+                    // Section uses background-image/gradient — check if it's a dark section
+                    var isDark = darkSections.indexOf(section.id) !== -1;
+                    sectionBg = isDark ? 'rgb(28, 28, 28)' : '#FFFFFF';
+                }
+                section.style.setProperty('--sticky-bg', sectionBg);
+
+                section.classList.add('section-expanded');
+                if (scroller) scroller.classList.add('snap-disabled');
+                // Scroll to title after expansion renders
+                var title = section.querySelector('h2');
+                if (title) {
+                    setTimeout(function() {
+                        section.scrollTop = 0;
+                        title.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 150);
+                }
+            }
+        }
+
         // Install BOTH scroll and wheel handlers unconditionally.
         // CSS transition on max-height (0.8s) makes a single early check unreliable
         // — each handler checks the real-time state when its event fires.
@@ -270,9 +300,37 @@ function collapseTimeline(container, btn) {
     if (icon) icon.setAttribute('name', 'chevron-down-outline');
 
     container.scrollTop = 0;
+
+    // MOBILE: Restore section and snap behavior
+    // skipScroll flag set by collapseAndScrollNext to avoid conflicting scrolls
+    if (window.innerWidth <= 768) {
+        var sectionEl = container.closest('section');
+        var scroller = document.getElementById('app-scroller');
+        if (sectionEl) {
+            sectionEl.scrollTop = 0;
+            sectionEl.classList.remove('section-expanded');
+            var shouldScroll = !container._skipMobileScroll;
+            container._skipMobileScroll = false;
+            // Re-enable snap after a brief delay for layout to settle
+            setTimeout(function() {
+                if (scroller) {
+                    var anyExpanded = document.querySelector('section.section-expanded');
+                    if (!anyExpanded) {
+                        scroller.classList.remove('snap-disabled');
+                    }
+                }
+                if (shouldScroll) {
+                    sectionEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 150);
+        }
+    }
 }
 
 function collapseAndScrollNext(container, btn) {
+    // Tell collapseTimeline not to scroll back to same section on mobile
+    container._skipMobileScroll = true;
+
     // First, collapse the timeline
     collapseTimeline(container, btn);
 
@@ -286,7 +344,7 @@ function collapseAndScrollNext(container, btn) {
         // Small delay to let collapse animation start
         setTimeout(() => {
             nextSection.scrollIntoView({ behavior: 'auto', block: 'start' });
-        }, 100);
+        }, 200);
     }
 }
 
