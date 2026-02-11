@@ -95,17 +95,45 @@
 }
 
 .section-education .timeline-content {
-    background: #EDF3EF;
-    border: 1px solid rgba(45, 90, 61, 0.15);
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-    color: var(--text-dark);
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    box-shadow: none;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: var(--white);
 }
 
 .section-education .timeline-content:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.20);
-    background: #F2F7F4;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    background: rgba(255, 255, 255, 0.16);
+}
+
+/* Texto dentro de cards education — blanco suave */
+.section-education .timeline-content h3 {
+    color: #FFFFFF;
+}
+
+.section-education .timeline-content .company-name,
+.section-education .timeline-content .company-name span {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.section-education .timeline-content .company-name a,
+.section-education .timeline-content .school-link {
+    color: #B8DFC5;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+
+.section-education .timeline-content .company-name a:hover,
+.section-education .timeline-content .school-link:hover {
+    color: #FFFFFF;
+    text-decoration-color: rgba(255, 255, 255, 0.6);
+}
+
+.section-education .timeline-content p {
+    color: rgba(255, 255, 255, 0.70);
 }
 
 .section-education .timeline-dot {
@@ -119,9 +147,9 @@
 }
 
 .section-education .timeline-date {
-    color: var(--accent-color);
-    background: #EDF3EF;
-    border-color: rgba(45, 90, 61, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.20);
 }
 
 .section-education .btn-expand {
@@ -143,7 +171,7 @@
 }
 
 .section-education .timeline-container.collapsed::after {
-    background: linear-gradient(to bottom, transparent, #2D5A3D);
+    background: linear-gradient(to bottom, transparent, var(--accent-color));
 }
 
 /* ═══════════════════════════════════════════════ */
@@ -312,7 +340,8 @@
 
 .section-contact h2 {
     color: var(--white);
-    text-shadow: none;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .section-contact h2::after {
@@ -322,12 +351,12 @@
 .contact-text-item {
     color: #FFFFFF !important;
     opacity: 1 !important;
-    text-shadow: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .contact-text-item a {
-    color: rgba(255, 255, 255, 0.95);
-    border-bottom-color: rgba(255, 255, 255, 0.25);
+    color: #FFFFFF;
+    border-bottom-color: rgba(255, 255, 255, 0.35);
 }
 
 .contact-text-item a:hover {
