@@ -7,6 +7,9 @@ const translations = {{TRANSLATIONS}};
 // DARK SECTIONS - Injected by generate.js
 const darkSections = {{DARK_SECTIONS}};
 
+// NAV ACCENT RGB - Injected by generate.js (extracted from theme --accent-color)
+const navAccentRgb = {{NAV_ACCENT_RGB}};
+
 // EXPANDABLE TIMELINE LOGIC
 window.toggleTimeline = function (id, btn) {
     const container = document.getElementById(id);
@@ -266,9 +269,9 @@ function _navColorTick() {
     }
 
     dark = Math.min(1, Math.max(0, dark));
-    var r = Math.round(28 + 156 * dark);
-    var g = Math.round(28 + 121 * dark);
-    var b = Math.round(28 + 78 * dark);
+    var r = Math.round(28 + (navAccentRgb[0] - 28) * dark);
+    var g = Math.round(28 + (navAccentRgb[1] - 28) * dark);
+    var b = Math.round(28 + (navAccentRgb[2] - 28) * dark);
     nav.style.setProperty('--nav-adaptive-color', 'rgb(' + r + ',' + g + ',' + b + ')');
 }
 setInterval(_navColorTick, 16);
