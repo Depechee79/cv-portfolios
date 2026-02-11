@@ -67,7 +67,7 @@ const THEMES = {
         sidebarDivider: 'rgba(255,255,255,0.06)',
         skillBg: 'rgba(255,255,255,0.05)',
         skillText: 'rgba(255,255,255,0.75)',
-        qrDark: '#A0ABA5',
+        qrDark: '#C8D4CC',
         qrLight: '#1C2622',
         fontHeading: 'Montserrat',
         fontBody: 'Lato'
