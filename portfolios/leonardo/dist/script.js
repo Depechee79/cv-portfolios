@@ -261,10 +261,10 @@ const translations = {
 };
 
 // DARK SECTIONS - Injected by generate.js
-const darkSections = ["contact"];
+const darkSections = ["education","skills","contact"];
 
 // NAV ACCENT RGB - Injected by generate.js (extracted from theme --accent-color)
-const navAccentRgb = [45,90,61];
+const navAccentRgb = [255,255,255];
 
 // EXPANDABLE TIMELINE LOGIC
 window.toggleTimeline = function (id, btn) {
