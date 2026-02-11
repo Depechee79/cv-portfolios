@@ -261,7 +261,7 @@ const translations = {
 };
 
 // DARK SECTIONS - Injected by generate.js
-const darkSections = ["about","experience","skills"];
+const darkSections = ["contact"];
 
 // EXPANDABLE TIMELINE LOGIC
 window.toggleTimeline = function (id, btn) {

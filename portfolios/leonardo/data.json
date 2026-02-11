@@ -1,5 +1,5 @@
 {
-  "theme": "hospitality",
+  "theme": "hospitality-light",
   "languages": ["es", "en", "ca"],
   "meta": {
     "title": "Leonardo Gómez Arvea | F&B Manager",
@@ -211,11 +211,7 @@
   },
   "sectionBackgrounds": {
     "hero": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1920&q=80",
-    "about": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1920&q=80",
-    "experience": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1920&q=80",
-    "education": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80",
-    "skills": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1920&q=80",
     "contact": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80"
   },
-  "darkSections": ["about", "experience", "skills"]
+  "darkSections": ["contact"]
 }

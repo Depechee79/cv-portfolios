@@ -172,7 +172,7 @@ function buildTranslations(config) {
 // Generate HTML from config
 function generateHTML(config) {
     const isMedical = config.theme === 'medical';
-    const isHospitality = config.theme === 'hospitality';
+    const isHospitality = config.theme.startsWith('hospitality');
 
     // Build nav links based on available sections
     const navLinks = [];
@@ -543,7 +543,7 @@ if (config.sectionBackgrounds) {
     const sectionSelectors = {
         hero: '.hero',
         about: '.section-about',
-        experience: config.theme === 'hospitality' ? '.section-experience' : '.section-education#experience',
+        experience: config.theme.startsWith('hospitality') ? '.section-experience' : '.section-education#experience',
         education: '.section-education#education',
         skills: '.section-skills',
         contact: '.section-contact'
