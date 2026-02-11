@@ -521,7 +521,7 @@ section, header, footer {
 
 .timeline-dot {
     position: absolute;
-    left: 12px;
+    left: 14px;
     top: 4px;
     width: 14px;
     height: 14px;
@@ -832,7 +832,7 @@ footer.snap-visible > .container {
 
     .timeline-item:nth-child(odd) {
         float: left;
-        padding-right: 25px;
+        padding-right: 40px;
         padding-left: 0;
         text-align: right;
         clear: both;
@@ -840,14 +840,22 @@ footer.snap-visible > .container {
 
     .timeline-item:nth-child(even) {
         float: right;
-        padding-left: 25px;
+        padding-left: 40px;
         text-align: left;
         clear: both;
     }
 
-    .timeline-dot {
-        left: 50%;
-        transform: translateX(-50%);
+    /* Dot on the INTERIOR side — between card and center line */
+    .timeline-item:nth-child(odd) .timeline-dot {
+        left: auto;
+        right: -7px;
+        transform: none;
+    }
+
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: -7px;
+        right: auto;
+        transform: none;
     }
 
     .timeline::after {
