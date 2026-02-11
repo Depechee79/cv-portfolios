@@ -1059,17 +1059,17 @@ footer.snap-visible > .container {
 }
 
 .section-education .timeline-content {
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #EDF3EF;
+    border: 1px solid rgba(45, 90, 61, 0.15);
     border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
     color: var(--text-dark);
 }
 
 .section-education .timeline-content:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
-    background: var(--white);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.20);
+    background: #F2F7F4;
 }
 
 .section-education .timeline-dot {
@@ -1084,8 +1084,8 @@ footer.snap-visible > .container {
 
 .section-education .timeline-date {
     color: var(--accent-color);
-    background: rgba(255, 255, 255, 0.9);
-    border-color: rgba(255, 255, 255, 0.5);
+    background: #EDF3EF;
+    border-color: rgba(45, 90, 61, 0.15);
 }
 
 .section-education .btn-expand {
