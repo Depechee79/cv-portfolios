@@ -16,7 +16,7 @@ const translations = {
     "hero.current": "F&B Manager en The Social Hub Poblenou",
     "hero.cta": "CONTACTAR",
     "about.title": "Perfil Profesional",
-    "about.desc": "F&B Manager con más de una década de experiencia en hostelería premium en Barcelona. Especializado en liderazgo estratégico, excelencia operativa y desarrollo de conceptos gastronómicos innovadores. Trayectoria demostrada en la transformación de operaciones de F&B, implementación de prácticas sostenibles y gestión de equipos multidisciplinares en hoteles de referencia y restaurantes de alto nivel.",
+    "about.desc": "F&B Manager con más de dos décadas de experiencia en hostelería premium en Barcelona. Especializado en liderazgo estratégico, excelencia operativa y desarrollo de conceptos gastronómicos innovadores. Trayectoria demostrada en la transformación de operaciones de F&B, implementación de prácticas sostenibles y gestión de equipos multidisciplinares en hoteles de referencia y restaurantes de alto nivel.",
     "about.stat1": "+20 años en hostelería",
     "about.stat2": "+100 personas lideradas",
     "about.stat3": "Hoteles 4★-5★",
@@ -101,7 +101,7 @@ const translations = {
     "hero.current": "F&B Manager at The Social Hub Poblenou",
     "hero.cta": "CONTACT",
     "about.title": "Professional Profile",
-    "about.desc": "F&B Manager with over a decade of experience in premium hospitality in Barcelona. Specialized in strategic leadership, operational excellence, and innovative gastronomic concept development. Proven track record in transforming F&B operations, implementing sustainable practices, and managing multidisciplinary teams across leading hotels and high-end restaurants.",
+    "about.desc": "F&B Manager with over two decades of experience in premium hospitality in Barcelona. Specialized in strategic leadership, operational excellence, and innovative gastronomic concept development. Proven track record in transforming F&B operations, implementing sustainable practices, and managing multidisciplinary teams across leading hotels and high-end restaurants.",
     "about.stat1": "20+ years in hospitality",
     "about.stat2": "100+ people led",
     "about.stat3": "4★-5★ Hotels",
@@ -186,7 +186,7 @@ const translations = {
     "hero.current": "F&B Manager a The Social Hub Poblenou",
     "hero.cta": "CONTACTAR",
     "about.title": "Perfil Professional",
-    "about.desc": "F&B Manager amb més d'una dècada d'experiència en hostaleria premium a Barcelona. Especialitzat en lideratge estratègic, excel·lència operativa i desenvolupament de conceptes gastronòmics innovadors. Trajectòria demostrada en la transformació d'operacions de F&B, implementació de pràctiques sostenibles i gestió d'equips multidisciplinaris en hotels de referència i restaurants d'alt nivell.",
+    "about.desc": "F&B Manager amb més de dues dècades d'experiència en hostaleria premium a Barcelona. Especialitzat en lideratge estratègic, excel·lència operativa i desenvolupament de conceptes gastronòmics innovadors. Trajectòria demostrada en la transformació d'operacions de F&B, implementació de pràctiques sostenibles i gestió d'equips multidisciplinaris en hotels de referència i restaurants d'alt nivell.",
     "about.stat1": "+20 anys en hostaleria",
     "about.stat2": "+100 persones liderades",
     "about.stat3": "Hotels 4★-5★",
@@ -468,6 +468,31 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set initial nav color
     if (document.querySelector('.bottom-nav')) {
         document.querySelector('.bottom-nav').style.setProperty('--nav-adaptive-color', 'rgb(28,28,28)');
+    }
+
+    // Scroll animations — IntersectionObserver
+    var animElements = document.querySelectorAll('.animate-on-scroll');
+    if (animElements.length > 0 && 'IntersectionObserver' in window) {
+        var animObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    animObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            root: document.getElementById('app-scroller'),
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        animElements.forEach(function(el) {
+            animObserver.observe(el);
+        });
+    } else {
+        // Fallback: show all elements immediately
+        animElements.forEach(function(el) {
+            el.classList.add('visible');
+        });
     }
 });
 

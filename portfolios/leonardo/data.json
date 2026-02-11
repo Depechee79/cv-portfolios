@@ -40,9 +40,9 @@
       "ca": "Perfil Professional"
     },
     "desc": {
-      "es": "F&B Manager con más de una década de experiencia en hostelería premium en Barcelona. Especializado en liderazgo estratégico, excelencia operativa y desarrollo de conceptos gastronómicos innovadores. Trayectoria demostrada en la transformación de operaciones de F&B, implementación de prácticas sostenibles y gestión de equipos multidisciplinares en hoteles de referencia y restaurantes de alto nivel.",
-      "en": "F&B Manager with over a decade of experience in premium hospitality in Barcelona. Specialized in strategic leadership, operational excellence, and innovative gastronomic concept development. Proven track record in transforming F&B operations, implementing sustainable practices, and managing multidisciplinary teams across leading hotels and high-end restaurants.",
-      "ca": "F&B Manager amb més d'una dècada d'experiència en hostaleria premium a Barcelona. Especialitzat en lideratge estratègic, excel·lència operativa i desenvolupament de conceptes gastronòmics innovadors. Trajectòria demostrada en la transformació d'operacions de F&B, implementació de pràctiques sostenibles i gestió d'equips multidisciplinaris en hotels de referència i restaurants d'alt nivell."
+      "es": "F&B Manager con más de dos décadas de experiencia en hostelería premium en Barcelona. Especializado en liderazgo estratégico, excelencia operativa y desarrollo de conceptos gastronómicos innovadores. Trayectoria demostrada en la transformación de operaciones de F&B, implementación de prácticas sostenibles y gestión de equipos multidisciplinares en hoteles de referencia y restaurantes de alto nivel.",
+      "en": "F&B Manager with over two decades of experience in premium hospitality in Barcelona. Specialized in strategic leadership, operational excellence, and innovative gastronomic concept development. Proven track record in transforming F&B operations, implementing sustainable practices, and managing multidisciplinary teams across leading hotels and high-end restaurants.",
+      "ca": "F&B Manager amb més de dues dècades d'experiència en hostaleria premium a Barcelona. Especialitzat en lideratge estratègic, excel·lència operativa i desenvolupament de conceptes gastronòmics innovadors. Trajectòria demostrada en la transformació d'operacions de F&B, implementació de pràctiques sostenibles i gestió d'equips multidisciplinaris en hotels de referència i restaurants d'alt nivell."
     },
     "stats": [
       {
@@ -208,6 +208,14 @@
   "buttons": {
     "expand": { "es": "Ver más", "en": "See more", "ca": "Veure més" },
     "collapse": { "es": "Ver menos", "en": "See less", "ca": "Veure menys" }
+  },
+  "sectionBackgrounds": {
+    "hero": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1920&q=80",
+    "about": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1920&q=80",
+    "experience": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1920&q=80",
+    "education": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80",
+    "skills": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1920&q=80",
+    "contact": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80"
   },
   "darkSections": ["about", "experience", "skills"]
 }
