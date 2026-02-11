@@ -456,6 +456,7 @@ function collapseTimeline(container, btn) {
         if (sectionEl) {
             sectionEl.scrollTop = 0;
             sectionEl.classList.remove('section-expanded');
+            sectionEl.style.removeProperty('--sticky-bg');
             var shouldScroll = !container._skipMobileScroll;
             container._skipMobileScroll = false;
             // Re-enable snap after a brief delay for layout to settle
