@@ -86,8 +86,20 @@ h2::after {
 }
 
 h3 {
-    font-size: 1.125rem;
+    font-size: 1.15rem;
     margin-bottom: 0.5em;
+}
+
+.timeline-content h3 {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    line-height: 1.7;
+    font-size: 0.92rem;
 }
 
 p {
@@ -497,8 +509,8 @@ section, header, footer {
     top: 0;
     bottom: 0;
     left: 20px;
-    width: 1px;
-    background-color: #e0e0e0;
+    width: 2px;
+    background-color: rgba(184, 149, 106, 0.25);
 }
 
 .timeline-item {
@@ -509,39 +521,46 @@ section, header, footer {
 
 .timeline-dot {
     position: absolute;
-    left: 14px;
+    left: 12px;
     top: 4px;
-    width: 11px;
-    height: 11px;
+    width: 14px;
+    height: 14px;
     background-color: var(--white);
-    border: 2.5px solid var(--accent-color);
+    border: 3px solid var(--accent-color);
     border-radius: 50%;
     z-index: 10;
+    box-shadow: 0 0 0 4px rgba(184, 149, 106, 0.15);
 }
 
 .timeline-date {
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 700;
     color: var(--accent-color);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    background: rgba(184, 149, 106, 0.1);
+    padding: 4px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(184, 149, 106, 0.2);
 }
 
 .timeline-content {
     background: var(--white);
-    padding: 24px;
-    border: 1px solid #eee;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    padding: 28px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
     position: relative;
     z-index: 10;
 }
 
 .timeline-content:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-color: rgba(184, 149, 106, 0.3);
 }
 
 .company-name, .school-name {
@@ -552,13 +571,16 @@ section, header, footer {
 }
 
 .company-name a, .school-name a, .school-link {
-    color: var(--text-dark);
+    color: var(--accent-color);
     text-decoration: underline;
     text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    font-weight: 600;
+    transition: opacity 0.2s ease, color 0.2s ease;
 }
 
 .company-name a:hover, .school-name a:hover, .school-link:hover {
-    color: var(--primary-color);
+    opacity: 0.8;
 }
 
 /* Collapsed Fade Fallback */
@@ -998,9 +1020,19 @@ footer.snap-visible > .container {
 }
 
 .section-experience .company-name,
-.section-experience .company-name span,
-.section-experience .company-name a {
+.section-experience .company-name span {
     color: rgba(255, 255, 255, 0.9);
+}
+
+.section-experience .company-name a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+.section-experience .company-name a:hover {
+    opacity: 0.8;
 }
 
 .section-experience p {
@@ -1009,26 +1041,34 @@ footer.snap-visible > .container {
 
 .section-experience .timeline::before {
     background-color: rgba(184, 149, 106, 0.3);
+    width: 2px;
 }
 
 .section-experience .timeline-dot {
     background-color: var(--primary-color);
     border-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(184, 149, 106, 0.25);
 }
 
 .section-experience .timeline-content {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .section-experience .timeline-content:hover {
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.25);
 }
 
 .section-experience .timeline-date {
     color: var(--accent-color);
+    background: rgba(184, 149, 106, 0.15);
+    border-color: rgba(184, 149, 106, 0.3);
 }
 
 .section-experience .btn-expand {
