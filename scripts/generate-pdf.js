@@ -58,15 +58,15 @@ const THEMES = {
         fontBody: 'Lato'
     },
     'hospitality-light': {
-        accent: '#B8976A',
+        accent: '#2D5A3D',
         sidebarBg: '#1C1C1C',
-        sidebarText: '#e0d8cf',
-        sidebarTextMuted: '#8a8178',
+        sidebarText: '#d0dfd5',
+        sidebarTextMuted: '#7a9a82',
         sidebarNameColor: '#FFFFFF',
-        sidebarDivider: 'rgba(184,151,106,0.3)',
-        skillBg: 'rgba(184,151,106,0.15)',
-        skillText: '#d4c4ac',
-        qrDark: '#B8976A',
+        sidebarDivider: 'rgba(45,90,61,0.3)',
+        skillBg: 'rgba(45,90,61,0.15)',
+        skillText: '#8FBF9E',
+        qrDark: '#2D5A3D',
         qrLight: '#ffffff',
         fontHeading: 'Montserrat',
         fontBody: 'Lato'

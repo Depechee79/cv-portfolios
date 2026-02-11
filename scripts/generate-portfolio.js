@@ -533,9 +533,23 @@ const translations = buildTranslations(config);
 
 // Generate JavaScript with injected translations
 const darkSections = JSON.stringify(config.darkSections || ['about', 'experience', 'skills']);
+
+// Extract accent color from theme CSS for nav color interpolation
+let navAccentRgb = [184, 149, 106]; // fallback: original gold
+const accentMatch = themeCSS.match(/--accent-color:\s*#([0-9a-fA-F]{6})/);
+if (accentMatch) {
+    const hex = accentMatch[1];
+    navAccentRgb = [
+        parseInt(hex.substr(0, 2), 16),
+        parseInt(hex.substr(2, 2), 16),
+        parseInt(hex.substr(4, 2), 16)
+    ];
+}
+
 const finalJS = coreJS
     .replace('{{TRANSLATIONS}}', JSON.stringify(translations, null, 2))
-    .replace('{{DARK_SECTIONS}}', darkSections);
+    .replace('{{DARK_SECTIONS}}', darkSections)
+    .replace('{{NAV_ACCENT_RGB}}', JSON.stringify(navAccentRgb));
 
 // Generate per-section background CSS overrides (if sectionBackgrounds defined)
 let sectionBgCSS = '';

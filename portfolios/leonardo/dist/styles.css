@@ -962,7 +962,7 @@ footer.snap-visible > .container {
 /* THEME: HOSPITALITY-LIGHT */
 /* ══════════════════════════════════════ */
 
-/* Theme: Hospitality Light — Boutique Hotel Elegance */
+/* Theme: Hospitality Light — Wine-Bottle Green Elegance */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap');
 
@@ -970,7 +970,7 @@ footer.snap-visible > .container {
     /* Palette: Light Boutique — Warm, Sophisticated */
     --primary-color: #1A1A1A;       /* Near-black for titles */
     --secondary-color: #F5F3EF;     /* Warm beige */
-    --accent-color: #B8976A;        /* Matte gold */
+    --accent-color: #2D5A3D;        /* Wine-bottle green */
     --text-dark: #333333;           /* Body text */
     --text-light: #666666;          /* Secondary text */
     --white: #FFFFFF;
@@ -985,10 +985,11 @@ footer.snap-visible > .container {
 }
 
 /* ═══════════════════════════════════════════════ */
-/* HERO — Warm overlay on dramatic photo          */
+/* HERO — Warm overlay on monochrome photo        */
 /* ═══════════════════════════════════════════════ */
 .hero {
     color: var(--primary-color);
+    background-blend-mode: saturation;
 }
 
 /* ═══════════════════════════════════════════════ */
@@ -1013,7 +1014,7 @@ footer.snap-visible > .container {
 
 .section-about .stat-badge {
     background: var(--white);
-    border: 1px solid rgba(184, 151, 106, 0.25);
+    border: 1px solid rgba(45, 90, 61, 0.25);
     color: var(--primary-color);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
@@ -1043,11 +1044,11 @@ footer.snap-visible > .container {
 .section-education .timeline-dot {
     background-color: var(--white);
     border-color: var(--accent-color);
-    box-shadow: 0 0 0 4px rgba(184, 151, 106, 0.15);
+    box-shadow: 0 0 0 4px rgba(45, 90, 61, 0.15);
 }
 
 .section-education .timeline::before {
-    background-color: rgba(184, 151, 106, 0.2);
+    background-color: rgba(45, 90, 61, 0.2);
 }
 
 .section-education .timeline-container.collapsed {
@@ -1097,14 +1098,14 @@ footer.snap-visible > .container {
 }
 
 .section-experience .timeline::before {
-    background-color: rgba(184, 151, 106, 0.2);
+    background-color: rgba(45, 90, 61, 0.2);
     width: 2px;
 }
 
 .section-experience .timeline-dot {
     background-color: var(--white);
     border-color: var(--accent-color);
-    box-shadow: 0 0 0 4px rgba(184, 151, 106, 0.15);
+    box-shadow: 0 0 0 4px rgba(45, 90, 61, 0.15);
 }
 
 .section-experience .timeline-content {
@@ -1127,8 +1128,8 @@ footer.snap-visible > .container {
 
 .section-experience .timeline-date {
     color: var(--accent-color);
-    background: rgba(184, 151, 106, 0.1);
-    border-color: rgba(184, 151, 106, 0.2);
+    background: rgba(45, 90, 61, 0.1);
+    border-color: rgba(45, 90, 61, 0.2);
 }
 
 .section-experience .btn-expand {
@@ -1137,7 +1138,7 @@ footer.snap-visible > .container {
 }
 
 .section-experience .btn-expand:hover {
-    background: rgba(184, 151, 106, 0.1);
+    background: rgba(45, 90, 61, 0.1);
 }
 
 .section-experience .timeline-container.collapsed {
@@ -1170,7 +1171,7 @@ footer.snap-visible > .container {
 
 .section-skills .skill-tag {
     background: var(--white);
-    border: 1px solid rgba(184, 151, 106, 0.25);
+    border: 1px solid rgba(45, 90, 61, 0.25);
     color: var(--text-dark);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
 }
@@ -1202,6 +1203,7 @@ footer.snap-visible > .container {
 /* ═══════════════════════════════════════════════ */
 .section-contact {
     color: var(--white);
+    background-blend-mode: saturation;
 }
 
 .section-contact h2 {
@@ -1209,7 +1211,7 @@ footer.snap-visible > .container {
 }
 
 .section-contact h2::after {
-    background-color: var(--accent-color);
+    background-color: #8FBF9E;
 }
 
 .contact-text-item {
@@ -1223,8 +1225,8 @@ footer.snap-visible > .container {
 }
 
 .contact-text-item a:hover {
-    border-bottom-color: var(--accent-color);
-    color: var(--accent-color);
+    border-bottom-color: #8FBF9E;
+    color: #8FBF9E;
 }
 
 .social-icon ion-icon {
@@ -1232,7 +1234,7 @@ footer.snap-visible > .container {
 }
 
 .social-icon:hover ion-icon {
-    color: var(--accent-color);
+    color: #8FBF9E;
 }
 
 /* ═══════════════════════════════════════════════ */
@@ -1257,7 +1259,7 @@ footer.snap-visible > .container {
     text-align: center;
     padding: 28px 20px;
     background: var(--secondary-color);
-    border: 1px solid rgba(184, 151, 106, 0.2);
+    border: 1px solid rgba(45, 90, 61, 0.2);
     border-radius: 4px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
