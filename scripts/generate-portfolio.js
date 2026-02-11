@@ -571,14 +571,19 @@ if (config.sectionBackgrounds) {
         const isDark = darkSectionIds.indexOf(sectionId) !== -1;
         const isHero = sectionId === 'hero';
         if (isDark) {
+            const isLightTheme = config.theme === 'hospitality-light';
+            const darkOverlay = isLightTheme ? '0.92' : '0.88';
             lines.push(selector + ' {');
-            lines.push("    background: linear-gradient(rgba(28, 28, 28, 0.88), rgba(28, 28, 28, 0.88)),");
+            lines.push("    background: linear-gradient(rgba(28, 28, 28, " + darkOverlay + "), rgba(28, 28, 28, " + darkOverlay + ")),");
             lines.push("        url('" + url + "') center/cover no-repeat;");
             lines.push("    background-attachment: scroll;");
             lines.push('}');
         } else if (isHero) {
+            const isLightTheme = config.theme === 'hospitality-light';
+            const heroOverlayTop = isLightTheme ? 'rgba(250, 250, 250, 0.90)' : 'rgba(247, 244, 239, 0.88)';
+            const heroOverlayBot = isLightTheme ? 'rgba(250, 250, 250, 0.93)' : 'rgba(247, 244, 239, 0.92)';
             lines.push(selector + ' {');
-            lines.push("    background: linear-gradient(rgba(247, 244, 239, 0.88), rgba(247, 244, 239, 0.92)),");
+            lines.push("    background: linear-gradient(" + heroOverlayTop + ", " + heroOverlayBot + "),");
             lines.push("        url('" + url + "') center top/cover no-repeat;");
             lines.push('}');
         }
