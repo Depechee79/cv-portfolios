@@ -120,40 +120,82 @@ function calculateContentScore(data) {
 }
 
 function getAdaptiveSizing(score) {
-    // score < 15 = sparse (Scarlet: ~3*2 + 6*1.5 + 2 = 19... let's recalculate)
-    // Scarlet: 3 exp * 2 + 6 edu * 1.5 + 0 skills + 0 lang + 0 ref + 2 about = 17
-    // Mireia:  6 exp * 2 + 5 edu * 1.5 + 8 skills * 0.5 + 3 lang + 3 ref + 2 about = 12 + 7.5 + 4 + 3 + 3 + 2 = 31.5
+    // Leonardo: 6*2 + 4*1.5 + 6*0.5 + 4*1 + 2 = 27
+    // Mireia:   6*2 + 5*1.5 + 8*0.5 + 3*1 + 3 + 2 = 31.5
+    // Scarlet:  3*2 + 6*1.5 + 0 + 0 + 0 + 2 = 17
 
-    if (score >= 25) {
-        // Dense: compact layout (Mireia)
+    if (score >= 28) {
+        // Ultra-dense: maximum compression (Mireia with references)
         return {
-            label: 'compact',
+            label: 'ultra-compact',
             css: `
-                /* Compact: dense content — tight spacing */
-                .sidebar { padding: 12mm 4.5mm 8mm 4.5mm; }
-                .sidebar-photo { width: 36mm; height: 36mm; margin-bottom: 3.5mm; }
-                .sidebar-name { font-size: 11.5pt; margin-bottom: 0.8mm; }
-                .sidebar-subtitle { font-size: 6.5pt; margin-bottom: 4mm; }
-                .sidebar-divider { margin: 3mm auto; }
-                .sidebar-section-title { font-size: 7pt; margin-bottom: 2mm; }
-                .contact-item { margin-bottom: 2mm; font-size: 7pt; }
-                .skill-item { font-size: 6.5pt; padding: 1mm 2.5mm; margin-bottom: 1mm; }
-                .main { padding: 12mm 9mm 8mm 9mm; }
-                .section { margin-bottom: 4.5mm; }
-                .section-title { font-size: 10pt; padding-bottom: 1.5mm; margin-bottom: 3mm; }
-                .about-text { font-size: 8pt; line-height: 1.5; }
-                .timeline-item { margin-bottom: 3.5mm; }
-                .timeline-place { font-size: 8.5pt; }
-                .timeline-date { font-size: 6.5pt; }
-                .timeline-role { font-size: 8pt; }
-                .timeline-desc { font-size: 7pt; }
-                .edu-school { font-size: 6.5pt; }
-                body { font-size: 8.5pt; }
+                /* Ultra-compact: very dense content — maximum compression */
+                .sidebar { padding: 10mm 4mm 6mm 4mm; }
+                .sidebar-photo { width: 32mm; height: 32mm; margin-bottom: 2.5mm; }
+                .sidebar-name { font-size: 10.5pt; margin-bottom: 0.5mm; }
+                .sidebar-subtitle { font-size: 6pt; margin-bottom: 3mm; }
+                .sidebar-divider { margin: 2mm auto; }
+                .sidebar-section-title { font-size: 6.5pt; margin-bottom: 1.5mm; }
+                .contact-item { margin-bottom: 1.5mm; font-size: 6.5pt; }
+                .skill-item { font-size: 6pt; padding: 0.8mm 2mm; }
+                .lang-row { margin-bottom: 1mm; font-size: 6.5pt; }
+                .main { padding: 8mm 7mm 6mm 7mm; }
+                .section { margin-bottom: 2.5mm; }
+                .section-title { font-size: 8.5pt; padding-bottom: 1mm; margin-bottom: 2mm; letter-spacing: 1.2px; }
+                .about-text { font-size: 7pt; line-height: 1.4; }
+                .timeline-item { margin-bottom: 1.2mm; padding: 1.5mm 2.5mm; }
+                .timeline-place { font-size: 7.5pt; }
+                .timeline-date { font-size: 5.5pt; padding: 0.3mm 1.5mm; }
+                .timeline-role { font-size: 7pt; margin-top: 0.3mm; }
+                .timeline-desc { font-size: 6.5pt; line-height: 1.35; margin-top: 0.3mm; }
+                .edu-title { font-size: 7.5pt; }
+                .edu-school { font-size: 6pt; }
+                .ref-card { padding: 1.5mm 2mm; }
+                .ref-name { font-size: 7pt; }
+                .ref-role { font-size: 6.5pt; }
+                .ref-company { font-size: 6pt; }
+                .ref-note { font-size: 6pt; margin-top: 1mm; }
+                body { font-size: 7.5pt; line-height: 1.35; }
+                .qr-wrapper { width: 16mm; height: 16mm; }
+                .qr-label { font-size: 4.5pt; }
             `
         };
     }
 
-    if (score >= 18) {
+    if (score >= 22) {
+        // Dense: compact layout (Leonardo)
+        return {
+            label: 'compact',
+            css: `
+                /* Compact: dense content — tight spacing */
+                .sidebar { padding: 10mm 4.5mm 7mm 4.5mm; }
+                .sidebar-photo { width: 34mm; height: 34mm; margin-bottom: 3mm; }
+                .sidebar-name { font-size: 11pt; margin-bottom: 0.5mm; }
+                .sidebar-subtitle { font-size: 6.5pt; margin-bottom: 3.5mm; }
+                .sidebar-divider { margin: 2.5mm auto; }
+                .sidebar-section-title { font-size: 6.5pt; margin-bottom: 1.5mm; }
+                .contact-item { margin-bottom: 1.5mm; font-size: 6.5pt; }
+                .skill-item { font-size: 6pt; padding: 0.8mm 2.5mm; }
+                .lang-row { margin-bottom: 1.2mm; font-size: 6.5pt; }
+                .main { padding: 9mm 8mm 6mm 8mm; }
+                .section { margin-bottom: 3mm; }
+                .section-title { font-size: 9pt; padding-bottom: 1.2mm; margin-bottom: 2.5mm; letter-spacing: 1.4px; }
+                .about-text { font-size: 7.5pt; line-height: 1.4; }
+                .timeline-item { margin-bottom: 1.5mm; padding: 2mm 3mm; }
+                .timeline-place { font-size: 8pt; }
+                .timeline-date { font-size: 6pt; padding: 0.3mm 1.5mm; }
+                .timeline-role { font-size: 7.5pt; margin-top: 0.3mm; }
+                .timeline-desc { font-size: 6.5pt; line-height: 1.35; margin-top: 0.3mm; }
+                .edu-title { font-size: 7.5pt; }
+                .edu-school { font-size: 6pt; }
+                body { font-size: 8pt; line-height: 1.35; }
+                .qr-wrapper { width: 17mm; height: 17mm; }
+                .qr-label { font-size: 4.5pt; }
+            `
+        };
+    }
+
+    if (score >= 15) {
         // Medium: balanced layout
         return {
             label: 'balanced',
@@ -171,7 +213,7 @@ function getAdaptiveSizing(score) {
                 .section { margin-bottom: 6mm; }
                 .section-title { font-size: 11pt; padding-bottom: 2mm; margin-bottom: 4mm; }
                 .about-text { font-size: 8.5pt; line-height: 1.55; }
-                .timeline-item { margin-bottom: 5mm; }
+                .timeline-item { margin-bottom: 3mm; padding: 3mm 4mm; }
                 .timeline-place { font-size: 9pt; }
                 .timeline-date { font-size: 7pt; }
                 .timeline-role { font-size: 8.5pt; }
@@ -200,7 +242,7 @@ function getAdaptiveSizing(score) {
             .section { margin-bottom: 8mm; }
             .section-title { font-size: 11.5pt; padding-bottom: 2.5mm; margin-bottom: 5mm; }
             .about-text { font-size: 9pt; line-height: 1.6; }
-            .timeline-item { margin-bottom: 6mm; }
+            .timeline-item { margin-bottom: 4mm; padding: 3.5mm 4.5mm; }
             .timeline-place { font-size: 9.5pt; }
             .timeline-date { font-size: 7.5pt; }
             .timeline-role { font-size: 9pt; }
