@@ -1,0 +1,198 @@
+{
+  "theme": "hospitality",
+  "languages": ["es", "en", "ca"],
+  "meta": {
+    "title": "Leonardo Gómez Arvea | F&B Manager",
+    "favicon": "restaurant-outline"
+  },
+  "hero": {
+    "name": "Leonardo Gómez Arvea",
+    "subtitle": {
+      "es": "F&B MANAGER",
+      "en": "F&B MANAGER",
+      "ca": "F&B MANAGER"
+    },
+    "current": {
+      "es": "F&B Manager en The Social Hub Poblenou",
+      "en": "F&B Manager at The Social Hub Poblenou",
+      "ca": "F&B Manager a The Social Hub Poblenou"
+    },
+    "photo": "photo.jpg",
+    "cta": {
+      "es": "CONTACTAR",
+      "en": "CONTACT",
+      "ca": "CONTACTAR"
+    }
+  },
+  "nav": {
+    "home": { "es": "Inicio", "en": "Home", "ca": "Inici" },
+    "profile": { "es": "Perfil", "en": "Profile", "ca": "Perfil" },
+    "experience": { "es": "Experiencia", "en": "Experience", "ca": "Experiència" },
+    "education": { "es": "Formación", "en": "Education", "ca": "Formació" },
+    "skills": { "es": "Competencias", "en": "Skills", "ca": "Competències" },
+    "references": { "es": "Referencias", "en": "References", "ca": "Referències" },
+    "contact": { "es": "Contacto", "en": "Contact", "ca": "Contacte" }
+  },
+  "about": {
+    "title": {
+      "es": "Perfil Profesional",
+      "en": "Professional Profile",
+      "ca": "Perfil Professional"
+    },
+    "desc": {
+      "es": "F&B Manager con más de una década de experiencia en hostelería premium en Barcelona. Especializado en liderazgo estratégico, excelencia operativa y desarrollo de conceptos gastronómicos innovadores. Trayectoria demostrada en la transformación de operaciones de F&B, implementación de prácticas sostenibles y gestión de equipos multidisciplinares en hoteles de referencia y restaurantes de alto nivel.",
+      "en": "F&B Manager with over a decade of experience in premium hospitality in Barcelona. Specialized in strategic leadership, operational excellence, and innovative gastronomic concept development. Proven track record in transforming F&B operations, implementing sustainable practices, and managing multidisciplinary teams across leading hotels and high-end restaurants.",
+      "ca": "F&B Manager amb més d'una dècada d'experiència en hostaleria premium a Barcelona. Especialitzat en lideratge estratègic, excel·lència operativa i desenvolupament de conceptes gastronòmics innovadors. Trajectòria demostrada en la transformació d'operacions de F&B, implementació de pràctiques sostenibles i gestió d'equips multidisciplinaris en hotels de referència i restaurants d'alt nivell."
+    },
+    "stats": [
+      {
+        "es": "+10 años en F&B",
+        "en": "10+ years in F&B",
+        "ca": "+10 anys en F&B"
+      },
+      {
+        "es": "+100 personas lideradas",
+        "en": "100+ people led",
+        "ca": "+100 persones liderades"
+      },
+      {
+        "es": "Hoteles 4★-5★",
+        "en": "4★-5★ Hotels",
+        "ca": "Hotels 4★-5★"
+      }
+    ]
+  },
+  "experience": {
+    "title": {
+      "es": "Experiencia Profesional",
+      "en": "Professional Experience",
+      "ca": "Experiència Professional"
+    },
+    "items": [
+      {
+        "date": { "es": "2023 — ACTUALIDAD", "en": "2023 — PRESENT", "ca": "2023 — ACTUALITAT" },
+        "place": { "es": "The Social Hub Poblenou", "en": "The Social Hub Poblenou", "ca": "The Social Hub Poblenou" },
+        "url": "https://www.thesocialhub.co/barcelona-poblenou/",
+        "role": { "es": "F&B Manager", "en": "F&B Manager", "ca": "F&B Manager" },
+        "desc": { "es": "Transformación de los puntos de venta de F&B mediante la implementación de conceptos gastronómicos premium y prácticas de sostenibilidad. Gestión operativa de múltiples espacios: WorkCafé, rooftop y cocinas comunitarias. Promoción y mentoría del equipo, fomentando el crecimiento profesional y la cohesión.", "en": "Transformation of F&B outlets through implementation of premium gastronomic concepts and sustainability practices. Operational management of multiple venues: WorkCafé, rooftop, and community kitchens. Team promotion and mentoring, fostering professional growth and cohesion.", "ca": "Transformació dels punts de venda de F&B mitjançant la implementació de conceptes gastronòmics premium i pràctiques de sostenibilitat. Gestió operativa de múltiples espais: WorkCafé, rooftop i cuines comunitàries. Promoció i mentoria de l'equip, fomentant el creixement professional i la cohesió." }
+      },
+      {
+        "date": { "es": "2020 — 2023", "en": "2020 — 2023", "ca": "2020 — 2023" },
+        "place": { "es": "Grand Hotel Central", "en": "Grand Hotel Central", "ca": "Grand Hotel Central" },
+        "url": "https://www.grandhotelcentral.com/",
+        "role": { "es": "F&B Manager", "en": "F&B Manager", "ca": "F&B Manager" },
+        "desc": { "es": "Liderazgo de la recuperación operativa post-pandemia, reestructurando flujos de trabajo y acelerando la recuperación financiera. Obtención de la Certificación Biosphere implementando prácticas de turismo sostenible conforme a estándares internacionales. Gestión de equipos transversales para mejorar la satisfacción del cliente y optimizar las operaciones en todas las áreas de restauración.", "en": "Led post-pandemic operational recovery, restructuring workflows and accelerating financial turnaround. Secured Biosphere Certification by implementing sustainable tourism practices aligned with international standards. Managed cross-functional teams to enhance guest satisfaction and streamline operations across all dining areas.", "ca": "Lideratge de la recuperació operativa post-pandèmia, reestructurant fluxos de treball i accelerant la recuperació financera. Obtenció de la Certificació Biosphere implementant pràctiques de turisme sostenible conforme a estàndards internacionals. Gestió d'equips transversals per millorar la satisfacció del client i optimitzar les operacions en totes les àrees de restauració." }
+      },
+      {
+        "date": { "es": "2018 — 2020", "en": "2018 — 2020", "ca": "2018 — 2020" },
+        "place": { "es": "Grupo Lombardo Restauración", "en": "Grupo Lombardo Restauración", "ca": "Grupo Lombardo Restauración" },
+        "url": "https://grupolombardo.com/",
+        "role": { "es": "Director de Operaciones", "en": "Operations Manager", "ca": "Director d'Operacions" },
+        "desc": { "es": "Supervisión de las operaciones diarias de la cadena de restaurantes de tapas. Implementación de estrategias de crecimiento de ingresos y optimización de costes. Adopción de tecnología para mejorar la eficiencia operativa. Adaptación de operaciones durante la crisis COVID-19, garantizando la continuidad del negocio y la seguridad del equipo.", "en": "Oversight of daily operations across the tapas restaurant chain. Implementation of revenue growth strategies and cost optimization. Technology adoption to improve operational efficiency. Operations adaptation during COVID-19, ensuring business continuity and team safety.", "ca": "Supervisió de les operacions diàries de la cadena de restaurants de tapes. Implementació d'estratègies de creixement d'ingressos i optimització de costos. Adopció de tecnologia per millorar l'eficiència operativa. Adaptació d'operacions durant la crisi COVID-19, garantint la continuïtat del negoci i la seguretat de l'equip." }
+      },
+      {
+        "date": { "es": "2015 — 2018", "en": "2015 — 2018", "ca": "2015 — 2018" },
+        "place": { "es": "Bestial Beach Club", "en": "Bestial Beach Club", "ca": "Bestial Beach Club" },
+        "url": "https://www.somosesencia.es/en/essences/bestial-beach-club",
+        "role": { "es": "Director General", "en": "General Manager", "ca": "Director General" },
+        "desc": { "es": "Dirección integral de las operaciones del icónico beach club mediterráneo. Gestión de un equipo amplio y desarrollo de ingresos significativos mediante conceptos de menú innovadores y promociones estacionales. Implementación de estrategias comerciales rentables y toma de decisiones basada en datos para maximizar la rentabilidad.", "en": "Comprehensive direction of operations at the iconic Mediterranean beach club. Management of a large team and significant revenue development through innovative menu concepts and seasonal promotions. Implementation of profitable business strategies and data-driven decision-making to maximize profitability.", "ca": "Direcció integral de les operacions de l'icònic beach club mediterrani. Gestió d'un equip ampli i desenvolupament d'ingressos significatius mitjançant conceptes de menú innovadors i promocions estacionals. Implementació d'estratègies comercials rendibles i presa de decisions basada en dades per maximitzar la rendibilitat." }
+      }
+    ]
+  },
+  "education": {
+    "title": {
+      "es": "Formación Académica",
+      "en": "Education",
+      "ca": "Formació Acadèmica"
+    },
+    "items": [
+      {
+        "date": { "es": "2016", "en": "2016", "ca": "2016" },
+        "school": { "es": "EAE Business School / Ostelea", "en": "EAE Business School / Ostelea", "ca": "EAE Business School / Ostelea" },
+        "url": "https://www.ostelea.com/",
+        "title": { "es": "Dirección Hotelera y de Restauración", "en": "Hotel and Restaurant Management", "ca": "Direcció Hotelera i de Restauració" },
+        "details": { "es": "Barcelona, España.", "en": "Barcelona, Spain.", "ca": "Barcelona, Espanya." }
+      },
+      {
+        "date": { "es": "2002", "en": "2002", "ca": "2002" },
+        "school": { "es": "Ferrandi Paris · Université du Vin · Ecole Hôtelière de Lausanne", "en": "Ferrandi Paris · Université du Vin · Ecole Hôtelière de Lausanne", "ca": "Ferrandi Paris · Université du Vin · Ecole Hôtelière de Lausanne" },
+        "url": "#",
+        "title": { "es": "Máster en Gestión de Alimentos y Bebidas", "en": "Master in Food & Beverage Management", "ca": "Màster en Gestió d'Aliments i Begudes" },
+        "details": { "es": "Francia / Suiza.", "en": "France / Switzerland.", "ca": "França / Suïssa." }
+      },
+      {
+        "date": { "es": "2001", "en": "2001", "ca": "2001" },
+        "school": { "es": "Universidad Iberoamericana", "en": "Universidad Iberoamericana", "ca": "Universidad Iberoamericana" },
+        "url": "https://www.ibero.mx/",
+        "title": { "es": "Licenciatura en Administración Hotelera", "en": "Bachelor in Hotel Management", "ca": "Llicenciatura en Administració Hotelera" },
+        "details": { "es": "Ciudad de México, México.", "en": "Mexico City, Mexico.", "ca": "Ciutat de Mèxic, Mèxic." }
+      },
+      {
+        "date": { "es": "2000", "en": "2000", "ca": "2000" },
+        "school": { "es": "Universidad Iberoamericana", "en": "Universidad Iberoamericana", "ca": "Universidad Iberoamericana" },
+        "url": "https://www.ibero.mx/",
+        "title": { "es": "Diploma en Artes Culinarias y Formación de Chef", "en": "Diploma in Culinary Arts and Chef Training", "ca": "Diploma en Arts Culinàries i Formació de Xef" },
+        "details": { "es": "Ciudad de México, México.", "en": "Mexico City, Mexico.", "ca": "Ciutat de Mèxic, Mèxic." }
+      }
+    ]
+  },
+  "skills": {
+    "title": {
+      "es": "Competencias e Idiomas",
+      "en": "Skills & Languages",
+      "ca": "Competències i Idiomes"
+    },
+    "skills_title": {
+      "es": "Competencias",
+      "en": "Competencies",
+      "ca": "Competències"
+    },
+    "items": [
+      { "es": "Planificación estratégica", "en": "Strategic Planning", "ca": "Planificació estratègica" },
+      { "es": "Liderazgo de equipos", "en": "Team Leadership", "ca": "Lideratge d'equips" },
+      { "es": "Experiencia del cliente", "en": "Guest Experience", "ca": "Experiència del client" },
+      { "es": "Sostenibilidad (Biosphere)", "en": "Sustainability (Biosphere)", "ca": "Sostenibilitat (Biosphere)" },
+      { "es": "Desarrollo de conceptos", "en": "Concept Development", "ca": "Desenvolupament de conceptes" },
+      { "es": "Gestión financiera", "en": "Financial Management", "ca": "Gestió financera" }
+    ],
+    "languages_title": {
+      "es": "Idiomas",
+      "en": "Languages",
+      "ca": "Idiomes"
+    },
+    "languages": [
+      { "name": { "es": "Español", "en": "Spanish", "ca": "Espanyol" }, "level": { "es": "Nativo", "en": "Native", "ca": "Natiu" }, "dots": 5 },
+      { "name": { "es": "Inglés", "en": "English", "ca": "Anglès" }, "level": { "es": "Avanzado", "en": "Advanced", "ca": "Avançat" }, "dots": 4 },
+      { "name": { "es": "Catalán", "en": "Catalan", "ca": "Català" }, "level": { "es": "Intermedio", "en": "Intermediate", "ca": "Intermedi" }, "dots": 3 }
+    ]
+  },
+  "references": null,
+  "contact": {
+    "title": {
+      "es": "Contacto Profesional",
+      "en": "Professional Contact",
+      "ca": "Contacte Professional"
+    },
+    "phone": "+34 692 40 54 56",
+    "email": "leonardo.gomez.arvea@gmail.com",
+    "location": {
+      "es": "Passatge Canti, Poblenou, Barcelona",
+      "en": "Passatge Canti, Poblenou, Barcelona",
+      "ca": "Passatge Canti, Poblenou, Barcelona"
+    },
+    "whatsapp": "34692405456",
+    "linkedin": "#"
+  },
+  "footer": {
+    "rights": {
+      "es": "2025 Leonardo Gómez Arvea. Todos los derechos reservados.",
+      "en": "2025 Leonardo Gómez Arvea. All rights reserved.",
+      "ca": "2025 Leonardo Gómez Arvea. Tots els drets reservats."
+    }
+  },
+  "buttons": {
+    "expand": { "es": "Ver más", "en": "See more", "ca": "Veure més" },
+    "collapse": { "es": "Ver menos", "en": "See less", "ca": "Veure menys" }
+  },
+  "darkSections": ["about", "experience", "skills"]
+}
