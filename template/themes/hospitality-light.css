@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap');
 
 :root {
-    /* Palette: Light Boutique — Warm, Sophisticated */
+    /* Palette: Light Boutique — Fresh, Sophisticated */
     --primary-color: #1A1A1A;       /* Near-black for titles */
-    --secondary-color: #F5F3EF;     /* Warm beige */
+    --secondary-color: #F0F4F1;     /* Cool green-gray */
     --accent-color: #2D5A3D;        /* Wine-bottle green */
     --text-dark: #333333;           /* Body text */
     --text-light: #666666;          /* Secondary text */
@@ -21,21 +21,44 @@
 }
 
 /* ═══════════════════════════════════════════════ */
-/* HERO — Warm overlay on monochrome photo        */
+/* HERO — Frosted glass over monochrome photo     */
 /* ═══════════════════════════════════════════════ */
 .hero {
     color: var(--primary-color);
     background-blend-mode: saturation;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    z-index: 0;
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    text-shadow: 0 1px 4px rgba(255, 255, 255, 0.6);
+}
+
+.hero .subtitle {
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
 /* ═══════════════════════════════════════════════ */
-/* ABOUT SECTION — Warm white                     */
+/* ABOUT SECTION — Clean white                     */
 /* ═══════════════════════════════════════════════ */
 .section-about {
     padding: 0;
     justify-content: center;
     align-items: center;
-    background-color: #FAFAF8;
+    background-color: #FAFAFA;
     color: var(--text-dark);
 }
 
@@ -56,7 +79,7 @@
 }
 
 /* ═══════════════════════════════════════════════ */
-/* EDUCATION SECTION — Soft beige                 */
+/* EDUCATION SECTION — Cool green-gray             */
 /* ═══════════════════════════════════════════════ */
 .section-education {
     background-color: var(--secondary-color);
@@ -64,17 +87,15 @@
 
 .section-education .timeline-content {
     background: var(--white);
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    border-left: 3px solid var(--accent-color);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .section-education .timeline-content:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
-    border-color: rgba(0, 0, 0, 0.06);
-    border-left-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.12);
 }
 
 .section-education .timeline-dot {
@@ -93,15 +114,15 @@
 }
 
 .section-education .timeline-container.collapsed::after {
-    background: linear-gradient(to bottom, transparent, rgba(245, 243, 239, 0.01));
+    background: linear-gradient(to bottom, transparent, rgba(240, 244, 241, 0.01));
 }
 
 /* ═══════════════════════════════════════════════ */
-/* EXPERIENCE SECTION — Warm white, solid cards   */
+/* EXPERIENCE SECTION — Clean white, solid cards   */
 /* ═══════════════════════════════════════════════ */
 .section-experience {
     padding: var(--section-spacing) 0;
-    background-color: #FAFAF8;
+    background-color: #FAFAFA;
     color: var(--text-dark);
 }
 
@@ -146,20 +167,18 @@
 
 .section-experience .timeline-content {
     background: var(--white);
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    border-left: 3px solid var(--accent-color);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
 }
 
 .section-experience .timeline-content:hover {
     background: var(--white);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
-    border-color: rgba(0, 0, 0, 0.06);
-    border-left-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.12);
 }
 
 .section-experience .timeline-date {
@@ -183,11 +202,11 @@
 }
 
 .section-experience .timeline-container.collapsed::after {
-    background: linear-gradient(to bottom, transparent, rgba(250, 250, 248, 0.01));
+    background: linear-gradient(to bottom, transparent, rgba(250, 250, 250, 0.01));
 }
 
 /* ═══════════════════════════════════════════════ */
-/* SKILLS SECTION — Soft beige                    */
+/* SKILLS SECTION — Cool green-gray                */
 /* ═══════════════════════════════════════════════ */
 .section-skills {
     padding: 0;
@@ -244,6 +263,7 @@
 
 .section-contact h2 {
     color: var(--white);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .section-contact h2::after {
@@ -251,8 +271,9 @@
 }
 
 .contact-text-item {
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
     opacity: 1 !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
 }
 
 .contact-text-item a {
