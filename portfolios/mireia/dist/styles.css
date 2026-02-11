@@ -226,7 +226,7 @@ section, header, footer {
     height: auto;
     padding: 8px 5px;
     gap: 8px;
-    border-color: var(--accent-color);
+    border-color: var(--nav-adaptive-color, var(--accent-color));
     background: transparent;
 }
 
