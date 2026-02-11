@@ -327,9 +327,9 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     z-index: 0;
 }
 
@@ -339,37 +339,52 @@
 }
 
 .section-contact h2 {
-    color: var(--white);
+    color: #FFFFFF !important;
     font-weight: 700;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .section-contact h2::after {
-    background-color: #8FBF9E;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .contact-text-item {
     color: #FFFFFF !important;
     opacity: 1 !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    font-size: 1.05em;
+}
+
+.contact-text-item ion-icon {
+    color: #FFFFFF !important;
+    opacity: 0.9;
 }
 
 .contact-text-item a {
-    color: #FFFFFF;
-    border-bottom-color: rgba(255, 255, 255, 0.35);
+    color: #FFFFFF !important;
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-text-item span {
+    color: #FFFFFF !important;
 }
 
 .contact-text-item a:hover {
-    border-bottom-color: #8FBF9E;
-    color: #8FBF9E;
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+    color: #FFFFFF;
 }
 
 .social-icon ion-icon {
-    color: var(--white);
+    color: #FFFFFF !important;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
 }
 
 .social-icon:hover ion-icon {
-    color: #8FBF9E;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.section-contact .btn-download-cv {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* ═══════════════════════════════════════════════ */

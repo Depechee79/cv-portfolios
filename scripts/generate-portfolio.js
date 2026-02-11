@@ -578,7 +578,7 @@ if (config.sectionBackgrounds) {
         const isHero = sectionId === 'hero';
         if (isDark) {
             const isLightTheme = config.theme === 'hospitality-light';
-            const darkOverlay = isLightTheme ? '0.72' : '0.88';
+            const darkOverlay = isLightTheme ? '0.80' : '0.88';
             lines.push(selector + ' {');
             lines.push("    background: linear-gradient(rgba(28, 28, 28, " + darkOverlay + "), rgba(28, 28, 28, " + darkOverlay + ")),");
             lines.push("        url('" + url + "') center/cover no-repeat;");
