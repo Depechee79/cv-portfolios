@@ -996,9 +996,9 @@ footer.snap-visible > .container {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     z-index: 0;
 }
 
@@ -1008,11 +1008,12 @@ footer.snap-visible > .container {
 }
 
 .hero h1 {
-    text-shadow: 0 1px 4px rgba(255, 255, 255, 0.6);
+    color: #1A1A1A;
+    text-shadow: none;
 }
 
 .hero .subtitle {
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+    text-shadow: none;
 }
 
 /* ═══════════════════════════════════════════════ */
@@ -1043,33 +1044,61 @@ footer.snap-visible > .container {
 }
 
 /* ═══════════════════════════════════════════════ */
-/* EDUCATION SECTION — Cool green-gray             */
+/* EDUCATION SECTION — Verde botella background    */
 /* ═══════════════════════════════════════════════ */
 .section-education {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
+}
+
+.section-education h2 {
+    color: var(--white);
+}
+
+.section-education h2::after {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .section-education .timeline-content {
-    background: var(--white);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    color: var(--text-dark);
 }
 
 .section-education .timeline-content:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    border-color: rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+    background: var(--white);
 }
 
 .section-education .timeline-dot {
-    background-color: var(--white);
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 4px rgba(45, 90, 61, 0.15);
+    background-color: var(--accent-color);
+    border-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
 }
 
 .section-education .timeline::before {
-    background-color: rgba(45, 90, 61, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.section-education .timeline-date {
+    color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.section-education .btn-expand {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.section-education .btn-expand:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.section-education .btn-expand ion-icon {
+    color: var(--white);
 }
 
 .section-education .timeline-container.collapsed {
@@ -1078,7 +1107,7 @@ footer.snap-visible > .container {
 }
 
 .section-education .timeline-container.collapsed::after {
-    background: linear-gradient(to bottom, transparent, rgba(240, 244, 241, 0.01));
+    background: linear-gradient(to bottom, transparent, #2D5A3D);
 }
 
 /* ═══════════════════════════════════════════════ */
@@ -1170,64 +1199,84 @@ footer.snap-visible > .container {
 }
 
 /* ═══════════════════════════════════════════════ */
-/* SKILLS SECTION — Cool green-gray                */
+/* SKILLS SECTION — Verde botella background       */
 /* ═══════════════════════════════════════════════ */
 .section-skills {
     padding: 0;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
-    color: var(--text-dark);
+    background-color: var(--accent-color);
+    color: var(--white);
 }
 
 .section-skills h2 {
-    color: var(--primary-color);
+    color: var(--white);
+}
+
+.section-skills h2::after {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .section-skills .skills-subtitle {
-    color: var(--primary-color);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .section-skills .skill-tag {
-    background: var(--white);
-    border: 1px solid rgba(45, 90, 61, 0.25);
-    color: var(--text-dark);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: var(--white);
+    box-shadow: none;
 }
 
 .section-skills .skill-tag:hover {
-    border-color: var(--accent-color);
-    background: var(--white);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .section-skills .lang-name {
-    color: var(--text-dark);
+    color: var(--white);
 }
 
 .section-skills .lang-level {
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.65);
 }
 
 .section-skills .lang-dot {
-    border-color: var(--accent-color);
+    border-color: rgba(255, 255, 255, 0.35);
 }
 
 .section-skills .lang-dot.filled {
-    background: var(--accent-color);
+    background: var(--white);
 }
 
 /* ═══════════════════════════════════════════════ */
-/* CONTACT SECTION — Dark for closing contrast    */
+/* CONTACT SECTION — Frosted dark glass           */
 /* ═══════════════════════════════════════════════ */
 .section-contact {
     color: var(--white);
     background-blend-mode: saturation;
+    position: relative;
+}
+
+.section-contact::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 0;
+}
+
+.section-contact .container {
+    position: relative;
+    z-index: 1;
 }
 
 .section-contact h2 {
     color: var(--white);
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    text-shadow: none;
 }
 
 .section-contact h2::after {
@@ -1235,14 +1284,14 @@ footer.snap-visible > .container {
 }
 
 .contact-text-item {
-    color: rgba(255, 255, 255, 0.95) !important;
+    color: #FFFFFF !important;
     opacity: 1 !important;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+    text-shadow: none;
 }
 
 .contact-text-item a {
-    color: rgba(255, 255, 255, 0.9);
-    border-bottom-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.95);
+    border-bottom-color: rgba(255, 255, 255, 0.25);
 }
 
 .contact-text-item a:hover {
@@ -1396,11 +1445,11 @@ footer.snap-visible > .container {
 /* ══════════════════════════════════════ */
 
 .hero {
-    background: linear-gradient(rgba(250, 250, 250, 0.90), rgba(250, 250, 250, 0.93)),
+    background: linear-gradient(rgba(250, 250, 250, 0.93), rgba(250, 250, 250, 0.96)),
         url('https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1920&q=80') center top/cover no-repeat;
 }
 .section-contact {
-    background: linear-gradient(rgba(28, 28, 28, 0.92), rgba(28, 28, 28, 0.92)),
+    background: linear-gradient(rgba(28, 28, 28, 0.60), rgba(28, 28, 28, 0.60)),
         url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80') center/cover no-repeat;
     background-attachment: scroll;
 }
