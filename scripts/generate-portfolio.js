@@ -6,6 +6,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { getPdfFilename, isValidUrl, getFaviconHref } = require('./utils');
 
 // Root of monorepo (one level up from scripts/)
 const ROOT = path.join(__dirname, '..');
@@ -166,11 +167,6 @@ function buildTranslations(config) {
     });
 
     return translations;
-}
-
-// Compute PDF filename (same logic as generate-pdf.js)
-function getPdfFilename(heroName) {
-    return `${heroName.replace(/[^a-zA-ZáéíóúñÁÉÍÓÚÑàèìòùÀÈÌÒÙ ]/g, '').replace(/\s+/g, '-')}-CV.pdf`;
 }
 
 // Generate HTML from config
@@ -458,9 +454,9 @@ ${langItems}
                     </div>
                 </div>
 
-                <div class="social-links">
+                ${isValidUrl(config.contact.linkedin) ? `<div class="social-links">
                     <a href="${config.contact.linkedin}" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
+                </div>` : ''}
 
                 <a class="btn-download-cv" href="${getPdfFilename(config.hero.name)}" download title="Descargar CV en PDF">
                     <ion-icon name="download-outline"></ion-icon>
@@ -484,7 +480,7 @@ ${langItems}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="hero.name">${config.meta.title}</title>
-    <link rel="icon" href="${config.meta.favicon}">
+    <link rel="icon" href="${getFaviconHref(config.meta.favicon, config.theme)}">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

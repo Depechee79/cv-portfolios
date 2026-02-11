@@ -6,14 +6,17 @@
     "generate": "node scripts/generate-portfolio.js",
     "generate:mireia": "node scripts/generate-portfolio.js mireia",
     "generate:scarlet": "node scripts/generate-portfolio.js scarlet",
-    "generate:all": "node scripts/generate-portfolio.js mireia && node scripts/generate-portfolio.js scarlet",
+    "generate:all": "node scripts/generate-all.js",
     "serve:mireia": "npx serve portfolios/mireia/dist -p 3000",
     "serve:scarlet": "npx serve portfolios/scarlet/dist -p 3001",
+    "serve:marc-demo": "npx serve portfolios/marc-demo/dist -p 3002",
+    "serve:elena-demo": "npx serve portfolios/elena-demo/dist -p 3003",
     "new-portfolio": "node scripts/new-portfolio.js",
     "parse-pdf": "node scripts/parse-pdf.js",
     "pdf": "node scripts/generate-pdf.js",
     "pdf:mireia": "node scripts/generate-pdf.js mireia",
-    "pdf:scarlet": "node scripts/generate-pdf.js scarlet"
+    "pdf:scarlet": "node scripts/generate-pdf.js scarlet",
+    "pdf:all": "node scripts/generate-all-pdfs.js"
   },
   "keywords": [
     "cv",
@@ -22,7 +25,8 @@
   ],
   "author": "Aitor",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "pdf-parse": "^2.4.5",
     "puppeteer": "^24.37.2",
     "qrcode": "^1.5.4"

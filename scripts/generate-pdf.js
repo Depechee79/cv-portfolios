@@ -9,6 +9,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { getPdfFilename } = require('./utils');
 
 const ROOT = path.join(__dirname, '..');
 
@@ -73,10 +74,6 @@ const THEMES = {
 };
 
 // ── Helpers ──
-function getPdfFilename(heroName) {
-    return `${heroName.replace(/[^a-zA-ZáéíóúñÁÉÍÓÚÑàèìòùÀÈÌÒÙ ]/g, '').replace(/\s+/g, '-')}-CV.pdf`;
-}
-
 function buildLangDots(count) {
     let html = '';
     for (let i = 0; i < 5; i++) {
