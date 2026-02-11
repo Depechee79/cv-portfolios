@@ -224,7 +224,7 @@ function generateHTML(config) {
                 <div class="university-info" style="margin-bottom: 15px;">
                     <p style="font-size: 1rem; font-weight: 500; color: var(--text-dark); opacity: 0.9;">
                         <span data-i18n="hero.degree">${config.hero.university.degree.es}</span> | <a
-                            href="${config.hero.university.url}" target="_blank"
+                            href="${config.hero.university.url}" target="_blank" rel="noopener noreferrer"
                             style="color: inherit; text-decoration: underline; text-underline-offset: 3px;"
                             data-i18n="hero.uni">${config.hero.university.name.es}</a> (${config.hero.university.year})
                     </p>
@@ -285,7 +285,7 @@ ${collegeHtml}
                             <div class="timeline-content">
                                 <div class="company-name">
                                     ${item.url && item.url !== '#'
-                                        ? `<a href="${item.url}" target="_blank" class="school-link" data-i18n="edu.${n}.school">${item.school.es}</a>`
+                                        ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer" class="school-link" data-i18n="edu.${n}.school">${item.school.es}</a>`
                                         : `<span data-i18n="edu.${n}.school">${item.school.es}</span>`}
                                 </div>
                                 <h3 data-i18n="edu.${n}.title">${item.title.es}</h3>
@@ -326,7 +326,7 @@ ${timelineItems}
                             <div class="timeline-content">
                                 <div class="company-name">
                                     ${item.url && item.url !== '#'
-                                        ? `<a href="${item.url}" target="_blank" data-i18n="exp.${n}.place">${item.place.es}</a>`
+                                        ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer" data-i18n="exp.${n}.place">${item.place.es}</a>`
                                         : `<span data-i18n="exp.${n}.place">${item.place.es}</span>`}
                                 </div>
                                 <h3 data-i18n="exp.${n}.role">${item.role.es}</h3>
@@ -440,7 +440,7 @@ ${langItems}
 
                     <div class="contact-text-item animate-on-scroll animate-delay-1">
                         <ion-icon name="logo-whatsapp"></ion-icon>
-                        <a href="https://wa.me/${config.contact.whatsapp}" target="_blank">WhatsApp Chat</a>
+                        <a href="https://wa.me/${config.contact.whatsapp}" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
                     </div>
 
                     <div class="contact-text-item animate-on-scroll animate-delay-2">
@@ -455,10 +455,10 @@ ${langItems}
                 </div>
 
                 ${isValidUrl(config.contact.linkedin) ? `<div class="social-links">
-                    <a href="${config.contact.linkedin}" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="${config.contact.linkedin}" target="_blank" rel="noopener noreferrer" class="social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
                 </div>` : ''}
 
-                <a class="btn-download-cv" href="${getPdfFilename(config.hero.name)}" download title="Descargar CV en PDF">
+                <a class="btn-download-cv" href="${getPdfFilename(config.hero.name)}" download="${getPdfFilename(config.hero.name)}" title="Descargar CV en PDF">
                     <ion-icon name="download-outline"></ion-icon>
                     <span data-i18n="btn.download">Descargar CV</span>
                 </a>
