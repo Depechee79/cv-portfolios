@@ -536,14 +536,20 @@ const darkSections = JSON.stringify(config.darkSections || ['about', 'experience
 
 // Extract accent color from theme CSS for nav color interpolation
 let navAccentRgb = [184, 149, 106]; // fallback: original gold
-const accentMatch = themeCSS.match(/--accent-color:\s*#([0-9a-fA-F]{6})/);
-if (accentMatch) {
-    const hex = accentMatch[1];
-    navAccentRgb = [
-        parseInt(hex.substr(0, 2), 16),
-        parseInt(hex.substr(2, 2), 16),
-        parseInt(hex.substr(4, 2), 16)
-    ];
+const isLightThemeNav = config.theme === 'hospitality-light';
+if (isLightThemeNav) {
+    // Light theme: dark sections have verde botella bg → nav must be WHITE
+    navAccentRgb = [255, 255, 255];
+} else {
+    const accentMatch = themeCSS.match(/--accent-color:\s*#([0-9a-fA-F]{6})/);
+    if (accentMatch) {
+        const hex = accentMatch[1];
+        navAccentRgb = [
+            parseInt(hex.substr(0, 2), 16),
+            parseInt(hex.substr(2, 2), 16),
+            parseInt(hex.substr(4, 2), 16)
+        ];
+    }
 }
 
 const finalJS = coreJS
