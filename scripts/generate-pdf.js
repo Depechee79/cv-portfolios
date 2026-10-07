@@ -137,7 +137,6 @@ function calculateContentScore(data) {
 function getAdaptiveSizing(score) {
     // Leonardo: 6*2 + 4*1.5 + 6*0.5 + 4*1 + 2 = 27
     // Mireia:   6*2 + 5*1.5 + 8*0.5 + 3*1 + 3 + 2 = 31.5
-    // ***REMOVED***:  3*2 + 6*1.5 + 0 + 0 + 0 + 2 = 17
 
     if (score >= 28) {
         // Ultra-dense: maximum compression (Mireia with references)

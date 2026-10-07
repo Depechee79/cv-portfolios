@@ -16,7 +16,7 @@ cv-portfolios/
 │       └── medical.css             # Medicina / Salud
 ├── portfolios/                     # Un directorio por cada profesional
 │   ├── mireia/                     # Portfolio activo
-│   ├── ***REMOVED***/                    # Portfolio activo
+│   ├── leonardo/                   # Portfolio activo
 │   └── _template/                  # Plantilla para nuevos portfolios
 ├── scripts/
 │   ├── generate-portfolio.js       # Genera la web desde data.json
@@ -44,14 +44,13 @@ cv-portfolios/
 ```bash
 # Generar un portfolio específico
 npm run generate -- mireia
-npm run generate -- ***REMOVED***
+npm run generate -- leonardo
 
 # Generar todos
 npm run generate:all
 
 # Previsualizar en local
 npm run serve:mireia     # http://localhost:3000
-npm run serve:***REMOVED***    # http://localhost:3001
 ```
 
 ### Crear un nuevo portfolio
@@ -79,7 +78,7 @@ npm install puppeteer qrcode
 
 # Generar PDF
 npm run pdf -- mireia
-npm run pdf -- ***REMOVED***
+npm run pdf -- leonardo
 
 # Con URL personalizada
 node scripts/generate-pdf.js mireia --url=https://mireia.tudominio.com

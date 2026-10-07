@@ -25,7 +25,7 @@ function isValidUrl(value) {
 
 /**
  * Genera el href del favicon segun el valor en data.json y el tema.
- * Si el valor ya es un data URI (como en ***REMOVED***/medical), lo usa directamente.
+ * Si el valor ya es un data URI, lo usa directamente.
  * Si no, genera un SVG data URI con emoji apropiado para el tema.
  * @param {string} faviconValue - Valor de meta.favicon del data.json
  * @param {string} theme - Nombre del tema ('hospitality', 'medical', etc.)

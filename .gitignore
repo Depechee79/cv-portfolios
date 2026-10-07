@@ -7,6 +7,3 @@ Thumbs.db
 
 # Documentos originales de cada persona (CV, certificados, fotos): nunca al repositorio público
 portfolios/*/assets/originals/
-
-# Datos fuente de ***REMOVED***: su web se muda a su propia cuenta
-portfolios/***REMOVED***/data.json
