@@ -7,3 +7,9 @@ Thumbs.db
 
 # Documentos originales de cada persona (CV, certificados, fotos): nunca al repositorio público
 portfolios/*/assets/originals/
+
+# Ficheros sueltos en la raíz (CV recibidos, capturas de pruebas): nunca al repositorio público
+/*.pdf
+/*.png
+/*.jpg
+/*.jpeg
